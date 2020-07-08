@@ -13,7 +13,9 @@ Code editors are usually overpowered text editors. Mainly they are used for edit
 
 In this article, I would like to present you my most favourite code editors and also some download links, and typical extensions I use.
 
-## [#1 Visual Studio Code](https://code.visualstudio.com/ "VS Code")
+## #1 Visual Studio Code
+
+![](https://www.elegantthemes.com/blog/wp-content/uploads/2019/01/000-Best-Code-Editor-VS-Code.png "VS Code")
 
 Visual studio code is a multi talented and an open source project by Microsoft. And also it's available for Windows Linux and Mac OS users. I use visual studio code mainly for web developments, cross platform app development, design and prototyping, server side scripting and as a typical code editor for other projects.
 
@@ -33,3 +35,27 @@ With this editor, I also use live server extension, SCSS compiler, HTML beautifi
 > * quick and responsive
 > * specific Linux distros for Ubuntu, Fedora, SUSE, Red Hat, and Debian
 > * IntelliSense highlighting and autocomplete works like a dream
+
+## #2 Atom
+
+![](https://www.elegantthemes.com/blog/wp-content/uploads/2018/04/001-Best-Text-Editors.jpg)
+
+Atom is another great text editor, in this case a perfect code editor made by GitHub but now owned by Microsoft. Microsoft development team is maintaining the atom code editor for a while now and it established a perfect user base and established as a premiere text and code editor out there. The best part is that Atom is totally free, open source, and highly customizable. Built around a minimal core, Atom comes with multiple language-specific packages built in, and the library of community-written ones has exploded over the years since the editor was first released. Atom is as robust as you need it to be – if the editor doesn’t do something you need, you can create that feature yourself. The Teletype features has been embraced by users, too. It allows multiple developers to work on the same code from remote locations.
+
+Download [Here](https://atom.io/ "Atom")
+
+> Key Features (out of the box)
+>
+> * File system browser
+> * Teletype
+> * Fuzzy finder for quickly opening files
+> * Fast project-wide search and replace
+> * Multiple cursors and selections
+> * Multiple panes
+> * Snippets
+> * Code folding
+> * A clean preferences UI
+> * Import TextMate grammars and themes
+> * Highly extendable
+> * Highly theme-able
+> * Incredibly passionate community
