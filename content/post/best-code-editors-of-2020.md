@@ -6,23 +6,7 @@ tags = ["Editors", "Introduction", "Review"]
 title = "Best Code Editors of 2020"
 
 +++
-+++
-
-author = "Nushan Kodikara"
-
-date = 2020-07-08T15:30:00Z
-
-description = "Brief explanation into modern code editors in 2020"
-
-draft = true
-
-tags = ["Editors", "Introduction", "Review"]
-
-title = "Best Code Editors of 2020"
-
-+++
-
-# Introduction
+# **Introduction**
 
 Code editors are usually overpowered text editors. Mainly they are used for editing codes, but in the modern world, code editors are playing a role of complete development environments for some frameworks, with the help of extensions.
 
@@ -40,7 +24,7 @@ With this editor, I also use live server extension, SCSS compiler, HTML beautifi
 
 > Key Features
 
->
+> 
 
 > * cross-platform
 
@@ -72,7 +56,7 @@ Download [Here](https://atom.io/ "Atom")
 
 > Key Features
 
->
+> 
 
 > * File system browser
 
@@ -104,13 +88,13 @@ Download [Here](https://atom.io/ "Atom")
 
 ![](https://www.elegantthemes.com/blog/wp-content/uploads/2018/04/003-Best-Text-Editors.jpg)
 
-Sublime text is something different from others, it was designed coding on mind. It has some cons when comparing to something like visual studio code, but for the working part it's doing perfectly, but this doesn't support extensions by this time. Sublime text can be used as a portable text editor and it's mostly usable for web developments & simple code writing. 
+Sublime text is something different from others, it was designed coding on mind. It has some cons when comparing to something like visual studio code, but for the working part it's doing perfectly, but this doesn't support extensions by this time. Sublime text can be used as a portable text editor and it's mostly usable for web developments & simple code writing.
 
 Download [Here](https://www.sublimetext.com/ "Sublime text")
 
 > Key Features
 
->
+> 
 
 > * Goto Anything (lightning fast search/shortcuts)
 
