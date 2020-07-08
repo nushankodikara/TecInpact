@@ -81,4 +81,4 @@ Usually we need a 3rd party uninstaller for this, but with choco, we are saved! 
 
     > choco uninstall package-name -y
    
-End Is Near!
+#End Is Near!
