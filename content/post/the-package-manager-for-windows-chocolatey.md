@@ -3,7 +3,7 @@ author = "Nushan Kodikara"
 date = 2020-07-08T17:30:00Z
 description = "Automate installations and updates on windows 3rd party softwares"
 tags = ["Windows", "Package Manager", "Introduction", "Review"]
-title = "The Package Manager for Windows ( Chocolatey )"
+title = "The Package Manager for Windows [ Chocolatey ]"
 
 +++
 ![Chocolatey](/uploads/20200708_224037.jpg "Chocolatey")
