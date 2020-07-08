@@ -23,27 +23,16 @@ Download [Here](https://code.visualstudio.com/ "VS Code")
 With this editor, I also use live server extension, SCSS compiler, HTML beautifier, HTML minifier extensions regularly, also you can find them in the visual studio code extension marketplace.
 
 > Key Features
-
-> 
-
+>
 > * cross-platform
-
 > * open source via MIT license (Github link)
-
 > * built-in Git (including merge conflicts, diff checking, and modified file tracking from within the editor)
-
 > * in-editor debugging
-
 > * large library of extensions and plugins
-
 > * compatible with nearly every programming language
-
 > * very lightweight in comparison to other, similarly robust editors
-
 > * quick and responsive
-
 > * specific Linux distros for Ubuntu, Fedora, SUSE, Red Hat, and Debian
-
 > * IntelliSense highlighting and autocomplete works like a dream
 
 ## #2 Atom
@@ -55,33 +44,19 @@ Atom is another great text editor, in this case a perfect code editor made by Gi
 Download [Here](https://atom.io/ "Atom")
 
 > Key Features
-
-> 
-
+>
 > * File system browser
-
 > * Teletype
-
 > * Fuzzy finder for quickly opening files
-
 > * Fast project-wide search and replace
-
 > * Multiple cursors and selections
-
 > * Multiple panes
-
 > * Snippets
-
 > * Code folding
-
 > * A clean preferences UI
-
 > * Import TextMate grammars and themes
-
 > * Highly extendable
-
 > * Highly theme-able
-
 > * Incredibly passionate community
 
 ## #3 Sublime Text
@@ -93,27 +68,16 @@ Sublime text is something different from others, it was designed coding on mind.
 Download [Here](https://www.sublimetext.com/ "Sublime text")
 
 > Key Features
-
-> 
-
+>
 > * Goto Anything (lightning fast search/shortcuts)
-
 > * Command Palette
-
 > * Keyboard shortcuts make everything smoother
-
 > * Split Editing
-
 > * Highly customizable
-
 > * Multiple selections
-
 > * Distraction free writing mode
-
 > * Instant project switch
-
 > * Plugin API
-
 > * And more
 
 ## Final conclusion
