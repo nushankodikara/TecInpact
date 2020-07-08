@@ -7,14 +7,14 @@ summarylength = 10
 enableEmoji = true
 
 # Enable Disqus
-#disqusShortname = ""
+disqusShortname = "tecinpact"
 
 # Google Analytics
 #googleAnalytics = "UA-123-45"
 
 [params]
 title = "I'm Nushan Kodikara"
-author = "Nushan Kodikara"
+author = "Tecinpact"
 description = "Call me Nushan"
 profilePicture = "images/profile.jpg"
 keywords = ""
