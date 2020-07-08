@@ -7,6 +7,8 @@ tags = ["Windows", "Package Manager", "Introduction", "Review"]
 title = "The Package Manager for Windows ( Chocolatey )"
 
 +++
+![Chocolatey](/uploads/20200708_224037.jpg "Chocolatey")
+
 # Introduction
 
 Do you ever thought about a single command to install, uninstall or update softwares in Windows? How about a script automatically do everything for you? Guess what, you're in the perfect place!
