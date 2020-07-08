@@ -44,7 +44,7 @@ Atom is another great text editor, in this case a perfect code editor made by Gi
 
 Download [Here](https://atom.io/ "Atom")
 
-> Key Features (out of the box)
+> Key Features
 >
 > * File system browser
 > * Teletype
