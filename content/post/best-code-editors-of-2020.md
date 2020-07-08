@@ -64,4 +64,19 @@ Download [Here](https://atom.io/ "Atom")
 
 ![](https://www.elegantthemes.com/blog/wp-content/uploads/2018/04/003-Best-Text-Editors.jpg)
 
-Sublime text is something different from others, it was designed coding on mind. It has some cons when comparing to something like visual studio code
+Sublime text is something different from others, it was designed coding on mind. It has some cons when comparing to something like visual studio code, but for the working part it's doing perfectly, but this doesn't support extensions by this time. Sublime text can be used as a portable text editor and it's mostly usable for web developments & simple code writing. 
+
+Download [Here](https://www.sublimetext.com/ "Sublime text")
+
+> Key Features
+>
+> * Goto Anything (lightning fast search/shortcuts)
+> * Command Palette
+> * Keyboard shortcuts make everything smoother
+> * Split Editing
+> * Highly customizable
+> * Multiple selections
+> * Distraction free writing mode
+> * Instant project switch
+> * Plugin API
+> * And more
