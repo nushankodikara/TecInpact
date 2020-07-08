@@ -80,5 +80,7 @@ Or packages individually by using
 Usually we need a 3rd party uninstaller for this, but with choco, we are saved! Choco logs and monitors all installation by default so we can easily uninstall anything we install with choco by using
 
     > choco uninstall package-name -y
-   
-#End Is Near!
+
+## Conclusions
+
+Chocolatey package manager is a very useful tool I use personally on my computers. It makes installations updates and uninstallations easier and less time consuming. However A little bit of knowledge on working with powershell is necessary to operate with chocolatey.
