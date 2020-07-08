@@ -1,40 +1,31 @@
 +++
-author = "Hugo Authors"
-date = 2019-03-10T00:00:00Z
-description = "A brief description of Hugo Shortcodes"
-draft = true
-tags = ["shortcodes", "privacy"]
+author = "Nushan Kodikara"
+date = 2020-07-08T06:30:00Z
+description = "The First Post With An Introduction"
+tags = ["Introduction"]
 title = "First Post"
 
 +++
-Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes) for rich content, along with a [Privacy Config](https://gohugo.io/about/hugo-and-gdpr/) and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-<!--more-->
----
+# Introduction
 
-## Instagram Simple Shortcode
+Hello There My Gorgous friends! From today on, this would be my hobby, bloggin about technology and solving your IT Related Anything!
 
-{{< instagram_simple BGvuInzyFAe hidecaption >}}
+# What I'm Posting?
 
-<br>
+As we speak, I'm planning to blog about
 
----
+* Web dev
+* PC / Android Software
+* New technologies
+* Security and Tips
+* Coding and Programming
 
-## YouTube Privacy Enhanced Shortcode
+And so much more on modern technologies.
 
-{{< youtube ZJthWmvUzzc >}}
+> Stay Tuned With RSS Feed Subscription
 
-<br>
+Don't forget to ask me anything through out my Social media links And E-Mail. 
 
----
+# Also
 
-## Twitter Simple Shortcode
-
-{{< twitter_simple 1085870671291310081 >}}
-
-<br>
-
----
-
-## Vimeo Simple Shortcode
-
-{{< vimeo_simple 48912912 >}}
+Don't forget! Suggestions are open.
