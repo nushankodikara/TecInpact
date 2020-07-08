@@ -75,4 +75,10 @@ Or packages individually by using
 
     > choco upgrade package-name -y
 
-End
+### Uninstalling softwares
+
+Usually we need a 3rd party uninstaller for this, but with choco, we are saved! Choco logs and monitors all installation by default so we can easily uninstall anything we install with choco by using
+
+    > choco uninstall package-name -y
+
+    End
