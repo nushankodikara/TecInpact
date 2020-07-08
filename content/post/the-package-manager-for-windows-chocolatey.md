@@ -55,14 +55,24 @@ Always start a powershell window with administration Access. Use the code below 
 
 Installation is simple and easy as it seams, replace the package name with the software you need to install and you're ready to go!
 
-    > choco install package-name
+    > choco install package-name -y
 
 You can also install several softwares at once, for an example I'll install VLC Firefox and Spotify at once as below
 
-    > choco install vlc firefox spotify
+    > choco install vlc firefox spotify -
 
 Also you can get all of the package names and commands by going to [chocolatey](https://chocolatey.org/) site and searching for softwares
 
 ![](/uploads/20200708_224814.jpg)
+
+### Updating softwares
+
+Updating softwares is something harder in Windows, but with chocolatey, harder no more! You can update everything at once by using
+
+    > choco upgrade all -y
+
+Or packages individually by using
+
+    > choco upgrade package-name -y
 
 End
