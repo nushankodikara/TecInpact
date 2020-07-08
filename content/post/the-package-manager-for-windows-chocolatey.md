@@ -46,7 +46,7 @@ And press enter, wait and you're ready to go.
 
 ## Usage
 
-Always start a powershell window with administration Access. Use the code below to get the help documents
+**Always start a powershell window with administration Access**. Use the code below to get the help documents
 
     > choco -?
 
