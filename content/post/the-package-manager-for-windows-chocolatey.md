@@ -34,7 +34,7 @@ And explore more in the [docs](https://chocolatey.org/docs "Chocolatey Docs")
 
 Step 1
 
-Installation is not much difficulty however, you just need a powershell window with administration Access. Right-click windows icon at bottom right and select powershell with administration Access.
+Installation is not much difficulty however, you just need a powershell window with administration Access. Right-click windows icon at bottom l and select powershell with administration Access.
 
 Step 2
 
