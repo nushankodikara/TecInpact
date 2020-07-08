@@ -20,3 +20,16 @@ Visual studio code is a multi talented and an open source project by Microsoft. 
 Download [Here](https://code.visualstudio.com/ "VS Code")
 
 With this editor, I also use live server extension, SCSS compiler, HTML beautifier, HTML minifier extensions regularly, also you can find them in the visual studio code extension marketplace.
+
+> Key Features
+>
+> * cross-platform
+> * open source via MIT license (Github link)
+> * built-in Git (including merge conflicts, diff checking, and modified file tracking from within the editor)
+> * in-editor debugging
+> * large library of extensions and plugins
+> * compatible with nearly every programming language
+> * very lightweight in comparison to other, similarly robust editors
+> * quick and responsive
+> * specific Linux distros for Ubuntu, Fedora, SUSE, Red Hat, and Debian
+> * IntelliSense highlighting and autocomplete works like a dream
