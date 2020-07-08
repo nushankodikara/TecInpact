@@ -80,3 +80,7 @@ Download [Here](https://www.sublimetext.com/ "Sublime text")
 > * Instant project switch
 > * Plugin API
 > * And more
+
+## Final conclusion
+
+Yes, there would be new and flashy text and code editors out there and most of the developers will develop and deploy their own text editors and code editors in the future, but these three will be always in my heart and these are what I use. But at the end of the day I use **visual studio code** for most of projects.
