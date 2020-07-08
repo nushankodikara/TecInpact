@@ -59,3 +59,9 @@ Download [Here](https://atom.io/ "Atom")
 > * Highly extendable
 > * Highly theme-able
 > * Incredibly passionate community
+
+## #3 Sublime Text
+
+![](https://www.elegantthemes.com/blog/wp-content/uploads/2018/04/003-Best-Text-Editors.jpg)
+
+Sublime text is something different from others, it was designed coding on mind. It has some cons when comparing to something like visual studio code
