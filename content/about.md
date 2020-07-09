@@ -1,10 +1,9 @@
-+++
-title = "About"
-description = "TECINPACT Technology Guide"
-date = "2020-7-7"
-aliases = ["about-us","contact"]
-author = "Nushan Kodikara"
-+++
+---
+title: "About"
+description: "TECINPACT Technology Guide"
+aliases: ["about-us","contact"]
+author: "Nushan Kodikara"
+---
 
 # TECINPACT Technology Guide
 ### Introduction
@@ -27,3 +26,7 @@ As A Daily Base
 ### Format
 
 My Posts would be in a step-by-step order, in order to make it easier to follow up. However reviews and those kinds of posts would review the software or the technology and provide you with resource links or download links at the bottom of the page.
+
+## If You Want To [Contact Me](/portfolio/)
+
+Check out my portfolio Or use The social Icons

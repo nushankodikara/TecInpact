@@ -82,5 +82,11 @@ url = "mailto:nushankodi@gmail.com"
   identifier = "search"
   url = "/search/"
 
-  [outputs]
+  [[menu.main]]
+  name = "Portfolio"
+  weight = 300
+  identifier = "portfolio"
+  url = "/portfolio/"
+
+[outputs]
   home = ["HTML", "RSS", "JSON"]
