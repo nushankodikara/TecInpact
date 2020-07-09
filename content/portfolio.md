@@ -1,9 +1,11 @@
 ---
-title: "Portfolio"
-draft: true
-description: "TECINPACT Technology Guide"
-aliases: ["portfolio","contact"]
-author: "Nushan Kodikara"
+title: Portfolio
+description: TECINPACT Technology Guide
+aliases:
+- portfolio
+- contact
+author: Nushan Kodikara
+
 ---
 # About Me
 I Am webadmin and a Software developer, mostly freelancing for the past decade. With rises and falls of newer technologies and technological trends I have many experiances over the fields of,
