@@ -10,12 +10,12 @@ enableEmoji = true
 disqusShortname = "tecinpact"
 
 # Google Analytics
-#googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-172360495-1"
 
 [params]
 title = "I'm Nushan Kodikara"
 author = "Tecinpact"
-description = "Call me Nushan"
+description = "Welcome Visitor! here you can find out new technologies, Reviews suggestions about technologies and step-by-step guides to the EASY World. I hope you'll find something usefull, and don't forget to comment out your opinion. If you need any help from me, consider using below links to contact me."
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
@@ -61,32 +61,32 @@ url = "mailto:nushankodi@gmail.com"
   [[menu.main]]
   name = "Home"
   identifier = "home"
-  weight = 100
+  weight = 1
   url = "/"
 
   [[menu.main]]
   name = "Posts"
-  weight = 200
+  weight = 2
   identifier = "posts"
   url = "/post/"
 
   [[menu.main]]
   name = "About"
-  weight = 300
+  weight = 3
   identifier = "about"
   url = "/about/"
 
   [[menu.main]]
   name = "Search"
-  weight = 300
+  weight = 100
   identifier = "search"
   url = "/search/"
 
   [[menu.main]]
   name = "Portfolio"
-  weight = 300
+  weight = 4
   identifier = "portfolio"
   url = "/portfolio/"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "JSON"]

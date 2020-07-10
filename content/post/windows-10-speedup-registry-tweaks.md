@@ -3,7 +3,6 @@ title: "Windows 10 Speedup Registry Tweaks"
 date: 2020-07-09T10:12:44+05:30
 Description: "Speedup your windows 10 PC with this speedup Trick with Registry"
 Tags: ["Windows","Registry","Tweaks"]
-Categories: []
 DisableComments: false
 ---
 # Introduction

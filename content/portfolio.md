@@ -1,6 +1,5 @@
 ---
 title: "Portfolio"
-draft: true
 description: "TECINPACT Technology Guide"
 aliases: ["portfolio","contact"]
 author: "Nushan Kodikara"
