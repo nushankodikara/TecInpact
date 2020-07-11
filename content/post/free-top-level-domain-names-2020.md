@@ -7,7 +7,7 @@ Categories: []
 DisableComments: false
 ---
 # Introduction
-I Was surprised and wasn't sure is this a spam or not. Top Level domains for free? that's Odd to be exact, But yeah, Freenom offers top level domains for no cost at all! and that's weird. In this article, I'll show you how you can get a Freenom top level domain for free and in the correct way. Follow this guide very carefully because anyone can f*ck it up in no time.
+I Was surprised and wasn't sure is this a spam or not, Top Level domains for free? that's Odd to be exact, But yeah, Freenom offers top level domains for no cost at all! and that's weird. In this article, I'll show you how you can get a Freenom top level domain for free and in the correct way. Follow this guide very carefully because anyone can f*ck it up in no time.
 
 ## How do they do that?
 Well, Freenom offers free domains of .tk .ml .ga .cf .gq extensions for no cost at all, But how do they do that? I didn't found any good explanation on how they do that or anything I can belive, so I came up with my own theory on this conspiracy. No they aren't aliens or something like that. These are domain zones of small exotic countries or even semi-independent parts of other countries – sometimes just a couple of islands in the ocean. so as silicon valley in china, they don't give a F*ck on world costs or nothing. And they have pretty flat rates on mostly every single domain name. Also they have a 99.9% online rate so I don't see anything bad about them.
