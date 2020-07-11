@@ -10,9 +10,6 @@ command = "hugo --gc --minify"
     sitemapPath = "/sitemap.xml"
     providers = ["google","bing"]
 
-[[plugins]]
-package = "netlify-plugin-image-optim"
-
 [context.production.environment]
 HUGO_VERSION = "0.73.0"
 HUGO_ENV = "production"
