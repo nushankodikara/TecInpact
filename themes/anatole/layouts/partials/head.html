@@ -22,7 +22,5 @@
     {{ $secureJS := $anatole |  resources.Minify | resources.Fingerprint }}
     <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"
         crossorigin="anonymous"></script>
-    <script data-ad-client="ca-pub-1895999955805554" async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     {{ template "_internal/twitter_cards.html" . }}
 </head>
