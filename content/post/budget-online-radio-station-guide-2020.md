@@ -7,8 +7,8 @@ Categories: []
 DisableComments: false
 ---
 # Introduction
-Youtube is the main source of entertaintment these days, but people still want to enjoy radio streams for no reason, online radio stations are costy and it's nearly imposible for a normal person to start an online radio station without getting in to any of the top stupid costing radio stream services.
-In this article, let me show you how I made an online radio station without wasting a single peny, or without sacraficing the quality
+Youtube is the main source of entertainment these days, but people still want to enjoy radio streams for no reason, online radio stations are costy and it's nearly impossible for a normal person to start an online radio station without getting in to any of the top stupid costing radio stream services.
+In this article, let me show you how I made an online radio station without wasting a single penny, or without sacrificing the quality
 
 ## Softwares And Services
 If you are searching on this topic, chances are, you're probably a tech geek. But I'm creating this article noobs in mind, anyone can follow up this tutorial and if you are a geek, I'll present you with extra tips to experiment with. My goal is to use Shoutcast so in 3rd party services,
@@ -28,7 +28,7 @@ All right, they didn't sponsor me or anything like that, I chosed this option be
 * Supported by Ads
 * 3 server locations & Instant setup
 
-For No Cost At All! If you reach your 5000 Listner count, you can expand your station for about 6.25$ / month in the time period I'm writing this. I'm pretty sure you are'nt going to hit that limit sooner, so free radio for a much longer time!
+For No Cost At All! If you reach your 5000 Listener count, you can expand your station for about 6.25$ / month in the time period I'm writing this. I'm pretty sure you aren't going to hit that limit sooner, so free radio for a much longer time!
 Their theming options are very limited BTW. But modern and simple
 
 >   ❝ listen2myradio was established in 2006 as the first free shoutcast hosting company on the internet, and even today listen2myradio remains the biggest free shoutcast hosting company in existence. More than one million users have signed up to listen2myradio for both our free and premium services. We specialize in all aspects of streaming over the internet. ❞
@@ -80,7 +80,7 @@ On server Type, select Shoutcast, select UK Server and the broadcaster password 
 
 ![Step 3](/uploads/20200711_10.png "Step 3")
 
-If you didn't listend to me and added Capital letters, well fix it now!
+If you didn't listened to me and added Capital letters, well fix it now!
 
 ![Step 3](/uploads/20200711_11.png "Step 3")
 
@@ -137,9 +137,9 @@ Now select the big logo to go to your main dashboard, and it should be ready to 
 Notice something? yeah all the bad is gone! and we're ready to rock on.
 
 ### Setting Up Softwares
-Here, we are using [Winamp](http://www.winamp.com/) And [Shoutcast](https://directory.shoutcast.com/Winamp) to setup a simple but professional setup. youcan use something like Virtual DJ, SAM Broadcater etc. but we are considering only free options in this post, if you need a complete guide on Virtual DJ and SAM Broadcaster, let me know in the comments. Download And install Winamp And Shoutcast Usually.
+Here, we are using [Winamp](http://www.winamp.com/) And [Shoutcast](https://directory.shoutcast.com/Winamp) to setup a simple but professional setup. you can use something like Virtual DJ, SAM Broadcaster etc. but we are considering only free options in this post, if you need a complete guide on Virtual DJ and SAM Broadcaster, let me know in the comments. Download And install Winamp And Shoutcast Usually.
 
-Follow up these steps, I Dont think I want to explain this but I'll whenever it's required.
+Follow up these steps, I don't think I want to explain this but I'll whenever it's required.
 
 [Download](http://www.winamp.com/)
 
@@ -186,7 +186,7 @@ Now That out to the side, Copy the IP Address, Port and Stream Password
 
 ![Software Setup](/uploads/20200711_43.png "Software Setup")
 
-And Paste respectivly in Server Address, Port and password. also change Connect Using to V1.x and DO NOT FILL DJ / User ID.
+And Paste respectively in Server Address, Port and password. also change Connect Using to V1.x and DO NOT FILL DJ / User ID.
 
 ![Software Setup](/uploads/20200711_44.png "Software Setup")
 
@@ -194,7 +194,7 @@ Enter your broadcast station name in the name section, your URL in the URL Secti
 
 ![Software Setup](/uploads/20200711_45.png "Software Setup")
 
-Select your bitrate you preffer to broadcast with
+Select your bitrate you prefer to broadcast with
 
 ![Software Setup](/uploads/20200711_46.png "Software Setup")
 
@@ -210,7 +210,7 @@ You are ready to rock, you can see your data usage in the sent section and to be
 
 ### Streaming To Radio
 
-All right mr.DJ, now you're ready to rock up. But first! create your play list in the winamp software and to start broadcasting, just play it! it's that simple, for programs, pre record your voiceovers and add to the playlist. Unfortunately, for now, we don't have a method to speak live to the audiance.
+All right mr.DJ, now you're ready to rock up. But first! create your play list in the winamp software and to start broadcasting, just play it! it's that simple, for programs, pre record your voiceover and add to the playlist. Unfortunately, for now, we don't have a method to speak live to the audience.
 
 ![Software Setup](/uploads/20200711_50.png "Software Setup")
 
@@ -228,14 +228,14 @@ This is what the streaming page looks like alongside
 
 ![Software Setup](/uploads/20200711_52.png "Software Setup")
 
-If you're running an uninterupted radio stream, don't forget to activate playlist repeate and maybe shuffle?
+If you're running an uninterrupted radio stream, don't forget to activate playlist repeat and maybe shuffle?
 
 ![Software Setup](/uploads/20200711_53.png "Software Setup")
 
 Don't Forget to turn your stream off after the broadcast.
 
 ## Data Usage
-This is something Very important to most of the users, I know. So I decided to calculate the maximum data consumption on common bitrates, for an hour. ( This is a theoratical maximum )
+This is something Very important to most of the users, I know. So I decided to calculate the maximum data consumption on common bitrates, for an hour. ( This is a theoretical maximum )
 
 | Bitrate | Data Usage For 1 hour |
 | :------ | :-------------------: |
@@ -249,8 +249,8 @@ This is something Very important to most of the users, I know. So I decided to c
 Seems like pretty good for a starter, isn't it.
 
 ## Extending Plans
-If you are going over 5000 simultanious listners, Listen2myradio has a packags suiting anyone. you can see more details [Here](http://www.listen2myradio.com/radio-order-shoutcast.php)
+If you are going over 5000 simultaneous listeners, Listen2myradio has a packages suiting anyone. you can see more details [Here](http://www.listen2myradio.com/radio-order-shoutcast.php)
 
 # Conclusion
 
-Well, It's a long but simple process, I totally preffer this setup to any starter in online radio broadcasting. If you got stuck or something went wrong, please feel free to contact me and inform the situation. I hope you got something new and Maybe, I'll do a highly professional radio streaming guide later? and another method of free broadcasting is on the way, so stay tuned!
+Well, It's a long but simple process, I totally prefer this setup to any starter in online radio broadcasting. If you got stuck or something went wrong, please feel free to contact me and inform the situation. I hope you got something new and Maybe, I'll do a highly professional radio streaming guide later? and another method of free broadcasting is on the way, so stay tuned!

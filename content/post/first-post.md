@@ -8,7 +8,7 @@ title = "First Post"
 +++
 # Introduction
 
-Hello There My Gorgous friends! From today on, this would be my hobby, bloggin about technology and solving your IT Related Anything!
+Hello There My Gorgeous friends! From today on, this would be my hobby, blogging about technology and solving your IT Related Anything!
 
 # What I'm Posting?
 

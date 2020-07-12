@@ -24,7 +24,7 @@ Well, here comes the boring part. If you don't want to know what this file does 
 * **NoResolveTrack** - Prevents Windows from using NTFS file system's tracking feature to resolve a shortcut.
 * **NoInternetOpenWith** - Disables "Search on Internet" prompt in "Open with" window so that you can directly see available programs list.
 * **WaitToKillServiceTimeout** - Reduces system waiting time before stopping services when the services are notified about shut down process.
-* **Change to Photo Viewer** - In Windows 10 It's default to use the photo app and that app is Eating resourcess as hell, so I decided to retrive the defaults
+* **Change to Photo Viewer** - In Windows 10 It's default to use the photo app and that app is Eating resources as hell, so I decided to retrieve the defaults
 * **Enable Last Active Click** - So You can switch windows with a single click
 * **Disable Lockscreen** - Most of us dosent even need the lock screen, and why should we keep it?
 * **Disable Cortana** - Cortana is a pain in the head as it dosent even work very well
@@ -62,4 +62,4 @@ You're Done!
 You can download the tweak from [Here 2kb](https://www5.zippyshare.com/v/3zA7eFwV/file.html)
 
 ## Troubleshoot
-If Something odd happends, or you just need to restore the changes, simply run the Restore Tweaks File and you're Good As new.
+If Something odd happens, or you just need to restore the changes, simply run the Restore Tweaks File and you're Good As new.

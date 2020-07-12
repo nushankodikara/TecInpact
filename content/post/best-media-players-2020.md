@@ -42,7 +42,7 @@ This is a popular player but it consumes alot of resources so it wont be ideal f
 [Download](http://kmplayer.com/)
 
 ## #3 VLC
-Here it is, the most famous and widly used media player in the whole universe. but do everyone right about their desicion? well, not at all. why? VLC has a lot more going in it's back end. it has it's own codecs, it uses more ram and so on. But, if you're an Advanced User, I won't bother you at all. For Others, Just Don't use it. It's flimsy and not good for me.
+Here it is, the most famous and widely used media player in the whole universe. but do everyone right about their decision? well, not at all. why? VLC has a lot more going in it's back end. it has it's own codecs, it uses more ram and so on. But, if you're an Advanced User, I won't bother you at all. For Others, Just Don't use it. It's flimsy and not good for me.
 
 ![VLC](https://images.videolan.org/vlc/screenshots/1.0.0/VLC_Qt4.jpg "VLC")
 
@@ -86,11 +86,11 @@ This is my favourit, It has a modern and sleek design language while maintaining
 [Download](https://play.google.com/store/apps/details?id=code.name.monkey.retromusic "Retro Music")
 
 ### #2 Eon Music Player
-Well, this is another player with a sleek and modern design language, however this player has a great intergration within the roots of the android system. so you should check this out as soon as posible.
+Well, this is another player with a sleek and modern design language, however this player has a great integration within the roots of the android system. so you should check this out as soon as possible.
 
 ![EON](https://lh3.googleusercontent.com/3cIyLlbU3P4cHATw1HMiGwYoGITImd-P_NVydawB4UTJwslvLQzYzwtMLWCVQOtWbdE=w720-h310-rw "Eon player")
 
 [Download](https://play.google.com/store/apps/details?id=qijaz221.github.io.musicplayer "Eon Player")
 
 # Conclusion
-After all, at the end of the day, we're using our favourit players to play our favourit songs no matter how boring or no matter how technologically down they are, but It's worth giving a shot out to these newcomers and re-imagine our lives with them.
+After all, at the end of the day, we're using our favourite players to play our favourite songs no matter how boring or no matter how technologically down they are, but It's worth giving a shot out to these newcomers and re-imagine our lives with them.
