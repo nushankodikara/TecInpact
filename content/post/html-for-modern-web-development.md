@@ -259,6 +259,7 @@ To use these formatters, I'll demonstrate it with a paragraph and a heading, but
 ## HTML Quotation and Citation Elements
 
 We will go through the blockquote,q, abbr, address, cite, bdo HTML elements.
+
 | Element    | Description                                                                                                                                               |
 | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | blockquote | this element can blockquote text sections.                                                                                                                |
