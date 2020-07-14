@@ -71,8 +71,14 @@ url = "mailto:nushankodi@gmail.com"
   url = "/post/"
 
   [[menu.main]]
-  name = "About"
+  name = "Crash Course"
   weight = 3
+  identifier = "Crash Course"
+  url = "/tags/crash-course/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 4
   identifier = "about"
   url = "/about/"
 

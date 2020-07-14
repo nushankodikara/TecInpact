@@ -1,10 +1,9 @@
 ---
 title: "HTML for Modern Web Development ( Zero to Hero )"
-date: 2020-07-12T15:13:33+05:30
+date: 2020-07-14
 Description: ""
 Tags: ["web development","HTML","Zero To Hero","Crash Course"]
 Categories: []
-draft: true
 DisableComments: false
 ---
 
@@ -354,27 +353,437 @@ of if you're using an external page,
 
 >       <a href="that-page.html#myID">Scroll to My ID</a>
 
-## HTML Image Maps
+## HTML Tables
 
-Noticed We're getting hard codes or so? It's not hard but seems like, so we're digging in to a deeper part in HTML, These aren't that hard, because it's just a markup. Now, Image maps are something you can do with images, for an example, let's take this image.
+Here, you can use the table element to create tables. How ever there are more to this, In tables, you have to define Table Rows with tr element inside the table element and Inside the table rows, you have to define table heading or table data with th or tr elements, let me show you a Simple Table
 
-![imaps](https://www.w3schools.com/html/workplace.jpg)
+>       <table>
+>           <tr>
+>               <th> First Heading </th>
+>               <th> Second Heading </th>
+>               <th> Third Heading </th>
+>           </tr>
+>           <tr>
+>               <td> First Data </td>
+>               <td> Second Data </td>
+>               <td> Third Data </td>
+>           </tr>
+>       </table>
 
-Here, let's say that I want the user to redirect to another page when the user selects certain objects in the image. let's see here
+You can expand a data cell in columns or rows, this is the same process as merging cells in excel sheets. There are two ways on doing this,
+* Spread in columns with Colspan
+* Spread in rows with Rowspan
 
-I want the user to redirect to several pages. and I'm mapping the image as this.
-* if the user selects the laptop, he will be redirected to google
-* if the user selects the coffee, he will be redirected to bing
-* if the user selects the phone, he will be redirected to microsoft
+Here is a demonstration on how you can do this
 
-So first we have to add the image,
+Considering Colspan attribute
 
->       <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+>       <table>
+>           <tr>
+>               <th>Name</th>
+>               <th colspan="2">Telephone</th>
+>           </tr>
+>           <tr>
+>               <td>Bill Gates</td>
+>               <td>55577854</td>
+>               <td>55577855</td>
+>           </tr>
+>       </table>
 
-Here you can see, I'm setting usemap attribution to workmap with a hash. now let me create the map itself.
+Considering Rowspan attribute
 
->       <map name="workmap">
+>       <table>
+>           <tr>
+>               <th>Name:</th>
+>               <td>Bill Gates</td>
+>           </tr>
+>           <tr>
+>               <th rowspan="2">Telephone:</th>
+>               <td>55577854</td>
+>           </tr>
+>           <tr>
+>               <td>55577855</td>
+>           </tr>
+>       </table>
 
-Simple isn't it. now here comes the fun part. I'm selecting the map areas as this.
+Now here, you'll notice that I'm not providing you with any Images lately on the display side of the things, it's because by now, you should be trying these by your self! If not, Why are you even following this article?
 
+Also You can add captions to the table with the caption element
 
+>       <table>
+>           <caption>Our First Table</caption>
+>           <tr>
+>               <th> First Heading </th>
+>               <th> Second Heading </th>
+>               <th> Third Heading </th>
+>           </tr>
+>           <tr>
+>               <td> First Data </td>
+>               <td> Second Data </td>
+>               <td> Third Data </td>
+>           </tr>
+>       </table>
+
+**Important Notice** The Caption element must be defined after the Table element as in the above example.
+
+## HTML Lists
+
+It's pretty straight forward from here on, There are three types of lists.
+* Un-ordered lists
+* Ordered lists
+* Description lists
+
+No matter what you use, you have to add the elements to the list using li element. Let me demonstrate to you
+
+>       <!-- Un-ordered List -->
+>       <ul>
+>           <li> element 1 </li>
+>           <li> element 2 </li>
+>           <li> element 3 </li>
+>       </ul>
+> 
+>       <!-- Ordered List -->
+>       <ol>
+>           <li> element 1 </li>
+>           <li> element 2 </li>
+>           <li> element 3 </li>
+>       </ol>
+> 
+>       <!-- Description List -->
+>       <dl>
+>           <dt>Main Item</dt>
+>           <dd>main Item description</dd>
+>           <dt>Secondary Item</dt>
+>           <dd>Secondary Item description</dd>
+>       </dl>
+
+## HTML Blocks
+Now my friends if you're comfortable with the concepts of HTML, let me show you how to group anything in HTML. grouping elements can give you the possibilities and the ease to apply certain properties to a group of elements without doing it one by one, There are few blocks you can use for this purpose and they are pretty much self explanatory.
+
+Here are some block-level elements in HTML.
+* address
+* article
+* aside
+* blockquote
+* canvas
+* dd
+* div
+* dl
+* dt
+* fieldset
+* figcaption
+* figure
+* footer
+* form
+* h1-h6
+* header
+* hr
+* li
+* main
+* nav
+* noscript
+* ol
+* p
+* pre
+* section
+* table
+* tfoot
+* ul
+* video
+
+To use HTML Block-level elements
+
+>       <tag>
+>           .
+>           content goes here
+>           .
+>       </tag>
+
+Now don't get panic seeing these, You'll understand these elements with some examples, and also the internet is open for more information. (Just google for more information.)
+
+And Here are some Inline-elements
+* a
+* abbr
+* acronym
+* b
+* bdo
+* big
+* br
+* button
+* cite
+* code
+* dfn
+* em
+* i
+* img
+* input
+* kbd
+* label
+* map
+* object
+* output
+* q
+* samp
+* script
+* select
+* small
+* span
+* strong
+* sub
+* sup
+* textarea
+* time
+* tt
+* var
+
+To use inline elements
+
+>       bla bla <tag> this is a </tag> paragraph in something in the document
+
+Now, you don't have to use all of these to remembered in order to master in html, but it's handy to know what's there to use in case of "An Event".
+
+#### Div element
+Now this div element stand for division and this is something special because we have to use this in like everywhere because this is the main element on grouping elements, to use
+
+>       <div>
+>           .
+>           .
+>           Content Goes Here
+>           .
+>           .
+>       </div>
+
+And you can apply certain properties to that div specifically. (more details later)
+
+#### Span element
+This is exactly like the div element but this can be used inline.
+
+>       bla bla <span> this is a </span> paragraph in something in the document
+
+## HTML Classes
+This is a method of selecting a certain set of elements, spread across the HTML document and without using elements, now this attribute would be used in CSS and JS to identify the element and I'll explain how to select using classes in the future, for now let's add classes to certain elements
+
+>       <tag class="your-class second-class">
+>           .
+>           .
+>           Content Goes Here
+>           .
+>           .
+>       </tag>
+
+you can have any number of classes assigned for a element and separate them with a space and you're good to go.
+
+## HTML ID
+This is exactly like classes but you can't use multiple IDs for a element or you can't assign a single ID to multiple tags. IDs are used to select specific tags such as a input box for password in a login forum. more details later. Let's assign an ID
+
+>       <tag id="myID">
+>           .
+>           .
+>           Content Goes Here
+>           .
+>           .
+>       </tag>
+
+## HTML Iframes
+Iframes are also easy to use, you can embed another webpage (local or external) in to your webpage. and it's something you have to try for yourself to understand
+
+>       <iframe src="https://www.tecinpact.tk/" title="description" width="100px" height="100px">
+>       </iframe>
+
+also you can change the src of the iframe using an anchor as this
+
+>       <iframe src="https://www.tecinpact.tk/" name="iframe_a" title="Iframe Example"></iframe>
+>       <p><a href="http://www.tecinpact.tk/post/html-for-modern-web-development/" target="iframe_a">W3Schools.com</a></p>
+
+## Script Element
+You can insert JS to your webpage externally or locally using script tag, to use it externally.
+
+>       <script src="external-js-file.js"></script>
+
+or Internally
+
+>       <script>
+>           // JS Goes Here
+>       </script>
+
+And don't consider this for now, after I published the JS crash course, you're good to go.
+
+## Head element
+Let's turn around to the boilerplate and our Head element, It's one of the main elements in HTML and you can use it to house the title, style, meta, link, script and base elements which describes the document
+
+you should know by now how these work, so I'll provide some examples.
+
+Linking external css files
+>       <link rel="stylesheet" href="mystyle.css">
+
+Define character set
+>       <meta charset="UTF-8">
+
+Define Keywords for SEO
+>       <meta name="keywords" content="HTML, CSS, JavaScript">
+
+Define Description for SEO
+>       <meta name="description" content="Free Web tutorials">
+
+Define the author of the page
+>       <meta name="author" content="John Doe">
+
+Refresh the page every 30 seconds
+>       <meta http-equiv="refresh" content="30">
+
+Setting the viewport to make your website look good on all devices
+>       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+## HTML Computer codes
+HTML Has a unique property to showcase computer codes in your documents, as I'm doing right now, you can use code and kbd elements to showcase codes and keyboard inputs easily, also samp for programing outputs and var for Variables
+
+>       <code>
+>           var x = 10;
+>           var b = 5;
+>       </code>
+
+>       This is kbd function, to copy <kbd>Ctrl + C</kbd> is useful
+
+>       <p>Message from my computer:</p>
+>       <p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+>       <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+## HTML Forms
+You can create a HTML Form using the form element, in it you can set
+* Text Inputs
+* Email Inputs
+* Password Inputs
+* Radio buttons
+* Selections
+* Submit button
+* Reset button
+* Text areas
+
+We won't be considering the functionality of forms under modern web development until JS course, so let's learn the structure, here's an example for you to try out
+
+>       <form>
+>           <label>Text</label>
+>           <input type="text" id="text" name="name" placeholder="Text">
+>           <label>Email</label>
+>           <input type="email" id="email" name="email" placeholder="Email">
+>           <label>Password</label>
+>           <input type="password" id="password" name="password" placeholder="password">
+>           <label>Textarea</label>
+>           <textarea placeholder="textArea" id="textarea" name="textarea" ></textarea>
+>           <br/>
+>           <input type="radio" id="male" name="gender" value="male">
+>           <label for="male">Male</label><br>
+>           <input type="radio" id="female" name="gender" value="female">
+>           <label for="female">Female</label><br>
+>           <input type="radio" id="other" name="gender" value="other">
+>           <label for="other">Other</label>
+>           <select id="cars" name="cars">
+>               <option value="volvo">Volvo</option>
+>               <option value="saab">Saab</option>
+>               <option value="fiat">Fiat</option>
+>               <option value="audi">Audi</option>
+>           </select>
+>           <datalist id="browsers">
+>               <option value="Internet Explorer">
+>               <option value="Firefox">
+>               <option value="Chrome">
+>               <option value="Opera">
+>               <option value="Safari">
+>           </datalist>
+>       </form>
+
+These are the basics and you can try to understand what each item does, and here's a list of Input types to try on
+
+* button
+* checkbox
+* color
+* date
+* datetime-local
+* email
+* file
+* hidden
+* image
+* month
+* number
+* password
+* radio
+* range
+* reset
+* search
+* submit
+* tel
+* text
+* time
+* url
+* week
+
+How to use these again? Let me show you
+
+>       <input type="type-from-above"/>
+
+use a ID and name attribute to give it a uniqueness so we can select it later.
+
+also for input element you can use these attributes, and they are also pretty much self explanatory
+* **value** Specify an initial value
+* **readonly** make the field readonly
+* **disabled** Disable the field
+* **size** visible width in characters.
+* **maxlength** Max length of an input field
+* **min** and **max** Minimum and maximum values for an input field
+* **multiple** specifies that the user is allowed to enter more than one value in an input field
+* **pattern** specifies a regular expression that the input field's value is checked against, when the form is submitted.
+* **placeholder** specifies short a hint that describes the expected value of an input field.
+* **required** attribute specifies that an input field must be filled out before submitting the form.
+* **autofocus** specifies that an input field should automatically get focus when the page loads.
+* **autocomplete** specifies whether a form or an input field should have autocomplete on or off.
+
+Now how to use them, I'll provide an example with all of those above.
+
+>       <input value="Jhon Doe" readonly>
+>       <input value="Jhon Doe" disabled>
+>       <input value="Jhon Doe" size="30" maxlength="40" required autofocus autocomplete="off" placeholder="Name">
+
+## HTML Media
+
+To embed videos, it's straight forward.
+
+>           <video width="320" height="240" autoplay>
+>               <source src="movie.mp4" type="video/mp4">
+>               <source src="movie.ogg" type="video/ogg">
+>               Your browser does not support the video tag.
+>           </video>
+
+Also embedding audio is straight forward.
+
+>       <audio controls>
+>           <source src="horse.ogg" type="audio/ogg">
+>           <source src="horse.mp3" type="audio/mpeg">
+>           Your browser does not support the audio element.
+>       </audio>
+
+## HTML Special Elements
+Well, here are some special elements to use in your documents.
+* br - This element is used for line breaks
+* hr - This element is used for Horizontal lines
+
+>       <p>Hello the world <br> Of HTML Magic</p>
+>       <hr>
+>       <p>In A Land of code, in the time of web development</p>
+
+# WTF Is This? how can this make a Website?
+Now now, calm down for a second, HTML is the structure for the websites, you can't and you shouldn't style your document with HTML attributes, we're using CSS for styling, and We're going to explore CSS in a further course. and for HTML, You're a Hero now!
+
+# That's It?
+That's it, for modern web development, but there are more tags and so many more things on html, but we don't want any of those, because we're creating our own layouts and they are much more responsible than default HTML 5 options. You're open to explore.
+
+# What's next?
+You can get a certificate from Us on completing HTML course for free. If you're interested send what certificates you want to [tecinpactagencies@gmail.com](mailto:tecinpactagencies@gmail.com) and After a brief test on your knowledge, We'll Issue a certificate. Also stay tuned for CSS and JS pages
+
+# Cheatsheet ?
+Yeah here's a cheatsheet for HTML
+* [Htmlcheatsheet](https://htmlcheatsheet.com/)
+* [PDF](https://websitesetup.org/wp-content/uploads/2019/10/WSU-HTML-Cheat-Sheet.pdf)
+
+# Conclusion
+Well, It's hard to make these courses for you, if you can show some love, share these, It would great! Well, anyhow I'll post Css and Js as soon as possible so we can round this up. HTML can be used to create websites mainly and hybrid mobile and desktop apps, but it should be stylized with css and add functions with Js. Stay tuned and I'll make you a pro within no time.
