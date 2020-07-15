@@ -1,5 +1,5 @@
 ---
-title: "HTML for Modern Web Development ( Zero to Hero )"
+title: "HTML for Modern Web Development (Zero-To-Hero)"
 date: 2020-07-14
 Description: ""
 Tags: ["web development","HTML","Zero To Hero","Crash Course"]
@@ -259,6 +259,7 @@ To use these formatters, I'll demonstrate it with a paragraph and a heading, but
 ## HTML Quotation and Citation Elements
 
 We will go through the blockquote,q, abbr, address, cite, bdo HTML elements.
+
 | Element    | Description                                                                                                                                               |
 | :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | blockquote | this element can blockquote text sections.                                                                                                                |

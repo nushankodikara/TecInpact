@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://www.tecinpact.tk/"
 languageCode = "en"
 DefaultContentLanguage = "en"
 title = "TECINPACT Techno Guide"
@@ -32,7 +32,12 @@ use = "katex"  # options: "katex", "mathjax". default is "katex".
 [[params.socialIcons]]
 icon = "fa-facebook"
 title = "Facebook"
-url = "https://facebook.com/nushan.kodikara.7"
+url = "https://www.facebook.com/Tecinpact/"
+
+[[params.socialIcons]]
+icon = "fa-twitter"
+title = "Twitter"
+url = "https://twitter.com/Tecinpact"
 
 [[params.socialIcons]]
 icon = "fa-github"
@@ -52,7 +57,7 @@ url = "https://www.instagram.com/____nushan_"
 [[params.socialIcons]]
 icon = "fa-envelope"
 title = "e-mail"
-url = "mailto:nushankodi@gmail.com"
+url = "mailto:tecinpactagencies@gmail.com"
 
 ## Menu items
 
@@ -71,28 +76,22 @@ url = "mailto:nushankodi@gmail.com"
   url = "/post/"
 
   [[menu.main]]
-  name = "Crash Course"
-  weight = 3
-  identifier = "Crash Course"
-  url = "/tags/crash-course/"
-
-  [[menu.main]]
   name = "About"
-  weight = 4
+  weight = 3
   identifier = "about"
   url = "/about/"
-
-  [[menu.main]]
-  name = "Search"
-  weight = 100
-  identifier = "search"
-  url = "/search/"
 
   [[menu.main]]
   name = "Portfolio"
   weight = 4
   identifier = "portfolio"
   url = "/portfolio/"
+
+  [[menu.main]]
+  name = "Search"
+  weight = 100
+  identifier = "search"
+  url = "/search/"
 
 [outputs]
   home = ["HTML", "JSON"]
