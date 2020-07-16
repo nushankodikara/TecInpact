@@ -1,6 +1,6 @@
 ---
 title: "Google Drive Serverless Web Hosting 2020"
-date: 2020-07-15T11:39:18+05:30
+date: 2020-07-15T08:39:18+05:30
 Description: "Google Drive as a web hosting platform, it works for static sites."
 Tags: ["Web development","Static Sites"]
 Categories: []
@@ -8,7 +8,7 @@ DisableComments: false
 ---
 
 # Introduction
-Serverless web hosting getting popular day by day, with the rise of static websites. So here today, I'm going to show you how to host your created website ( HTML JS And CSS files ) In the google drive, and setting up a proper domain name for it using Freenom and netlify. If you are a typical follower of my blog, this would be awkward because I didn't completed the web development course just yet. But I will very soon and a side note : This is a side post Until I'm preparing the Python Programming course.
+Serverless web hosting getting popular day by day, with the rise of static websites, So here today, I'm going to show you how to host your created website ( HTML JS And CSS files ) In the google drive, and setting up a proper domain name for it using Freenom and netlify. If you are a typical follower of my blog, this would be awkward because I didn't completed the web development course just yet. But I will very soon and a side note : This is a side post Until I'm preparing the Python Programming course.
 
 # Website
 Well, for now you have the HTML file (index.html) you made from our [HTML Zero To Hero](/post/html-for-modern-web-development/) Course or you should have a static website pre built. First thing's first, we have to upload the webpage to a folder in our google drive. [Here](/zip/Sample-site.zip) you can download the sample file I'm going to use in this project.
