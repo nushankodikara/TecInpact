@@ -94,4 +94,4 @@ url = "mailto:tecinpactagencies@gmail.com"
   url = "/search/"
 
 [outputs]
-  home = ["HTML", "JSON"]
+  home = ["HTML", "RSS", "JSON"]

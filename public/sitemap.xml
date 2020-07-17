@@ -3,115 +3,209 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>localhost/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/</loc>
+    <lastmod>2020-07-16T14:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/post/</loc>
+    <lastmod>2020-07-16T14:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/programming/</loc>
+    <lastmod>2020-07-16T14:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/post/python-ultimate-crash-course-2020/</loc>
+    <lastmod>2020-07-16T14:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/software-development/</loc>
+    <lastmod>2020-07-16T14:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/</loc>
+    <lastmod>2020-07-16T14:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/post/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/post/google-drive-serverless-web-hosting-2020/</loc>
+    <lastmod>2020-07-15T08:39:18+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/post/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/static-sites/</loc>
+    <lastmod>2020-07-15T08:39:18+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/web-development/</loc>
+    <lastmod>2020-07-15T08:39:18+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/crash-course/</loc>
+    <lastmod>2020-07-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/html/</loc>
+    <lastmod>2020-07-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/post/html-for-modern-web-development/</loc>
+    <lastmod>2020-07-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/zero-to-hero/</loc>
+    <lastmod>2020-07-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/post/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/graphics-designing/</loc>
+    <lastmod>2020-07-13T18:14:56+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/resources/</loc>
+    <lastmod>2020-07-13T18:14:56+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/post/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/royalty-free/</loc>
+    <lastmod>2020-07-13T18:14:56+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/post/royalty-free-internet-resources/</loc>
+    <lastmod>2020-07-13T18:14:56+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/post/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/linux/</loc>
+    <lastmod>2020-07-12T07:38:18+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/post/vs-code-for-web-developers/</loc>
+    <lastmod>2020-07-12T07:38:18+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/post/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <loc>https://www.tecinpact.tk/tags/windows/</loc>
+    <lastmod>2020-07-12T07:38:18+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/about/</loc>
+    <loc>https://www.tecinpact.tk/tags/domains/</loc>
+    <lastmod>2020-07-11T15:54:59+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/index/</loc>
+    <loc>https://www.tecinpact.tk/post/free-top-level-domain-names-2020/</loc>
+    <lastmod>2020-07-11T15:54:59+05:30</lastmod>
   </url>
   
   <url>
-    <loc>localhost/search/</loc>
+    <loc>https://www.tecinpact.tk/tags/web-admin/</loc>
+    <lastmod>2020-07-11T15:54:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/post/budget-online-radio-station-guide-2020/</loc>
+    <lastmod>2020-07-11T08:47:08+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/tags/online-radio/</loc>
+    <lastmod>2020-07-11T08:47:08+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/tags/android/</loc>
+    <lastmod>2020-07-10T15:59:09+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/post/best-media-players-2020/</loc>
+    <lastmod>2020-07-10T15:59:09+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/tags/media-players/</loc>
+    <lastmod>2020-07-10T15:59:09+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/tags/review/</loc>
+    <lastmod>2020-07-10T15:59:09+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/tags/registry/</loc>
+    <lastmod>2020-07-09T10:12:44+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/tags/tweaks/</loc>
+    <lastmod>2020-07-09T10:12:44+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/post/windows-10-speedup-registry-tweaks/</loc>
+    <lastmod>2020-07-09T10:12:44+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/tags/introduction/</loc>
+    <lastmod>2020-07-08T17:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/tags/package-manager/</loc>
+    <lastmod>2020-07-08T17:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/post/the-package-manager-for-windows-chocolatey/</loc>
+    <lastmod>2020-07-08T17:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/post/best-code-editors-of-2020/</loc>
+    <lastmod>2020-07-08T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/tags/editors/</loc>
+    <lastmod>2020-07-08T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/post/first-post/</loc>
+    <lastmod>2020-07-08T06:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/portfolio/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.tecinpact.tk/search/</loc>
     <priority>0.1</priority>
   </url>
   

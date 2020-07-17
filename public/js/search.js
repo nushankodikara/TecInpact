@@ -1,5 +1,5 @@
 
-summaryInclude=60;
+summaryInclude=100;
 var fuseOptions = {
   shouldSort: true,
   includeMatches: true,
@@ -22,7 +22,7 @@ if(searchQuery){
   $("#search-query").val(searchQuery);
   executeSearch(searchQuery);
 }else {
-  $('#search-results').append("<p>Please enter a search phrase above</p>");
+  $('#search-results').append("<h4>Please enter a search phrase above</h4>");
 }
 
 

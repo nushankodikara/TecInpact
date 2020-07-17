@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Development on TECINPACT Techno Guide</title>
+    <link>https://www.tecinpact.tk/tags/software-development/</link>
+    <description>Recent content in Software Development on TECINPACT Techno Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Jul 2020 14:30:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://www.tecinpact.tk/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Ultimate Crash Course (Zero-To-Hero)</title>
+      <link>https://www.tecinpact.tk/post/python-ultimate-crash-course-2020/</link>
+      <pubDate>Thu, 16 Jul 2020 14:30:00 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/post/python-ultimate-crash-course-2020/</guid>
+      <description>Introduction Python is one of most popular and most powerful and one of the fastest programming languages until now, Millions upon millions developers use python in their projects to script easily.</description>
+    </item>
+    
+  </channel>
+</rss>

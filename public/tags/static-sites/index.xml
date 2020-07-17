@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Static Sites on TECINPACT Techno Guide</title>
+    <link>https://www.tecinpact.tk/tags/static-sites/</link>
+    <description>Recent content in Static Sites on TECINPACT Techno Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 Jul 2020 08:39:18 +0530</lastBuildDate>
+    
+	<atom:link href="https://www.tecinpact.tk/tags/static-sites/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google Drive Serverless Web Hosting 2020</title>
+      <link>https://www.tecinpact.tk/post/google-drive-serverless-web-hosting-2020/</link>
+      <pubDate>Wed, 15 Jul 2020 08:39:18 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/post/google-drive-serverless-web-hosting-2020/</guid>
+      <description>Introduction Serverless web hosting getting popular day by day, with the rise of static websites, So here today, I&amp;rsquo;m going to show you how to host your created website ( HTML JS And CSS files ) In the google drive, and setting up a proper domain name for it using Freenom and netlify.</description>
+    </item>
+    
+  </channel>
+</rss>

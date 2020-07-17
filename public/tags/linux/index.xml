@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on TECINPACT Techno Guide</title>
+    <link>https://www.tecinpact.tk/tags/linux/</link>
+    <description>Recent content in Linux on TECINPACT Techno Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Jul 2020 07:38:18 +0530</lastBuildDate>
+    
+	<atom:link href="https://www.tecinpact.tk/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VS Code for Web Developers</title>
+      <link>https://www.tecinpact.tk/post/vs-code-for-web-developers/</link>
+      <pubDate>Sun, 12 Jul 2020 07:38:18 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/post/vs-code-for-web-developers/</guid>
+      <description>Introduction Visual studio code is a powerful and a user-friendly code editor, It has extended functionality, which makes it an all-in-one solution for most of the web developers and This would be a follow up guide to a Web and Hybrid app development course I&amp;rsquo;m planning forward to.</description>
+    </item>
+    
+    <item>
+      <title>Best Media Players 2020</title>
+      <link>https://www.tecinpact.tk/post/best-media-players-2020/</link>
+      <pubDate>Fri, 10 Jul 2020 15:59:09 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/post/best-media-players-2020/</guid>
+      <description>Introduction In this post, I would like to present to you with the best media players according to technologies they use.</description>
+    </item>
+    
+  </channel>
+</rss>

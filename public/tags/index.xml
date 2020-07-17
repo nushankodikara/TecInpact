@@ -2,93 +2,219 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on TECINPACT Techno Guide</title>
-    <link>localhost/tags/</link>
+    <link>https://www.tecinpact.tk/tags/</link>
     <description>Recent content in Tags on TECINPACT Techno Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2020 14:30:00 +0530</lastBuildDate>
     
-	<atom:link href="localhost/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.tecinpact.tk/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>css</title>
-      <link>localhost/tags/css/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Programming</title>
+      <link>https://www.tecinpact.tk/tags/programming/</link>
+      <pubDate>Thu, 16 Jul 2020 14:30:00 +0530</pubDate>
       
-      <guid>localhost/tags/css/</guid>
+      <guid>https://www.tecinpact.tk/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>html</title>
-      <link>localhost/tags/html/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Software Development</title>
+      <link>https://www.tecinpact.tk/tags/software-development/</link>
+      <pubDate>Thu, 16 Jul 2020 14:30:00 +0530</pubDate>
       
-      <guid>localhost/tags/html/</guid>
+      <guid>https://www.tecinpact.tk/tags/software-development/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>markdown</title>
-      <link>localhost/tags/markdown/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Static Sites</title>
+      <link>https://www.tecinpact.tk/tags/static-sites/</link>
+      <pubDate>Wed, 15 Jul 2020 08:39:18 +0530</pubDate>
       
-      <guid>localhost/tags/markdown/</guid>
+      <guid>https://www.tecinpact.tk/tags/static-sites/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>themes</title>
-      <link>localhost/tags/themes/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Web Development</title>
+      <link>https://www.tecinpact.tk/tags/web-development/</link>
+      <pubDate>Wed, 15 Jul 2020 08:39:18 +0530</pubDate>
       
-      <guid>localhost/tags/themes/</guid>
+      <guid>https://www.tecinpact.tk/tags/web-development/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>privacy</title>
-      <link>localhost/tags/privacy/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Crash Course</title>
+      <link>https://www.tecinpact.tk/tags/crash-course/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/privacy/</guid>
+      <guid>https://www.tecinpact.tk/tags/crash-course/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>shortcodes</title>
-      <link>localhost/tags/shortcodes/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>HTML</title>
+      <link>https://www.tecinpact.tk/tags/html/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/shortcodes/</guid>
+      <guid>https://www.tecinpact.tk/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>text</title>
-      <link>localhost/tags/text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Zero To Hero</title>
+      <link>https://www.tecinpact.tk/tags/zero-to-hero/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>localhost/tags/text/</guid>
+      <guid>https://www.tecinpact.tk/tags/zero-to-hero/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>emoji</title>
-      <link>localhost/tags/emoji/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Graphics Designing</title>
+      <link>https://www.tecinpact.tk/tags/graphics-designing/</link>
+      <pubDate>Mon, 13 Jul 2020 18:14:56 +0530</pubDate>
       
-      <guid>localhost/tags/emoji/</guid>
+      <guid>https://www.tecinpact.tk/tags/graphics-designing/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>index</title>
-      <link>localhost/tags/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Resources</title>
+      <link>https://www.tecinpact.tk/tags/resources/</link>
+      <pubDate>Mon, 13 Jul 2020 18:14:56 +0530</pubDate>
       
-      <guid>localhost/tags/index/</guid>
+      <guid>https://www.tecinpact.tk/tags/resources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Royalty free</title>
+      <link>https://www.tecinpact.tk/tags/royalty-free/</link>
+      <pubDate>Mon, 13 Jul 2020 18:14:56 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/royalty-free/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://www.tecinpact.tk/tags/linux/</link>
+      <pubDate>Sun, 12 Jul 2020 07:38:18 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://www.tecinpact.tk/tags/windows/</link>
+      <pubDate>Sun, 12 Jul 2020 07:38:18 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Domains</title>
+      <link>https://www.tecinpact.tk/tags/domains/</link>
+      <pubDate>Sat, 11 Jul 2020 15:54:59 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/domains/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Admin</title>
+      <link>https://www.tecinpact.tk/tags/web-admin/</link>
+      <pubDate>Sat, 11 Jul 2020 15:54:59 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/web-admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Online Radio</title>
+      <link>https://www.tecinpact.tk/tags/online-radio/</link>
+      <pubDate>Sat, 11 Jul 2020 08:47:08 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/online-radio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://www.tecinpact.tk/tags/android/</link>
+      <pubDate>Fri, 10 Jul 2020 15:59:09 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Media Players</title>
+      <link>https://www.tecinpact.tk/tags/media-players/</link>
+      <pubDate>Fri, 10 Jul 2020 15:59:09 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/media-players/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>https://www.tecinpact.tk/tags/review/</link>
+      <pubDate>Fri, 10 Jul 2020 15:59:09 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Registry</title>
+      <link>https://www.tecinpact.tk/tags/registry/</link>
+      <pubDate>Thu, 09 Jul 2020 10:12:44 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/registry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tweaks</title>
+      <link>https://www.tecinpact.tk/tags/tweaks/</link>
+      <pubDate>Thu, 09 Jul 2020 10:12:44 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/tweaks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://www.tecinpact.tk/tags/introduction/</link>
+      <pubDate>Wed, 08 Jul 2020 17:30:00 +0000</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/introduction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Package Manager</title>
+      <link>https://www.tecinpact.tk/tags/package-manager/</link>
+      <pubDate>Wed, 08 Jul 2020 17:30:00 +0000</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/package-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Editors</title>
+      <link>https://www.tecinpact.tk/tags/editors/</link>
+      <pubDate>Wed, 08 Jul 2020 15:30:00 +0000</pubDate>
+      
+      <guid>https://www.tecinpact.tk/tags/editors/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tweaks on TECINPACT Techno Guide</title>
+    <link>https://www.tecinpact.tk/tags/tweaks/</link>
+    <description>Recent content in Tweaks on TECINPACT Techno Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 09 Jul 2020 10:12:44 +0530</lastBuildDate>
+    
+	<atom:link href="https://www.tecinpact.tk/tags/tweaks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows 10 Speedup Registry Tweaks</title>
+      <link>https://www.tecinpact.tk/post/windows-10-speedup-registry-tweaks/</link>
+      <pubDate>Thu, 09 Jul 2020 10:12:44 +0530</pubDate>
+      
+      <guid>https://www.tecinpact.tk/post/windows-10-speedup-registry-tweaks/</guid>
+      <description>Introduction Windows based PCs have a registry system to take control over the system wide operations and most of the times windows default operations are useless to most of us and somewhat annoying.</description>
+    </item>
+    
+  </channel>
+</rss>
