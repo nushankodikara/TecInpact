@@ -386,7 +386,7 @@ Now that's all we need for CSS, look carefully and you'll find something you lik
 
 ## Let's Create A Login Page
 
-Now, Let's Cerate this beautiful Login page And I'll Show you the code and then explain what's going on here, Now considering this, it's not a difficult one to make as it seams. Also you can download the complete project [HERE](/static/zip/Sample-site.zip).
+Now, Let's Cerate this beautiful Login page And I'll Show you the code and then explain what's going on here, Now considering this, it's not a difficult one to make as it seams. Also you can download the complete project [HERE](/zip/Sample-site.zip).
 
 ![HTML Document](/uploads/20200718_06.png)
 
