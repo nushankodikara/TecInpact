@@ -46,7 +46,7 @@ Or use inline style attribution to apply css directly to that block
 >       <div style="background:black; font-family: monospace;"></div>
 
 ## Purpose Of CSS
-Remember, this css language is for styling oyt html page and Here with my modern development course, I'm explaining only what you will use for real projects, there are a lot of properties you can play with and you're always open to explore. And remember because this is modern web development, we'll use scss and these are what you only use.
+Remember, this css language is for styling your html page and Here with my modern development course, I'm explaining only what you will use for real projects, there are a lot of properties you can play with and you're always open to explore. And remember because this is modern web development, we'll use scss and these are what you only use.
 
 ## Selectors
 Here, there are three types of selectors. you can select a tag in our HTML page, you can select a class in our HTML page and you can also select an ID on our HTML page. And to select each type
@@ -98,12 +98,12 @@ Here, you can see how the selector is used. now in those curly braces, those are
 
 And this is how I did it.
 
-![HTML Document](/uploads/20200718_02.png)
-![CSS Document](/uploads/20200718_02.png)
+![HTML Document](/uploads/20200718_03.png)
+![CSS Document](/uploads/20200718_04.png)
 
 and now you can see the web page looks like this.
 
-![Webpage Preview](/uploads/20200718_02.png)
+![Webpage Preview](/uploads/20200718_05.png)
 
 Let's explore what properties we have to work with and how to use it.
 
