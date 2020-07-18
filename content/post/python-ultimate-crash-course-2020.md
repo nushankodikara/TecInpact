@@ -2,7 +2,7 @@
 title: "Python Ultimate Crash Course (Zero-To-Hero)"
 date: 2020-07-16T14:30:00+05:30
 Description: "A guide on python 3 and python 2"
-Tags: ["Programming","Software Development"]
+Tags: ["Programming","Software Development","Zero To Hero","Crash Course"]
 Categories: []
 DisableComments: false
 ---
