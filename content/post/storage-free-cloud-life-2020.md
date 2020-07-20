@@ -67,7 +67,7 @@ Congratulations on your first Cloud storage and enjoy the unlimited storage feat
 
 ## iBroadcast
 
-Now let's consider music. Here you can goto www.ibroadcast.com and signup for a new account. And then download the mobile app **"ibroadcast"** and media uploader **"iBroadcast MediaSync Lite"** to your mobile devices. Let's Set it up on Computers first.
+Now let's consider music. Here you can goto www.ibroadcast.com and sign up for a new account. And then download the mobile app **"ibroadcast"** and media uploader **"iBroadcast MediaSync Lite"** to your mobile devices. Let's Set it up on Computers first.
 
 Here It's Straight Forward. go to [media.ibroadcast.com](https://media.ibroadcast.com/) To listen to your music.
 
