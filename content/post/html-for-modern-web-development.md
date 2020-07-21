@@ -11,7 +11,7 @@ DisableComments: false
 HTML is the structural markup language for the web development community, there are more than HTML in markup community but for websites, we use mainly HTML. I'll explain HTML from ground level so if you're a absolute beginner, you can follow up easily. If something went wrong, just contact me from the links provided.
 
 # Environment
-HTML doesn't need a specific environment to run, but Modern web development required you to host the main files. So let's start with our code editor. You can use anything if you know what you're doing, or else I'm using [Visual Studio Code](/post/vs-code-for-web-developers.md) and I installed the live server extension for this demo. Or you can use [Codesandbox.io](https://codesandbox.io/) (Not Sponsored).
+HTML doesn't need a specific environment to run, but Modern web development required you to host the main files. So let's start with our code editor. You can use anything if you know what you're doing, or else I'm using [Visual Studio Code](/post/vs-code-for-web-developers/) and I installed the live server extension for this demo. Or you can use [Codesandbox.io](https://codesandbox.io/) (Not Sponsored).
 
 # Folder Structure
 Modern web development has a rule to start the main HTML file with

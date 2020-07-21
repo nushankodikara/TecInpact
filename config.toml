@@ -32,7 +32,7 @@ use = "katex"  # options: "katex", "mathjax". default is "katex".
 [[params.socialIcons]]
 icon = "fa-facebook"
 title = "Facebook"
-url = "https://www.facebook.com/Tecinpact/"
+url = "https://www.facebook.com/Tecinpact"
 
 [[params.socialIcons]]
 icon = "fa-twitter"
@@ -42,7 +42,7 @@ url = "https://twitter.com/Tecinpact"
 [[params.socialIcons]]
 icon = "fa-github"
 title = "GitHub"
-url = "https://github.com/nushankodikara/"
+url = "https://github.com/Tecinpact"
 
 [[params.socialIcons]]
 icon = "fa-whatsapp"
@@ -52,7 +52,7 @@ url = "https://wa.me/94719988189"
 [[params.socialIcons]]
 icon = "fa-instagram"
 title = "instagram"
-url = "https://www.instagram.com/____nushan_"
+url = "https://www.instagram.com/Tecinpact"
 
 [[params.socialIcons]]
 icon = "fa-envelope"
