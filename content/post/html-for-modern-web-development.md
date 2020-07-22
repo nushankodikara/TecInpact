@@ -1,7 +1,7 @@
 ---
 title: "HTML for Modern Web Development (Zero-To-Hero)"
 date: 2020-07-14
-Description: ""
+Description: "HTML For modern web development"
 Tags: ["web development","HTML","Zero To Hero","Crash Course"]
 Categories: []
 DisableComments: false
@@ -783,7 +783,7 @@ You can get a certificate from Us on completing HTML course for free. If you're 
 
 # Cheatsheet ?
 Yeah here's a cheatsheet for HTML
-* [Htmlcheatsheet](https://htmlcheatsheet.com/)
+* [Html Cheatsheet](https://htmlcheatsheet.com/)
 * [PDF](https://websitesetup.org/wp-content/uploads/2019/10/WSU-HTML-Cheat-Sheet.pdf)
 
 # Conclusion
