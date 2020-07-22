@@ -45,6 +45,11 @@ title = "GitHub"
 url = "https://github.com/Tecinpact"
 
 [[params.socialIcons]]
+icon = "fa-telegram"
+title = "Telegram"
+url = "https://t.me/tecinpact"
+
+[[params.socialIcons]]
 icon = "fa-whatsapp"
 title = "Whatsapp"
 url = "https://wa.me/94719988189"
