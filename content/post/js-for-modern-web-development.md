@@ -195,7 +195,7 @@ alert('World');
 
 In most editors, a line of code can be commented out by pressing the `key:Ctrl+/` hotkey for a single-line comment and something like `key:Ctrl+Shift+/` -- for multiline comments (select a piece of code and press the hotkey). For Mac, try `key:Cmd` instead of `key:Ctrl` and `key:Option` instead of `key:Shift`.
 
-warn header="Nested comments are not supported!"
+
 There may not be `/*...*/` inside another `/*...*/`.
 
 Such code will die with an error:
@@ -237,7 +237,7 @@ For example:
 
 Quite soon we're going to learn functions (a way to group commands), so let's note in advance that `"use strict"` can be put at the beginning of a function. Doing that enables strict mode in that function only. But usually people use it for the whole script.
 
-warn header="Ensure that \"use strict\" is at the top"
+
 Please make sure that `"use strict"` is at the top of your scripts, otherwise strict mode may not be enabled.
 
 Strict mode isn't enabled here:
@@ -254,11 +254,9 @@ alert("some code");
 Only comments may appear above `"use strict"`.
 
 
-```warn header="There's no way to cancel `use strict`"
 There is no directive like `"no use strict"` that reverts the engine to old behavior.
 
 Once we enter strict mode, there's no going back.
-```
 
 ## Browser console
 
@@ -434,7 +432,6 @@ alert(hello); // Hello world!
 alert(message); // Hello world!
 ```
 
-warn header="Declaring twice triggers an error"
 A variable should be declared only once.
 
 A repeated declaration of the same variable is an error:
@@ -500,8 +497,6 @@ let 我 = '...';
 
 Technically, there is no error here. Such names are allowed, but there is an international convention to use English in variable names. Even if we're writing a small script, it may have a long life ahead. People from other countries may need to read it some time.
 
-
-warn header="Reserved names"
 There is a [list of reserved words](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords), which cannot be used as variable names because they are used by the language itself.
 
 For example: `let`, `class`, `return`, and `function` are reserved.
@@ -514,7 +509,6 @@ let return = 5; // also can't name it "return", error!
 ```
 
 
-warn header="An assignment without `use strict`"
 
 Normally, we need to define a variable before using it. But in the old times, it was technically possible to create a variable by a mere assignment of the value without using `let`. This still works now if we don't put `use strict` in our scripts to maintain compatibility with old scripts.
 
@@ -948,7 +942,7 @@ let age = prompt('How old are you?', 100);
 alert(`You are ${age} years old!`); // You are 100 years old!
 ```
 
-warn header="In IE: always supply a `default`"
+
 The second parameter is optional, but if we don't supply it, Internet Explorer will insert the text `"undefined"` into the prompt.
 
 Run this code in Internet Explorer to see:
@@ -1110,7 +1104,7 @@ alert( Boolean("hello") ); // true
 alert( Boolean("") ); // false
 ```
 
-warn header="Please note: the string with zero `\"0\"` is `true`"
+
 Some languages (namely PHP) treat `"0"` as `false`. But in JavaScript, a non-empty string is always `true`.
 
 ```js run
@@ -2291,7 +2285,7 @@ The precedence of AND `&&` operator is higher than OR `||`.
 So the code `a && b || c && d` is essentially the same as if the `&&` expressions were in parentheses: `(a && b) || (c && d)`.
 
 
-warn header="Don't replace `if` with || or &&"
+
 Sometimes, people use the AND `&&` operator as a "shorter to write `if`".
 
 For instance:
@@ -2754,7 +2748,7 @@ From a technical point of view, this is identical to the example above. Surely, 
 But as a side-effect, this created one more level of nesting (the `alert` call inside the curly braces). If the code inside of `if` is longer than a few lines, that may decrease the overall readability.
 
 
-warn header="No `break/continue` to the right side of '?'"
+
 Please note that syntax constructs that are not expressions cannot be used with the ternary operator `?`. In particular, directives such as `break/continue` aren't allowed there.
 
 For example, if we take this code:
@@ -2841,7 +2835,7 @@ for (let i = 0; i < 3; i++) { ... }
 
 The `continue` directive can also be used with a label. In this case, code execution jumps to the next iteration of the labeled loop.
 
-warn header="Labels do not allow to \"jump\" anywhere"
+
 Labels do not allow us to jump into an arbitrary place in the code.
 
 For example, it is impossible to do this:
@@ -3372,7 +3366,7 @@ alert( doNothing() === undefined ); // true
 ```
 
 
-warn header="Never add a newline between `return` and the value"
+
 For a long expression in `return`, it might be tempting to put it on a separate line, like this:
 
 ```js
@@ -5750,15 +5744,13 @@ In the example above, `user?.` allows only `user` to be `null/undefined`.
 
 On the other hand, if `user` does exist, then it must have `user.address` property, otherwise `user?.address.street` gives an error at the second dot.
 
-```warn header="Don't overuse the optional chaining"
+
 We should use `?.` only where it's ok that something doesn't exist.
 
 For example, if according to our coding logic `user` object must be there, but `address` is optional, then `user.address?.street` would be better.
 
 So, if `user` happens to be undefined due to a mistake, we'll know about it and fix it. Otherwise, coding errors can be silenced where not appropriate, and become more difficult to debug.
-```
 
-warn header="The variable before `?.` must be declared"
 If there's no variable `user` at all, then `user?.anything` triggers an error:
 
 ```js run
@@ -5833,7 +5825,6 @@ Also we can use `?.` with `delete`:
 delete user?.name; // delete user.name if user exists
 ```
 
-```warn header="We can use `?.` for safe reading and deleting, but not writing"
 The optional chaining `?.` has no use at the left side of an assignment:
 
 ```js run
@@ -5898,7 +5889,7 @@ alert(id1 == id2); // false
 
 If you are familiar with Ruby or another language that also has some sort of "symbols" -- please don't be misguided. JavaScript symbols are different.
 
-warn header="Symbols don't auto-convert to a string"
+
 Most values in JavaScript support implicit conversion to a string. For instance, we can `alert` almost any value, and it will work. Symbols are special. They don't auto-convert.
 
 For instance, this `alert` will show an error:
