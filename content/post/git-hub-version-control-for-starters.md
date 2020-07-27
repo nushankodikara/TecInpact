@@ -29,7 +29,7 @@ Consider a repository as a project. and that's the most simplistic explanation o
 There are many hit services like gitbucket github gitlabs so on... but we're using github today, not for a real reason but it's my favorite git service and I use it on my personal projects allot.
 
 # How do I start
-There are many ways you can start, you can use a full GUI based application like github desktop or the command line GIT or extensions for VSCode too.. now let's download git first, you can use https://desktop.github.com/ This link or just got to your appstore on pc for linux and mac users. Anyway you need a git client on your machine install it, restart the machine and you're good to go. Also goto www.github.com and create your account before starting, in anytime you'll come-up with a login section, which you have to login with your email and password.
+There are many ways you can start, you can use a full GUI based application like github desktop or the command line GIT or extensions for VSCode too.. now let's download git first, you can use https://desktop.github.com/ or https://git-scm.com/downloads To download manually or just got to your appstore on pc for linux and mac users. Anyway you need a git client on your machine install it, restart the machine and you're good to go. Also goto www.github.com and create your account before starting, in anytime you'll come-up with a login section, which you have to login with your email and password.
 
 # Github CLI
 
