@@ -2,7 +2,7 @@
 title: "Js for Modern Web Development (Part 2)"
 date: 2020-07-26T06:00:00+05:30
 Description: "JS For modern web development"
-Tags: ["web development","HTML","Zero To Hero","Crash Course"]
+Tags: ["web development","Javascript","Zero To Hero","Crash Course"]
 Categories: []
 DisableComments: false
 ---
