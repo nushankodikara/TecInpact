@@ -8,7 +8,7 @@ DisableComments: false
 ---
 
 # Introduction
-We all come across a situation when the default notify-the-user procedure is getting incompatible with our project theme and appearance, so in this guide I'm going to discuss about creating a beautiful modal for your web project, with a SCSS and JQuery ( a little bit ) before this, you have to master [HTML](/post/html-for-modern-web-development/) [CSS](/post/css-for-modern-web-development/) [SCSS](/post/scss-for-modern-web-development/) [JS part 1](/post/js-for-modern-web-development.md) and [JS part 2](/content/post/js-for-modern-web-development-2.md) guides.
+We all come across a situation when the default notify-the-user procedure is getting incompatible with our project theme and appearance, so in this guide I'm going to discuss about creating a beautiful modal for your web project, with a SCSS and JQuery ( a little bit ) before this, you have to master [HTML](/post/html-for-modern-web-development/) [CSS](/post/css-for-modern-web-development/) [SCSS](/post/scss-for-modern-web-development/) [JS part 1](/post/js-for-modern-web-development/) and [JS part 2](/content/post/js-for-modern-web-development-2/) guides.
 
 Now in this guide, We're making This Beautiful modal from scratch with only 14 lines of JS codes. I'm using HTML SCSS and a JS file in the root folder.
 

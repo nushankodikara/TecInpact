@@ -8,7 +8,7 @@ DisableComments: false
 ---
 
 # Introduction
-Welcome to the world of modern web hosting, no why modern you ask, If you followed our course of modern web development, by now you should know it's different from the typical web development process and here Today I'm showing you the free and paid web hosting platforms I use for my projects in a daily basis. My favorite is Netlify, before you ask, and this is only an introduction guide to what we're going to explore in the near future. Let's get into the list
+Welcome to the world of modern web hosting, now why modern you ask, If you followed our course of modern web development, by now you should know it's different from the typical web development process and here Today I'm showing you the free and paid web hosting platforms I use for my projects in a daily basis. My favorite is Netlify, before you ask, and this is only an introduction guide to what we're going to explore in the near future. Let's get into the list
 
 ![Just A PC](https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
 

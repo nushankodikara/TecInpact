@@ -60,7 +60,7 @@ Let me list out declaring the end of this post
 * Don't use an Antivirus Software
 * Don't install softwares from un-trusted sources.
 * Uninstall unwanted softwares
-* Always backup important data (I have a guide on cloud usage [HERE](/post/storage-free-cloud-life-2020.md))
+* Always backup important data (I have a guide on cloud usage [HERE](/post/storage-free-cloud-life-2020/)
 * Keep your devices clean
 
 And That's pretty much it for now.
