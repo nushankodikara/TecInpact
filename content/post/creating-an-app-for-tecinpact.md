@@ -1,6 +1,6 @@
 ---
 title: "Let's Create a Mobile App for TECINPACT"
-date: 2020-07-31T19:13:23+05:30
+date: 2020-08-02T06:00:00+05:30
 Description: "Here, We're creating an app for tecinpact using previous tutorial"
 Tags: ["Android","IOS","Mobile development","Hybrid Apps"]
 Categories: []
