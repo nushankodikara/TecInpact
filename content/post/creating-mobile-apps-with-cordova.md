@@ -2,7 +2,7 @@
 title: "Let's Create Mobile Apps With Cordova"
 date: 2020-08-01T06:00:00+05:30
 Description: "Creating Mobile apps using cordova"
-Tags: ["Android","IOS","Mobile development"]
+Tags: ["Android","IOS","Mobile development","Hybrid Apps"]
 Categories: []
 DisableComments: false
 ---
