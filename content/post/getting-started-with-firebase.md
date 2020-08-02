@@ -131,6 +131,10 @@ Firebase App Indexing gets your app into Google Search. If users have your app i
 
 And That's It! That's all we get for a free quota which updates every month! and believe it or not these are the cheapest services you can get right now!
 
+# How Should I Start?
+
+We're considering Firebase with Javascript. So in this guide series we're considering more and more web apps and hybrid mobile apps to develop. And you also need some basic knowledge on [HTML](/post/html-for-modern-web-development/), [CSS](/post/css-for-modern-web-development/), [SCSS](/post/scss-for-modern-web-development/), [JS part 1](/post/js-for-modern-web-development/) and [JS part 2](/content/post/js-for-modern-web-development-2/) After that we can get into this series. This isn't hard but you have to keep your focus high.
+
 # Conclusion
 
 Firebase is a set of services ( A Collection of services ) which can make your life easier. I Use firebase personally in my projects whenever I can and It made my life so much easier. From today on we're discussing how we can use these services. So stay Tuned!
