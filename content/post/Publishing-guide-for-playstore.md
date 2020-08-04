@@ -114,7 +114,7 @@ Final Step! get to the dashboard again, And here you can see the final step, `Re
 
 And finally It's under review! Playstore employees manually tests each application and guess what, These days it could get up-to 24 hours for them to review your applications, so Be patient. But anyhow if it's taking more than 24 hours, You have clearly messed up somewhere and usually it'll get rejected. So review your content ratings, target audience and so on. Hope you learn something today and wish you luck on your journey.
 
-I'll post a link to the application [HERE]() when it get released.
+I'll post a link to the application [HERE](https://play.google.com/store/apps/details?id=tk.tecinpact.bio) when it get released.
 
 # Conclusion
 
