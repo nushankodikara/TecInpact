@@ -71,7 +71,7 @@ Let's add firebase to our project. in order to do this, you have to implement li
 
 ```html
 <!-- This is the main JS file to implement Firebase -->
-<script src="/__/firebase/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 <!-- Now you can add any modular firebase services in this case Realtime Database -->
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
 ```
