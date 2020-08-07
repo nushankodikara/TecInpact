@@ -85,6 +85,7 @@ Include the following script and CSS file in the `<head>` tag of your page, belo
 ```
 
 ## Initialize FirebaseUI
+
 After importing the SDK, initialize the Auth UI.
 
 ```js
@@ -128,7 +129,7 @@ ui.start('#firebaseui-auth-container', {
 
 You can use Firebase Authentication to create and use temporary anonymous accounts to authenticate with Firebase. These temporary anonymous accounts can be used to allow users who haven't yet signed up to your app to work with data protected by security rules. If an anonymous user decides to sign up to your app, you can link their sign-in credentials to the anonymous account so that they can continue to work with their protected data in future sessions.
 
-## Before you begin
+## Before you  begin
 
 1. Add Firebase to your JavaScript project.
 1. If you haven't yet connected your app to your Firebase project, do so from the Firebase console.
@@ -210,7 +211,7 @@ If the call to link succeeds, the user's new account can access the anonymous ac
 
 You can let your users authenticate with Firebase using their Google Accounts by integrating Google Sign-In into your app. You can integrate Google Sign-In either by using the Firebase SDK to carry out the sign-in flow, or by carrying out the Google Sign-In flow manually and passing the resulting ID token to Firebase.
 
-## Before you  begin
+## Before you   begin
 
 1. Add Firebase to your JavaScript project.
 2. Enable Google Sign-In in the Firebase console:
