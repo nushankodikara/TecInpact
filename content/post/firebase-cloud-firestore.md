@@ -483,7 +483,7 @@ There are two ways to retrieve data stored in Cloud Firestore. Either of these m
 
 * Call a method to get the data.
 * Set a listener to receive data-change events.
-* 
+  
 When you set a listener, Cloud Firestore sends your listener an initial snapshot of the data, and then another snapshot each time the document changes.
 
 ## Example data
@@ -562,7 +562,7 @@ docRef.get(getOptions).then(function(doc) {
 });
 ```
 
-## Custom objects
+## Custom  objects
 
 The previous example retrieved the contents of the document as a map, but in some languages it's often more convenient to use a custom object type. In Add Data, you defined a City class that you used to define each city. You can turn your document back into a City object:
 
