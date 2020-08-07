@@ -61,7 +61,7 @@ The Auth object finishes initializing and a user was already signed in from a pr
 * The current user's access token is refreshed. This case can happen in the following conditions:
 * The access token expires: this is a common situation. The refresh token is used to get a new valid set of tokens.
 * The user changes their password: Firebase issues new access and refresh tokens and renders the old tokens expired. This automatically expires the user's token and/or signs out the user on every device, for security reasons.
-* The user re-authenticates: some actions require that the user's credentials are recently issued; such actions include deleting an account, setting a primary email address, and changing a password. Instead of signing out the user and then signing in the user again, get new credentials from the user, and pass the new credentials to the reauthenticate method of the user object.
+* The user re-authenticates: some actions require that the user's credentials are recently issued; such actions include deleting an account, setting a primary email address, and changing a password. Instead of signing out the user and then signing in the user again, get new credentials from the user, and pass the new credentials to the re-authenticate method of the user object.
 
 ## Easily add sign-in to your Web app with FirebaseUI
 
