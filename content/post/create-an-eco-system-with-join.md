@@ -7,15 +7,18 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
+
 Let's be real, We all like to work in one place but access all of our devices, Apple has a solution for this but what if you don't have an apple eco system? Today, Let's discuss how we can create an ecosystem for with what we have and for a little price to pay, With Join by joaoapps.
 
 There are more services like this, Push bullet is one of them but their prices are, for my tastes, unfair. So I decided to move on to this app called join and I wasn't able to find a clear explanation on this. So let me explain from tip to toe, what is join and how we can use it.
 
-# What Is Join
+## What Is Join
+
 This app let's you to sync your notifications, messages, clipboard and many more features across all of your devices and also it let's you to sync information such as battery health and many more. So, in other words, this let's you to connect all of your devices phones, computers to gather and it allows you to control them remotely. In my personal experience, this is something I use daily and I can't imagine how many times it saved me from awkward situations.
 
-# How to install this?
+## How to install this
+
 Installation is pretty simple as it seams, for android and iphones, you have an app called join by joaoapps in the playstore and in the appstore to download and continue with a pretty simple steps, you're good to go. for pcs, you have to install an extension in chrome and also you're good to go. Let's see how we can setup these step wise.
 
 ### Download
@@ -27,6 +30,7 @@ Installation is pretty simple as it seams, for android and iphones, you have an 
 * [Google Assistant](https://joaoapps.com/google-assistant-ifttt-join-tasker-awesomeness/)
 
 ### Android
+
 When you open Join for the first time, you will need to sign in with your Google account. Then enable to push your SMS and calls to other devices.
 
 ![Join](https://juanmtech.b-cdn.net/wp-content/uploads/2018/09/Web-Join-set-up-1.jpg)
@@ -38,6 +42,7 @@ Then you have to allow notification access
 You also have the option to enable Join’s accessibility service. This option is handy for when you push the clipboard from your computer to your device, it would automatically paste the text for you instead of manually having to press and hold to get the Paste option.
 
 ### Chrome extension
+
 Now, our main setup is done and here you have to download the chrome extension from above links and you can login to the account you just made and you're done!
 
 ![Join](https://juanmtech.b-cdn.net/wp-content/uploads/2018/09/Web-Join-Chrome-pop-up.jpg)
@@ -54,11 +59,11 @@ Click on the gear at the type right corner of the Join pop-up to access the sett
 * The Advanced tab has multiple settings. You can manage how links, files, EventGhost and Tasker commands interact when they are pushed.
 * Last but not least, we have the Help tab which has multiple links available to other websites and social media communities where you can find help for any type of issues or questions that you might have about Join.
 
-# Encryption
+## Encryption
 
 To setup encryption, go to the Encryption tab and set up a new password. Then, open Join on your phone and go to Settings > Encryption > Password and enter the same password you set up in the Chrome extension. Now Join will encrypt the data before pushing it to other devices.
 
-# Notifications
+## Notifications
 
 Next, we need to select what notifications we want to push and to which device or devices. Go to Settings > Notifications > Notification Devices. Then after that, go to Notification Apps and select the apps that you would like to push notifications to the selected devices via Join.
 
@@ -66,13 +71,13 @@ Next, we need to select what notifications we want to push and to which device o
 
 Also in this way, you can select how to sync your clipboard too.
 
-# Join on the web
+## Join on the web
 
 What if you want to access Join from an IOS device, like an iPhone or iPad or from a computer at work? Well, the developer has you covered. Join also has a web interface that allows you to access all your connected devices and send commands to it from most browsers by going to the following URL, https://joinjoaomgcd.appspot.com.
 
 ![Join](https://juanmtech.b-cdn.net/wp-content/uploads/2018/09/Web-Join-Web.jpg)
 
-# Push websites from an IOS device to other devices using Join
+## Push websites from an IOS device to other devices using Join
 
 To send links from an IOS device to other devices, we will need to save the Send Tab option in a bookmark on your browser. Open Join web on an IOS device using Google Chrome and select the device that you want to push links. Then, click on Join API, under API Key, click on Show and then close the Join API pop-up window. Now press and hold the Send Tab button and click on Copy Link URL. The link would look like this:
 
@@ -82,9 +87,10 @@ If you use Safari on your IOS device. Open Safari, go to any website and add it 
 
 ![Join](https://juanmtech.b-cdn.net/wp-content/uploads/2018/09/Web-IMG_0004-cropped.png)
 
->   Note: If you have multiple devices that you would like to set up, you will have to repeat this process for each device. Also, at the time of this guide, it is not possible to push any data to an IOS device using Join.
+> Note: If you have multiple devices that you would like to set up, you will have to repeat this process for each device. Also, at the time of this guide, it is not possible to push any data to an IOS device using Join.
 
-# Join API
+## Join API
+
 The Join API is a very useful feature. It allows sending custom commands to Tasker to execute different tasks. You can also use the API with the Webhook service in IFTTT. To access the API, go to the Join web interface. Then, select a device, click on Join API and click on Show to display the API key. The Join API feature has many parameters available that you can add to the API URL.
 
 ![Join](https://juanmtech.b-cdn.net/wp-content/uploads/2018/09/Web-Join-API-setup-2.jpg)
@@ -115,7 +121,8 @@ The title of the notification is the name of the website and the text, is the ti
 
 >       Note: This Android Police notification was originally covered in a tutorial by João Dias, the developer of Join. I wanted to update it a little and include it in this guide so, all credit goes to him.
 
-# Join Plugin for Tasker
+## Join Plugin for Tasker
+
 What if we wanted to trigger a task in Tasker when we get the above Join notification? Simple, we can create an Event Profile in Tasker using the Join Plugin. Go to Tasker, click on the “+” icon, then Event > Plugin > Join. There are four available options: Text, Title, URL and Screen Capture.
 
 ![Join](https://juanmtech.b-cdn.net/wp-content/uploads/2018/09/Web-Join-received-push-498x1024.jpg)
@@ -124,7 +131,8 @@ Select Title and then click on Title Filter. Type Android Police in the field an
 
 ![Join](https://juanmtech.b-cdn.net/wp-content/uploads/2018/09/Web-Join-title-page-498x1024.jpg)
 
-# Join and EventGhost
+## Join and EventGhost
+
 ![Join](https://juanmtech.b-cdn.net/wp-content/uploads/2018/09/Web-EventGhost-1.jpg)
 
 Another great thing about Join is that you can add it to EventGhost and send commands to the computer from other devices to execute different tasks.
