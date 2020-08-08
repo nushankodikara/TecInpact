@@ -554,6 +554,11 @@ And finally you should see the pending status. Here you can see Firebase is gene
 
 ![Project Directory](/uploads/20200808_24.png)
 
+After few hours you can see the SSL certificate has beed delivered and there's a padlock next to your URL. Also in the console, the status would be `connected`.
+
+![Project Directory](/uploads/20200808_25.png)
+![Project Directory](/uploads/20200808_26.png)
+
 And you are a master in Firebase Hosting!
 
 ## Firebase Analytics
