@@ -2,7 +2,7 @@
 title: "Firebase Realtime Database"
 date: 2020-08-05T06:00:00+05:30
 Description: "Complete Guide on Firebase Realtime Database"
-Tags: ["Mobile Development","web Development"]
+Tags: ["Mobile Development","web Development","Firebase"]
 Categories: []
 DisableComments: false
 ---

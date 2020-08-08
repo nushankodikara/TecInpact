@@ -2,7 +2,7 @@
 title: "Firebase Authentication"
 date: 2020-08-07T06:00:00+05:30
 Description: "Let's Use Firebase For User Authentication."
-Tags: ["Mobile Development","web Development"]
+Tags: ["Mobile Development","web Development","Firebase"]
 Categories: []
 DisableComments: false
 ---
@@ -172,6 +172,8 @@ firebase.auth().onAuthStateChanged(function(user) {
 });
 ```
 
+Also you can use this to check authentication state.
+
 ## Convert an anonymous account to a permanent account
 
 When an anonymous user signs up to your app, you might want to allow them to continue their work with their new account—for example, you might want to make the items the user added to their shopping cart before they signed up available in their new account's shopping cart. To do so, complete the following steps:
@@ -315,6 +317,18 @@ This is also where you can catch and handle errors. For a list of error codes ha
 ![Authentication Providers](/uploads/20200807_01.gif)
 
 Alright! Now we know how we can authenticate with firebase, Now, Let's explore how we can secure our Firestore and Realtime databases.
+
+## Signing Out
+
+We all need a sign out button and it's very simple, just use this code.
+
+```js
+firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+}).catch(function(error) {
+  // An error happened.
+});
+```
 
 ## Understand Firebase Realtime Database Rules
 

@@ -2,7 +2,7 @@
 title: "Firebase Hosting and Analytics"
 date: 2020-08-08T06:00:00+05:30
 Description: "Let's Explore firebase Hosting And Firebase Analytics"
-Tags: ["Mobile Development","web Development"]
+Tags: ["Mobile Development","web Development","Firebase"]
 Categories: []
 DisableComments: false
 ---
@@ -559,7 +559,7 @@ After few hours you can see the SSL certificate has beed delivered and there's a
 ![Project Directory](/uploads/20200808_25.png)
 ![Project Directory](/uploads/20200808_26.png)
 
-And you are a master in Firebase Hosting!
+And you are a master in Firebase Hosting! If you made some changes, just deploy and you're good to go!
 
 ## Firebase Analytics
 
