@@ -1,8 +1,8 @@
 ---
 title: "Secure Your JavaScript Files"
 date: 2020-08-10T06:00:00+05:30
-Description: ""
-Tags: "web development","Javascript","Zero To Hero","Crash Course"
+Description: "Let's Secure your JS Files"
+Tags: ["web development","Javascript","Zero To Hero","Crash Course"]
 Categories: []
 DisableComments: false
 ---
