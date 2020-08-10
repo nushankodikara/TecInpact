@@ -7,6 +7,7 @@ date: 2020-07-08T06:00:00Z
 ---
 
 # TECINPACT Technology Guide
+
 ### Introduction
 
 TECINPACT is a Digital Guide Book to navigate through the 21st century cyber space in a safe and cheap manner. As we can get most of the products and services we're paying for pennies, my vision here is to support the non-geeks and starters to start their Cyber career with a boost.
