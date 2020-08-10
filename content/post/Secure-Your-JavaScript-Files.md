@@ -11,6 +11,8 @@ DisableComments: false
 
 Let's be real, with firebase and all these knowledge, we should protect our JS files, They can't be wide open for a smart ass to get there and mess around with the code or so, Yeah I know the firebase provides a much secure system in the security side but the code has to be secure too! To day let's discuss on that, let's explore what we can do to Protect our JS files.
 
+![Security](https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+
 ## My Steps
 
 I Usually use 5 steps of protection in my personal projects,
