@@ -7,11 +7,11 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
 
 Playstore is the king of all appstores in the world right now, It hold's a market share of 75% around the globe and google single handedly offers the best tools for Android developers as none other, We already discussed how we can create android applications using Cordova as a hybrid app platform and today, We're uploading our newly signed apk file to the playstore from our own account.
 
-# Preparation
+## Preparation
 
 The ingredients for this recipe
 * Playstore Account
@@ -25,7 +25,7 @@ The ingredients for this recipe
 
 Before gathering these, I have to tell you that you need to pay 25$ for google in order to get a new playstore console account. And you can get one from https://play.google.com/apps/publish/signup This link. Always remember, use your Generic information on this account, Don't fake it.
 
-# Let's Start Then?
+## Let's Start Then?
 
 And One thing before start. Google has released a new play console and today we're exploring it. It's still in the beta phrase ( Today is 4-Aug-2020 ) and could be changed in the future. But they wont do anything big, so the process would be the same. And also there are more options to explore.
 
@@ -33,7 +33,7 @@ Let's Start Shall we, you have to login to your play console account from https:
 
 I made an app out of our Yesterday's post about bio section (Network hub) and I'm uploading it now With you. Also I made some quick arts for Screenshot, Icon and banner. Let's start the project.
 
-# First Thing's First
+## First Thing's First
 
 Let's login to the console, Goto https://play.google.com/console after you paid the one-time payment and created the account, And select your developer account from the list.
 
@@ -116,6 +116,6 @@ And finally It's under review! Playstore employees manually tests each applicati
 
 I'll post a link to the application [HERE](https://play.google.com/store/apps/details?id=tk.tecinpact.bio) when it get released.
 
-# Conclusion
+## Conclusion
 
 Google play store is the biggest mobile store in earth. Knowing to release applications there is a skill these days, It could get complicated within seconds. so watch for it and Good luck.

@@ -7,16 +7,17 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
+
 Mobile app development is a cool thing, and most of us use android studio or swift in order to create mobile apps for Android and IOS devices, But what if I tell you that now you can create mobile apps for android and IOS with a single code base and It's working with HTML CSS and JS? Yeah that's true, with node.js now we're able to create mobile apps using platforms such as Cordova.
 
-# What is Cordova
+## What is Cordova
 
 ![Cordova](https://images.prismic.io/ionicframeworkcom/3d6dfd9bd31653194a051e7a2b859d0890a1554e_article---what-is-cordova-phone-gap.png?auto=compress,format)
 
 Apache Cordova is an open-source mobile development framework. It allows you to use standard web technologies - HTML5, CSS3, and JavaScript for cross-platform development. Applications execute within wrappers targeted to each platform, and rely on standards-compliant API bindings to access each device's capabilities such as sensors, data, network status, etc.
 
-# Architecture
+## Architecture
 
 There are several components to a Cordova application. The following diagram shows a high-level view of the Cordova application architecture.
 
@@ -24,7 +25,7 @@ There are several components to a Cordova application. The following diagram sho
 
 Pretty cool isn't it? Let's go on. Today, we're considering on Android app development using a Windows PC, also you can convert this code base to IOS, Windows, Mac, Linux and any platform you think of.
 
-# Setting up the environment
+## Setting up the environment
 
 In order to develop android apps, You need to have android Studio installed, If you didn't installed it you can download android studio from https://developer.android.com/studio And also the core, You need node.js to installed in your system, you can download and install the latest LTS or Current version from https://nodejs.org/en/download 
 
@@ -38,7 +39,7 @@ Now after that, We need to install cordova on our system. You need to install no
 
 And after that, Let's Create our first project and add android platform to begin with.
 
-# Creating Our First Project
+## Creating Our First Project
 
 Let's now start creating our first project, It isn't hard or so, let's get right in to the process. First you need to have a terminal in your working directory, and in there you need to use the command
 
@@ -91,14 +92,14 @@ Now that out to the way, Let's continue with the guide. Where were we, Okay we m
 
 ![Showing Android SDK](/uploads/20200801_03.gif)
 
-# Multidex
+## Multidex
 Now, If you don't know what multidex is, it allows android apps to have over 64k functions and you'll hit that threshold as soo as installing some plugins and doing some work, so I usually install multidex at the begining of the project, to do this you can use the following command.
 
 >       cordova plugin add cordova-plugin-enable-multidex
 
 This is a must! so do it as soon as posible. After this you're done with the initial setup. Now let's see how we can create apps using cordova.
 
-# Folder Structure
+## Folder Structure
 
 ![Cordova Folder Structure](/uploads/20200801_04.png)
 
@@ -106,7 +107,7 @@ Here we only need to discuss about few files,
 * config.xml
 * www
 
-## config.xml
+### config.xml
 
 For this project I have a config file like this and I'm pretty sure yours also looks like this.
 
@@ -143,11 +144,11 @@ Now here, This is the file that controls our application, this is our meta data 
 
 Let me introduce each element to you. Name tags holds the application name, description tag holds a description of the app, author tag as others author details. content must be pointed to the main HTML file and that's what you need for now, and there should be a self closing icon tag pointing to a icon file with src attribute and that's all you need to know in the base level. if non of these made sense to you, go check out my Web Development series [HTML](/post/html-for-modern-web-development/), [CSS](/post/css-for-modern-web-development/), [SCSS](/post/scss-for-modern-web-development/), [JS part 1](/post/js-for-modern-web-development/) and [JS part 2](/content/post/js-for-modern-web-development-2/) First and then come to this section.
 
-## www Directory
+### www Directory
 
 Now the www directory is where we create our hybrid app. Hybrid means you can create your application out of HTML CSS and JS and compile it into a native app, using some sort of a magic. Magics are not real and they are illusions, so the trick behind the sleave is, Cordova has a separate stable web view activity which can run the HTML file internally. The end user won't feel a difference and if you're careful enough, We can make this app looks way way better. Now you can find these even in the cordova documentation page, but let me show you what you cannot find in the documentation and what I really use in my workflow. BTW go and modify the content in the www folder and create your mobile app there with HTML CSS and JS and I'll do it in the next guide. For now I'm using the default pages.
 
-# Setting up an Icon
+## Setting up an Icon
 
 This isn't a hard one you need to create a res folder and add your icon in there, also after that you just need to add a single line of code to the config file and you're pretty much good to go. Here's how I do it.
 
@@ -228,7 +229,7 @@ Here you have to change mykey.keystore to your keystore file, enter your storepa
 
 And Disclaimer, If you're an absolute beginner, You have to setup environments for each pieces of software you need, I'm only showing this step for windows users because mac users can install AndroidStudio, Java and get Gradle tools and you're going to need one more step and I'll show it, Linux users, you have to figure it out, You're using linux because you know somewhat about developments and you have to know how other programs use environmental variables and also install everything without overriding other applications. If that's complicated for you, yes that's totally complicated in linux. Use a windows OS Instead. Let's Setup Our Environments
 
-# Environmental Variables
+## Environmental Variables
 
 You have to download Java SE Development Kit And Gradle Bundle Links Would Be https://gradle.org/install for gradle and https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html for Java. Good news mac users. you can use brew to install the gradle and the command is
 
@@ -271,6 +272,6 @@ And that command would output an apk file in
 
 This is what you get if everything went correctly, In the terminal. And wolah! You are officially made an android app that can be published to mobile stores. Also you can install this apk to your mobile by sending it in any way you prefer.
 
-# Conclusion
+## Conclusion
 
 Here, we successfully created an android app and it's simple as it. environmental setup is the most advanced step in this whole process and if you ran into an issue which you can't figure out what to do, just contact me or post down below in the comment section. Tomorrow we're creating an app for Tecinpact and On monday, We're Publishing it to the play store!

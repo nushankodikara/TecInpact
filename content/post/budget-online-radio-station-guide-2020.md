@@ -6,21 +6,27 @@ Tags: ["Windows","Online Radio"]
 Categories: []
 DisableComments: false
 ---
-# Introduction
+## Introduction
+
 Youtube is the main source of entertainment these days, but people still want to enjoy radio streams for no reason, online radio stations are costy and it's nearly impossible for a normal person to start an online radio station without getting in to any of the top stupid costing radio stream services.
 In this article, let me show you how I made an online radio station without wasting a single penny, or without sacrificing the quality
 
-## Softwares And Services
+### Softwares And Services
+
 If you are searching on this topic, chances are, you're probably a tech geek. But I'm creating this article noobs in mind, anyone can follow up this tutorial and if you are a geek, I'll present you with extra tips to experiment with. My goal is to use Shoutcast so in 3rd party services,
+
 * Listen2myradio [Visit](http://www.listen2myradio.com/)
 * Winamp Media Player [Download](http://www.winamp.com/)
 * SHOUTcast DSP For Winamp [Download](https://directory.shoutcast.com/Winamp)
 
-## Overview Guide
+### Overview Guide
+
 If you're a geek and want to do it your self, here's the deal, just create an account and complete it on Listen2myradio service and use winamp DSP or any other DSP software to stream your cast in to it and that's it. If you need my help, follow up this step-by-step guide.
 
-## Listen2MyRadio
+### Listen2MyRadio
+
 All right, they didn't sponsor me or anything like that, I chosed this option because of it's freely available features. let me show you, The provide you
+
 * A Personal Page & A Personal Subdomain
 * Shoutbox, Blog and Gallery
 * Up to 5000 listeners without quality reduction
@@ -31,18 +37,19 @@ All right, they didn't sponsor me or anything like that, I chosed this option be
 For No Cost At All! If you reach your 5000 Listener count, you can expand your station for about 6.25$ / month in the time period I'm writing this. I'm pretty sure you aren't going to hit that limit sooner, so free radio for a much longer time!
 Their theming options are very limited BTW. But modern and simple
 
->   ❝ listen2myradio was established in 2006 as the first free shoutcast hosting company on the internet, and even today listen2myradio remains the biggest free shoutcast hosting company in existence. More than one million users have signed up to listen2myradio for both our free and premium services. We specialize in all aspects of streaming over the internet. ❞
+> ❝ listen2myradio was established in 2006 as the first free shoutcast hosting company on the internet, and even today listen2myradio remains the biggest free shoutcast hosting company in existence. More than one million users have signed up to listen2myradio for both our free and premium services. We specialize in all aspects of streaming over the internet. ❞
 
-### Setting Up Listen2MyRadio
+#### Setting Up Listen2MyRadio
+
 I'm using a temp mail address to signup and stream a session.
 
-#### Step 1
+##### Step 1
 
 ![Step 1](/uploads/20200711_01.png "Step 1")
 
 Goto [www.listen2myradio.com](http://www.listen2myradio.com/) And Click on Sign Up button under Radio Streaming Section.
 
-#### Step 2
+##### Step 2
 
 ![Step 2](/uploads/20200711_02.png "Step 2")
 
@@ -60,7 +67,7 @@ Now Go To your email viewer and confirm your account with the confirmation link 
 
 If you did it correctly, you'll be presented with this screen. Now select Return to login page.
 
-#### Step 3
+##### Step 3
 
 ![Step 3](/uploads/20200711_06.png "Step 3")
 
@@ -90,7 +97,7 @@ Here you can see, your broadcasting station is getting ready to deploy, it would
 
 If you did everything correctly, welcome to your dashboard DJ!
 
-#### Step 4
+##### Step 4
 
 ![Step 4](/uploads/20200711_13.png "Step 4")
 
@@ -136,7 +143,8 @@ Now select the big logo to go to your main dashboard, and it should be ready to 
 
 Notice something? yeah all the bad is gone! and we're ready to rock on.
 
-### Setting Up Softwares
+#### Setting Up Softwares
+
 Here, we are using [Winamp](http://www.winamp.com/) And [Shoutcast](https://directory.shoutcast.com/Winamp) to setup a simple but professional setup. you can use something like Virtual DJ, SAM Broadcaster etc. but we are considering only free options in this post, if you need a complete guide on Virtual DJ and SAM Broadcaster, let me know in the comments. Download And install Winamp And Shoutcast Usually.
 
 Follow up these steps, I don't think I want to explain this but I'll whenever it's required.
@@ -208,13 +216,13 @@ Now, Select the Connect button, and Tick Auto connect if you want it to automati
 
 You are ready to rock, you can see your data usage in the sent section and to be exact, your playing and the radio station has a slight delay to improve audio quality through buffering so it's natural.
 
-### Streaming To Radio
+#### Streaming To Radio
 
 All right mr.DJ, now you're ready to rock up. But first! create your play list in the winamp software and to start broadcasting, just play it! it's that simple, for programs, pre record your voiceover and add to the playlist. Unfortunately, for now, we don't have a method to speak live to the audience.
 
 ![Software Setup](/uploads/20200711_50.png "Software Setup")
 
-### Streaming link
+#### Streaming link
 
 You can give the subdomain to anyone to listen to your radio online, cloak in in dns to look legit maybe? I'll provide a future post on that manner.
 
@@ -234,7 +242,8 @@ If you're running an uninterrupted radio stream, don't forget to activate playli
 
 Don't Forget to turn your stream off after the broadcast.
 
-## Data Usage
+### Data Usage
+
 This is something Very important to most of the users, I know. So I decided to calculate the maximum data consumption on common bitrates, for an hour. ( This is a theoretical maximum )
 
 | Bitrate | Data Usage For 1 hour |
@@ -248,9 +257,10 @@ This is something Very important to most of the users, I know. So I decided to c
 
 Seems like pretty good for a starter, isn't it.
 
-## Extending Plans
+### Extending Plans
+
 If you are going over 5000 simultaneous listeners, Listen2myradio has a packages suiting anyone. you can see more details [Here](http://www.listen2myradio.com/radio-order-shoutcast.php)
 
-# Conclusion
+## Conclusion
 
 Well, It's a long but simple process, I totally prefer this setup to any starter in online radio broadcasting. If you got stuck or something went wrong, please feel free to contact me and inform the situation. I hope you got something new and Maybe, I'll do a highly professional radio streaming guide later? and another method of free broadcasting is on the way, so stay tuned!

@@ -7,17 +7,17 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
 
-We all see the new instagram bio link apps are getting popular and popular day by day, and They are just a simple lines of HTML and CSS even without no JS! And I totally think I can re-create this bio link page with HTML and CSS and add some JS to the taste and also add some dynamic functionalities you can use. Today we're discussing about how I made https://bio.tecinpact.tk or in other words, Our Network HUB.
+We all see the new instagram bio link apps are getting popular and popular day by day, and They are just a simple lines of HTML and CSS even without no JS! And I totally think I can re-create this bio link page with HTML and CSS and add some JS to the taste and also add some dynamic functionalities you can use. Today we're discussing about how I made <https://bio.tecinpact.tk> or in other words, Our Network HUB.
 
-# I Never saw it
+## I Never saw it
 
 In case you didn't saw it before, let me show you a quick overview of what I did there, I added all of my Social links with some description and because I'm a mainstream developer, I added something that would be cool. A RSS Feed, Dynamically Updating from my site and this is it!
 
 ![BIO SECTION](/uploads/20200803_01.gif)
 
-# Let's Start Shall we
+## Let's Start Shall we
 
 Because I made this in a hurry, I used two commonly used libraries from the internet to make my life easier, Bootstrap 4 and JQuery 3, If you aren't comfortable with these, check their official documents, Otherwise, Just copy my codes and you'll be good to go! As usual [HERE](/zip/TecinpactBio.zip) is the link to download the documents directly. Let's Start with HTML First, This is a single page setup so the index.html file would be
 
@@ -407,10 +407,10 @@ viewQP = () => {
 loadData()
 ```
 
-At the beginning as usual, I defined the function to remove the preloader, here also I'm hiding the quickpost section to show only the content page. Then, I added a event listener to trigger the function I explained above, after the page loads completely. and The next code part is the same, if you saw my guide on how I made the tecinpact application. so I'm not explaining the mechanic in detail. however I added a simple function to get a random number form 0 to 6 when it ran, to get a randomly picked color for the posts, also here, I added a simple logic to prevent the function from giving me the same number twice in a row. and also the loadData function is as the same from the previous guide and View QP is as the same as the function which I used to show a feed in my app. 
+At the beginning as usual, I defined the function to remove the preloader, here also I'm hiding the quickpost section to show only the content page. Then, I added a event listener to trigger the function I explained above, after the page loads completely. and The next code part is the same, if you saw my guide on how I made the tecinpact application. so I'm not explaining the mechanic in detail. however I added a simple function to get a random number form 0 to 6 when it ran, to get a randomly picked color for the posts, also here, I added a simple logic to prevent the function from giving me the same number twice in a row. and also the loadData function is as the same from the previous guide and View QP is as the same as the function which I used to show a feed in my app.
 
 And here you go! that's all it needs to create a bio section (A Network hub), you can skip the feed part if you don't use RSS in your project and use github Pages, Netlify or Heroku to host this site for no cost at all!
 
-# Conclusion
+## Conclusion
 
 As a developer, my opinion is we don't have to depend on others every single time, there are times which we can do something better than someone else, and in that process, maybe we would be able to create something more appealing to the user. Who Knows! what could be better.

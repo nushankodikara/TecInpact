@@ -6,11 +6,11 @@ tags = ["Introduction"]
 title = "First Post"
 
 +++
-# Introduction
+## Introduction
 
 Hello There My Gorgeous friends! From today on, this would be my hobby, blogging about technology and solving your IT Related Anything!
 
-# What I'm Posting?
+## What I'm Posting?
 
 As we speak, I'm planning to blog about
 
@@ -26,6 +26,6 @@ And so much more on modern technologies.
 
 Don't forget to ask me anything through out my Social media links And E-Mail. 
 
-# Also
+## Also
 
 Don't forget! Suggestions are open.

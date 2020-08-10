@@ -7,15 +7,15 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
 
 If you noticed, I Didn't mentioned css for browser types in our previous CSS tutorial, The case is, I don't want to, SCSS is doing everything for us so why should we even bother? Let's get started with SCSS and supercharge our css.
 
-# Pre-Setup
+## Pre-Setup
 
 SCSS isn't a universal solution, it's here to help us with variables, nesting and automatic css generation. So we need a software to compile scss into css, here I'm using VSCode and an extension called live SCSS compiler. you can download it [Here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass). Install it to VSCode and you're good to go. You can see how to setup VSCode [Here](/post/vs-code-for-web-developers/).
 
-# Folder Structure and Setup
+## Folder Structure and Setup
 
 Now, SCSS works like this, you have to create a HTML file and a SCSS file, and through the extension, we have to activate the SCSS watcher and It generates a css file in the same name as the scss file, so We can link up the css file as usual. Enough theory for that part, let's do some work. You need basic CSS knowledge, and if you didn't followed any of our tutorials Before, Check the CSS Guide [Here](/post/css-for-modern-web-development/) And the HTML Guide [Here](/post/html-for-modern-web-development/)
 
@@ -36,7 +36,7 @@ Now link that css file to our html page and we are pretty much done and ready to
 
 ![VSCode](/uploads/20200721_05.png)
 
-# Coding Section
+## Coding Section
 
 Let's Start Coding The, First of all, SCSS is almost like css but We have extended functionalities such as nested elements functions and Variables, Here's an Example for you.
 
@@ -54,7 +54,7 @@ Let's Start Coding The, First of all, SCSS is almost like css but We have extend
 
 Let's get started.
 
-## Sass Variables
+### Sass Variables
 variables are variables in every language and I explained variables so much and here again explaining the same concept, Variable holds data and there are several types of data we can set a variable to,
 * String
 * numbers
@@ -92,7 +92,7 @@ And The Automatically generated CSS File would be like this
 >         background: red;
 >       }
 
-## Sass Variable Scope
+### Sass Variable Scope
 
 There are two types of scopes, Global and local. Global scoped variables can be defined in the root line, outside any selectors, and local variables are defined inside selectors.
 
@@ -119,7 +119,7 @@ And the CSS Output would be
 >         color: red;
 >       }
 
-## Using Sass !global
+### Using Sass !global
 
 Using this, you can change global scoped variables. For an example,
 
@@ -144,7 +144,7 @@ And the css output would be
 >         color: green;
 >       }
 
-## Sass Nested Rules and Properties
+### Sass Nested Rules and Properties
 
 Assume you have a h1 tag inside a div element and we need to change only it's color to red. you can select it directly with scss using the same nesting procedure as the HTML, let's explore, now to select only the h1 tag in the div, we can use
 
@@ -160,7 +160,7 @@ CSS Output would be
 >           color:reed;
 >       }
 
-## Sass Nested Properties
+### Sass Nested Properties
 
 This is something new, but I'm pretty sure you can wrap your head around it pretty easily. Remember font-size, font-family, font-weight properties? and text-align, text-transform, text-overflow properties? these have font and text in common, so we can use these common words to nest properties like this.
 
@@ -186,7 +186,7 @@ And the CSS Output would be
 >       text-transform: lowercase;
 >       text-overflow: hidden;
 
-## SCSS @import and export
+### SCSS @import and export
 
 Let's talk about these files, you can import properties from different files, which means for an example, you can save variables in a file and use them in another file. but to export, you have to end that file name with an Underscore ( _ ).
 
@@ -198,7 +198,7 @@ and you can import it to working file using
 
 And that's all for importing.
 
-## Sass @mixin and @include
+### Sass @mixin and @include
 
 assume this as a function in other languages, you can create code blocks to re use in scss using @mixin.
 
@@ -229,7 +229,7 @@ And the CSS Output would be
 >           font-size: 25px;
 >       }
 
-### Passing Variables to a Mixin
+#### Passing Variables to a Mixin
 Just like in functions, you can preform some dynamic actions with Mixin. you can define dynamic mixin as this.
 
 >       @mixin bordered($color, $width) {
@@ -256,7 +256,7 @@ And the CSS Output Would be
 >           font-size: 25px;
 >       }
 
-### Default Values for a Mixin
+#### Default Values for a Mixin
 
 Also you can set default values in case you forgot to include one,
 
@@ -264,7 +264,7 @@ Also you can set default values in case you forgot to include one,
 >         border: $width solid $color;
 >       }
 
-## Sass @extend and Inheritance
+### Sass @extend and Inheritance
 
 Here's the last thing you need to know about SCSS, It's a simple code block which allows you to re-use a code from a selector you already wrote
 
@@ -302,7 +302,7 @@ Here with the extend inheritance, you just added what's in button-basic to butto
 
 And That's IT! You're a pro now.
 
-# Let's Create a super cool website using SCSS and HTML
+## Let's Create a super cool website using SCSS and HTML
 
 Now it's time to the fun part, Let's create A Super cool website and as always, you can download it [Here](/zip/ModernWebDevelopmentAssetPack02.zip).
 
@@ -404,6 +404,6 @@ And if you look in to the css file, It's complicated and Cool because it's what 
 
 ![Site](/uploads/20200721_06.png)
 
-# Conclusion
+## Conclusion
 
 Let's be real, we don't like to write so-much code for so many vendors and it would be super cool if most of the things has been automated, I use SCSS Regularly on my projects so I can save a lot of time and code easily. So even you should use it for sure!

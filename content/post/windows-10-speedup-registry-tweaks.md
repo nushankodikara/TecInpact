@@ -5,10 +5,10 @@ Description: "Speedup your windows 10 PC with this speedup Trick with Registry"
 Tags: ["Windows","Registry","Tweaks"]
 DisableComments: false
 ---
-# Introduction
+## Introduction
 Windows based PCs have a registry system to take control over the system wide operations and most of the times windows default operations are useless to most of us and somewhat annoying. So to be cleared, I made this easy to install Registry file to speed up your PC in matter of seconds.
 
-## What Does It Do?
+### What Does It Do?
 Well, here comes the boring part. If you don't want to know what this file does to your PC, just skip this section and use the link below to download the program.
 
 * Adds **Copy To** and **Move To** options in files and folders context menu, so that you can easily copy and move them to other locations.
@@ -32,7 +32,7 @@ Well, here comes the boring part. If you don't want to know what this file does 
 * **Disable the Startup Delay** - Windows has a startup delay in default to pre-load apps and so on, but it annoys and dosent work on newer PCs
 * **Disable Shake To Minimize** - Windows has a feature were you can shake a window to minimize all other windows, which most of the windows users dosent even know about.
 
-## How To Install
+### How To Install
 **Step 1**
 > Download the file from the link below and extract it. If you have trouble extarcting the File, Install [choco](/post/the-package-manager-for-windows-chocolatey/) and Run
 
@@ -58,8 +58,8 @@ You're Done!
 **Step 3**
 > Restart Your PC
 
-## Download
+### Download
 You can download the tweak from [Here 2kb](https://www5.zippyshare.com/v/3zA7eFwV/file.html)
 
-## Troubleshoot
+### Troubleshoot
 If Something odd happens, or you just need to restore the changes, simply run the Restore Tweaks File and you're Good As new.

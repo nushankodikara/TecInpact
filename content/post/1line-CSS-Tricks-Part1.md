@@ -7,10 +7,11 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
+
 CSS is the main styler over the internet, We all can't use everything on css and because it's a huge base, We're probably lost somewhere inside it, So today, Let's explore some creative and simple to use but effective single line codes for your next project. You can visit the CSS Full course [HERE](/post/css-for-modern-web-development/) And without much explanations, Let's get in to the post.
 
-# 01. Super Centered
+## 01. Super Centered
 
 We can do so much things to make a code centered, But have you use the place-items property of the grid layout? Here's how to use it.
 
@@ -29,8 +30,9 @@ We can do so much things to make a code centered, But have you use the place-ite
     display: grid;
     place-items: center;
   }
-```
-# 02. The Easy Card
+
+
+## 02. The Easy Card
 
 We all have a moment which we need to create some responsive cards on CSS but how are we going to do that depends on our knowledge on CSS, But had you ever came across this technique? Use the stretching code if you want to stretch the cards to fit the container, or use the no stretching code.
 
@@ -58,7 +60,7 @@ We all have a moment which we need to create some responsive cards on CSS but ho
   }
 ```
 
-# 03. Easy Side bar
+## 03. Easy Side bar
 
 This is how you can add a simple but elegant side bar to your HTML document without a much effort
 
@@ -75,6 +77,7 @@ This is how you can add a simple but elegant side bar to your HTML document with
     </div>
   </div>
 ```
+
 ```css
   .parent {
     display: grid;
@@ -82,7 +85,7 @@ This is how you can add a simple but elegant side bar to your HTML document with
   }
 ```
 
-# 04. Pancake Stack
+## 04. Pancake Stack
 
 This is a common occurrence in modern web development, but had it been this easy to set up?
 
@@ -95,6 +98,7 @@ This is a common occurrence in modern web development, but had it been this easy
     <footer class="purple section" contenteditable>Footer Content</footer>
   </div>
 ```
+
 ```css
   .parent {
     display: grid;
@@ -102,7 +106,7 @@ This is a common occurrence in modern web development, but had it been this easy
   }
 ```
 
-# 05. Classic Holy Grail Layout
+## 05. Classic Holy Grail Layout
 
 As the name suggest, It's a all time classic, less seen these days but there are many Auctions which this presents.
 
@@ -117,6 +121,7 @@ As the name suggest, It's a all time classic, less seen these days but there are
     <footer class="green section">Footer</footer>
   </div>
 ```
+
 ```css
   .parent {
     display: grid;
@@ -145,7 +150,7 @@ As the name suggest, It's a all time classic, less seen these days but there are
   }
 ```
 
-# 06. 12-Span Grid
+## 06. 12-Span Grid
 
 We don't always use bootstrap or a framework like that, We can implement the 12-span grid without much effort like this.
 
@@ -159,6 +164,7 @@ We don't always use bootstrap or a framework like that, We can implement the 12-
     <div class="span-2 yellow section">Span 2</div>
   </div>
 ```
+
 ```css
   .parent {
     display: grid;
@@ -189,7 +195,7 @@ We don't always use bootstrap or a framework like that, We can implement the 12-
   }
 ```
 
-# 07. RAM (Repeat, Auto, Minmax)
+## 07. RAM (Repeat, Auto, Minmax)
 
 Now what's this? Imagine this as a responsive grid layout for like a photo gallery or for a post gallery, anyway for a gallery.
 
@@ -203,6 +209,7 @@ Now what's this? Imagine this as a responsive grid layout for like a photo galle
     <div class="box green">4</div>
   </div>
 ```
+
 ```css
   .parent {
     display: grid;
@@ -211,7 +218,7 @@ Now what's this? Imagine this as a responsive grid layout for like a photo galle
   }
 ```
 
-# 08. Line Up
+## 08. Line Up
 
 This is the perfect grid for a post set, for a blog or anything formal. Check this out and use your imaginative mindset for good use.
 
@@ -236,6 +243,7 @@ This is the perfect grid for a post set, for a blog or anything formal. Check th
     </div>
   </div>
 ```
+
 ```css
   .ex8 .parent {
     height: auto;
@@ -261,7 +269,7 @@ This is the perfect grid for a post set, for a blog or anything formal. Check th
   }
 ```
 
-# 09. Clamping Posts
+## 09. Clamping Posts
 
 This is best suite for a feature post style thing in my opinion, Look for yourself. and you'll maybe use it in your next project.
 
@@ -276,6 +284,7 @@ This is best suite for a feature post style thing in my opinion, Look for yourse
     </div>
   </div>
 ```
+
 ```css
   .parent {
     display: grid;
@@ -290,7 +299,7 @@ This is best suite for a feature post style thing in my opinion, Look for yourse
   }
 ```
 
-# 10. Keep the Aspect
+## 10. Keep the Aspect
 
 Let's be real, there are sometimes we need to hold an aspect ratio for an element which we don't know the parent container's dimensions, Now we can use this for it
 
@@ -305,6 +314,7 @@ Let's be real, there are sometimes we need to hold an aspect ratio for an elemen
     </div>
   </div>
 ```
+
 ```css
   .parent {
     display: grid;
@@ -323,5 +333,6 @@ Let's be real, there are sometimes we need to hold an aspect ratio for an elemen
   }
 ```
 
-# Conclusion
+## Conclusion
+
 You could be an expert on css, maybe a beginner or whatever, Did you saw this coming? I use them daily in my projects and They are like bread and butter. I hope you'll use them in your next project.

@@ -6,26 +6,26 @@ Tags: ["Programming","Software Development","Zero To Hero","Crash Course"]
 Categories: []
 DisableComments: false
 ---
-# Introduction
+## Introduction
 Python is one of most popular and most powerful and one of the fastest programming languages until now, Millions upon millions developers use python in their projects to script easily. also python is one of the easiest languages to learn and master. But there are some differences between python 2 and 3, and most beginners get confused and leave python because they can't understand how these work. So let's begin with python 2 and 3 at the same time shall we?
 
-# Environment
+## Environment
 I'm using [Visual Studio Code](/post/vs-code-for-web-developers/) as my code editor. Windows, Mac and linux users can download and install python from the main website [Here](https://www.python.org/). And if you're just going to try it, you can use these Online terminals for [Python 2](https://www.tutorialspoint.com/execute_python_online.php) and for [Python 3](https://www.tutorialspoint.com/execute_python3_online.php). Follow the installer guide and don't forget to add python to the path (Setup would do it for you). If everything goes according to the plan, you can see wether it's installed or not by typing
 >       python -v
 
 To a terminal window, or windows Powershell or windows CMD and you'll be greeted with bunch of version numbers. If it pops up errors, try adding python path.
 
-# Zero
+## Zero
 Here, we're starting and continuing with the terminal, GUI programming is something else in python so, Don't expect anything GUI related in the beginning. But I'll provide you a GUI Tutorial in the future.
 
-## Folder Structure
+### Folder Structure
 Now, let's begin with the Python Document. you have to create a file with .py extension, so it'll be Identified as a python script. If you are using VS Code, just save it as a python file.
 
 ![Python VSCode](/uploads/20200714_01.png)
 
 And you're ready with the file.
 
-## Basic Syntax
+### Basic Syntax
 Here begins the differences of python 2 and 3. Let's print a hello world phrase to the terminal. In python 2
 >       print "Hello World!"
 
@@ -53,7 +53,7 @@ to Run the file.
 
 You should see the Hello world printed to the terminal! Now we can explore what we can do with python as a programming language.
 
-## Python Identifiers
+### Python Identifiers
 Identifiers are names, that used to identify classes variables functions module or other objects. Identifiers must start with a-z or A-Z and can be continued with characters, underscores and numbers. Python does not allow punctuation characters such as @, $, and % within identifiers. And also python is case sensitive, which means it watches for capital and simple letters and 'a' is not the same as 'A'.
 
 Here are naming conventions for Python identifiers −
@@ -62,7 +62,7 @@ Here are naming conventions for Python identifiers −
 * Starting an identifier with two leading underscores indicates a strongly private identifier.
 * If the identifier also ends with two trailing underscores, the identifier is a language-defined special name.
 
-## Reserved Words
+### Reserved Words
 These words are literally python keywords so you can't use these as Identifiers, you'll get in trouble if you did so, so keep these noticed
 
 | ======== | ======== | ======== |
@@ -78,7 +78,7 @@ These words are literally python keywords so you can't use these as Identifiers,
 | else     |    is    |     with |
 | except   |  lambda  |    yield |
 
-## Lines and Indentation
+### Lines and Indentation
 Now this is something, you have to keep in your mind. python is different from other languages because of several reasons and here, It doesn't has any braces at all, so white spacing is compulsory! Let's check an example, Don't consider the codes, I'll explain them later.
 
 Python 2
@@ -104,7 +104,7 @@ Python 2
 >       else:
 >       print "Noo World"
 
-## Multi-Line Statements
+### Multi-Line Statements
 
 Statements in python ends with a new line, how ever there are some multiline statements, a hand full of them to try out. The line continuation character (\) would make a statement multiline as this. ( Examples are only for reference, we'll discuss everything later. )
 
@@ -118,7 +118,7 @@ Statements withing [],{} or () doesn't need the line continuation character.
 >                   "5a", "6a",
 >                   "7a", "8a"]
 
-## Quotation in Python
+### Quotation in Python
 
 Python can identify single(') double (") or triple (''' or """) quotations to denote string literals, as long as it starts and ends, you're good to go. The triple quotation can be used to denote multiline strings.
 
@@ -132,11 +132,11 @@ Python can identify single(') double (") or triple (''' or """) quotations to de
 >       d = """ Multiline Without
 >               any escape characters """
 
-## Comments in Python
-Comments are important to give hints about your program to future you, because no one can keep a thousand line codebase on their heads, and humans are designed to forget everything withing few days. Comments in python starts with a # sign and can be placed in a new line or after a statement
+### Comments in Python
+Comments are important to give hints about your program to future you, because no one can keep a thousand line codebase on their heads, and humans are designed to forget everything withing few days. Comments in python starts with a ## sign and can be placed in a new line or after a statement
 
->       # This is a comment
->       variable = "bla bla bla" # This is a comment
+>       ## This is a comment
+>       variable = "bla bla bla" ## This is a comment
 
 and for multiline comments, you can also use the triple quotation technique but only in new lines.
 
@@ -156,17 +156,17 @@ python 3
 >       '''
 >       print ("comment ends")
 
-## Using Blank Lines
+### Using Blank Lines
 You're free to use blank line as much as you want. But you can't use blank lines inside objects classes or functions, It'll make a mess, so  trust me. Use blank lines for good.
 
 Let's begin some actual codings.
 
-## Waiting for the user
+### Waiting for the user
 In a certain point, we all have to take an input from the user. in python console, it's simple as this. This is not a "String" input, but this is more like a "Press enter to continue" input.
 
 >       raw_input("\n\nPress the enter key to exit.")
 
-## Multiple Statements on a Single Line
+### Multiple Statements on a Single Line
 We can use a semi-colone (;) to add multiple statements to a single line
 
 python 2
@@ -177,7 +177,7 @@ python 3
 
 >       x = "hello"; y = "world"; print (x + y)
 
-## Multiple Statement Groups as Suites
+### Multiple Statement Groups as Suites
 Here, it's more like the curly braces of other languages, we call them suites here, the mechanic is the same so you won't be bothered that much.
 
 >       if expression : 
@@ -189,13 +189,13 @@ Here, it's more like the curly braces of other languages, we call them suites he
 
 if you aren't comfortable with these for now, be cool you'll understand later in this series. Let's start with assigning variables.
 
-## Assigning Values to Variables
+### Assigning Values to Variables
 This is why python is one of my favorite programming languages, it does it's basic work, it self. so considering variables, python is automatically assigning it's variable types (explicit declaration), to reserve memory for that variable, so you can assign variables as this. Continue with the examples from now on.
 
->       a = "Hello World"   # This is a string
->       b = 15              # This is an integer
->       c = 15.23           # This is a float
->       d = true            # This is a boolean
+>       a = "Hello World"   ## This is a string
+>       b = 15              ## This is an integer
+>       c = 15.23           ## This is a float
+>       d = true            ## This is a boolean
 
 you can check them using,
 
@@ -219,7 +219,7 @@ And there's a way to assign multiple variables in python, at once. I can assign 
 
 and you can use the print statements above to check again.
 
-## Standard Data Types
+### Standard Data Types
 This is an important topic to understand, here I'm explaining what kind of data types you have to work with, programming languages are all the same so it won't be hard if you're coming from a "Background", I'm explaining for everyone, so don't panic.
 
 Standard Data Types And What They Are
@@ -234,30 +234,30 @@ Standard Data Types And What They Are
 
 Now Let's Explore Data types One by one
 
-## Python Strings
+### Python Strings
 Just paragraphs. and that's all for the definition. There are string operators, which can be used to process strings in python. You can multiply, add another string to a string and slice. Run this example and see for your self
 
 python 2
 
 >       str = "Hello World"
->       print str           # Prints Whole String
->       print str*3         # Prints the string Three Times
->       print str + "WW"    # Print the modified string
->       print str[0]        # Prints the first character
->       print str[2:7]      # Prints characters from 3rd to 7th
->       print str[2:]       # Prints characters from 3 onwards
+>       print str           ## Prints Whole String
+>       print str*3         ## Prints the string Three Times
+>       print str + "WW"    ## Print the modified string
+>       print str[0]        ## Prints the first character
+>       print str[2:7]      ## Prints characters from 3rd to 7th
+>       print str[2:]       ## Prints characters from 3 onwards
 
 python 3
 
 >       str = "Hello World"
->       print (str)           # Prints Whole String
->       print (str*3)         # Prints the string Three Times
->       print (str + "WW")    # Print the modified string
->       print (str[0])        # Prints the first character
->       print (str[2:7])      # Prints characters from 3rd to 7th
->       print (str[2:])       # Prints characters from 3 onwards
+>       print (str)           ## Prints Whole String
+>       print (str*3)         ## Prints the string Three Times
+>       print (str + "WW")    ## Print the modified string
+>       print (str[0])        ## Prints the first character
+>       print (str[2:7])      ## Prints characters from 3rd to 7th
+>       print (str[2:])       ## Prints characters from 3 onwards
 
-## Python Numbers
+### Python Numbers
 
 We'll discuss basic operators later, for now, these are the types of numbers you have to work with
 
@@ -274,7 +274,7 @@ We'll discuss basic operators later, for now, these are the types of numbers you
 * Python allows you to use a lowercase l with long, but it is recommended that you use only an uppercase L to avoid confusion with the number 1. Python displays long integers with an uppercase L.
 * A complex number consists of an ordered pair of real floating-point numbers denoted by x + yj, where x and y are the real numbers and j is the imaginary unit.
 
-## Python Lists
+### Python Lists
 
 These are versatile and you can use these to store a list of other data types as it is a "list". now let's define a list
 
@@ -285,27 +285,27 @@ Now let's do some list operations
 
 Python 2
 
->       print lista*2           # Prints out the list 2 times
->       print lista + listb     # Prints out lista and listb as a single list
->       print lista[0]          # Prints the first item in the list
->       print lista[0:3]        # Prints from first item to the third item
->       print lista[1:]         # Prints from 2nd item onwards
+>       print lista*2           ## Prints out the list 2 times
+>       print lista + listb     ## Prints out lista and listb as a single list
+>       print lista[0]          ## Prints the first item in the list
+>       print lista[0:3]        ## Prints from first item to the third item
+>       print lista[1:]         ## Prints from 2nd item onwards
 
 Python 3
 
->       print (lista*2)           # Prints out the list 2 times
->       print (lista + listb)     # Prints out lista and listb as a single list
->       print (lista[0])          # Prints the first item in the list
->       print (lista[0:3])        # Prints from first item to the third item
->       print (lista[1:])         # Prints from 2nd item onwards
+>       print (lista*2)           ## Prints out the list 2 times
+>       print (lista + listb)     ## Prints out lista and listb as a single list
+>       print (lista[0])          ## Prints the first item in the list
+>       print (lista[0:3])        ## Prints from first item to the third item
+>       print (lista[1:])         ## Prints from 2nd item onwards
 
 Also you can change certain items in lists as this
 
 >       lista[0] = "Something Else"
->       print lista                # For Python 2
->       print (lista)              # For Python 3
+>       print lista                ## For Python 2
+>       print (lista)              ## For Python 3
 
-## Python Tuples
+### Python Tuples
 
 These are also lists but they can't be changed in the future
 
@@ -316,23 +316,23 @@ Now let's do some Tuple operations
 
 Python 2
 
->       print tuplea*2           # Prints out the tuple 2 times
->       print tuplea + tupleb     # Prints out tuplea and tupleb as a single tuple
->       print tuplea[0]          # Prints the first item in the tuple
->       print tuplea[0:3]        # Prints from first item to the third item
->       print tuplea[1:]         # Prints from 2nd item onwards
+>       print tuplea*2           ## Prints out the tuple 2 times
+>       print tuplea + tupleb     ## Prints out tuplea and tupleb as a single tuple
+>       print tuplea[0]          ## Prints the first item in the tuple
+>       print tuplea[0:3]        ## Prints from first item to the third item
+>       print tuplea[1:]         ## Prints from 2nd item onwards
 
 Python 3
 
->       print (tuplea*2)           # Prints out the tuple 2 times
->       print (tuplea + tupleb)     # Prints out tuplea and tupleb as a single tuple
->       print (tuplea[0])          # Prints the first item in the tuple
->       print (tuplea[0:3])        # Prints from first item to the third item
->       print (tuplea[1:])         # Prints from 2nd item onwards
+>       print (tuplea*2)           ## Prints out the tuple 2 times
+>       print (tuplea + tupleb)     ## Prints out tuplea and tupleb as a single tuple
+>       print (tuplea[0])          ## Prints the first item in the tuple
+>       print (tuplea[0:3])        ## Prints from first item to the third item
+>       print (tuplea[1:])         ## Prints from 2nd item onwards
 
 And That's all for Tuples. Now To the final data type, Dictionaries
 
-## Python Dictionary
+### Python Dictionary
 
 Dictionaries are defined using curly braces {} and you can add items in the beginning or later. Remember dictionaries are using key, value pairs to define entries in it. for an example, a Phone book. Let's make a simple phonebook here.
 
@@ -346,13 +346,13 @@ Dictionaries are defined using curly braces {} and you can add items in the begi
 Now, Defining out to the way, you can use some simple operators to process these phone books. (Dictionaries)
 Let's Combine, get values by name, get names, and get numbers from this phonebook.
 
->       bigPhonebook = phonebook + anotherPhonebook     # Combines Phonebooks to a big one
->       print phonebook["Jhon"]                         # Prints the number of Jhon
->       print phonebook                                 # Prints the whole phonebook
->       print phonebook.keys()                          # Prints all of the names
->       print phonebook.values()                        # Prints all of the numbers
+>       bigPhonebook = phonebook + anotherPhonebook     ## Combines Phonebooks to a big one
+>       print phonebook["Jhon"]                         ## Prints the number of Jhon
+>       print phonebook                                 ## Prints the whole phonebook
+>       print phonebook.keys()                          ## Prints all of the names
+>       print phonebook.values()                        ## Prints all of the numbers
 
-## Data Type Conversion
+### Data Type Conversion
 
 There are certain times when you have to convert data to another type, for an example let's consider the string "180", And we want to convert this to integers. so we can use a simple function and convert it to 180. Now look carefully, "180" is a string and not a number, because it has quotations around it. Let's explore a bit.
 
@@ -393,7 +393,7 @@ Python 3
 
 Figure out what happened here.
 
-## Basic Operators
+### Basic Operators
 
 Now, We're in to the arithmetic part of our journey. But not only the arithmetics, Types of Operators in
 Python are categorized as below.
@@ -408,7 +408,7 @@ Python are categorized as below.
 
 Let's Explore one by one, I'll provide you everything with brief explanations, We'll dig deeper into these late. Also these are self explanatory.
 
-#### Python Arithmetic Operators
+##### Python Arithmetic Operators
 
 These are the operators we use to preform arithmetic calculations.
 
@@ -424,7 +424,7 @@ Assume variable a holds 10 and variable b holds 20, then
 | **               | Exponent	Performs exponential (power) calculation on operators                                                                                                                                                                                              | a**b =10 to the power 20                            |
 | //               | Floor Division - The division of operands where the result is the quotient in which the digits after the decimal point are removed. But if one of the operands is negative, the result is floored, i.e., rounded away from zero (towards negative infinity) | 9//2 = 4 and 9.0//2.0=4.0, -11//3=-4, -11.0//3=-4.0 |
 
-#### Python Comparison Operators
+##### Python Comparison Operators
 
 we use comparison for our logical expressions.
 
@@ -449,7 +449,7 @@ For an example, we can use on of these in a IF statement ( Just for examples )
 >       else:
 >           print(b)
 
-#### Python Assignment Operators
+##### Python Assignment Operators
 
 These are for assigning variables
 
@@ -466,7 +466,7 @@ Assume variable a holds 10 and variable b holds 20, then
 | **=      | Exponent AND	Performs exponential (power) calculation on operators and assign value to the left operand | c **= a is equivalent to c = c ** a     |
 | //=      | Floor Division	It performs floor division on operators and assign value to the left operand             | c //= a is equivalent to c = c // a     |
 
-#### Python Bitwise Operators
+##### Python Bitwise Operators
 
 Bitwise operator works on bits and performs bit by bit operation. Assume if a = 60 and b = 13 Now in the binary format their values will be 0011 1100 and 0000 1101 respectively.
 
@@ -493,7 +493,7 @@ What the f happened here? It's BITWISE. let's explore
 | <<       | Binary Left Shift	The left operands value is moved left by the number of bits specified by the right operand.   | a << 2 = 240 (means 1111 0000)                                                     |
 | >>       | Binary Right Shift	The left operands value is moved right by the number of bits specified by the right operand. | a >> 2 = 15 (means 0000 1111)                                                      |
 
-#### Python Logical Operators
+##### Python Logical Operators
 We use these very often and notice these are more like creating sentences.
 
 Assume variable a holds 10 and variable b holds 20 then.
@@ -504,7 +504,7 @@ Assume variable a holds 10 and variable b holds 20 then.
 | or       | Logical OR	If any of the two operands are non-zero then condition becomes true. | (a or b) is true.      |
 | not      | Logical NOT	Used to reverse the logical state of its operand.                   | Not(a and b) is false. |
 
-#### Python Membership Operators
+##### Python Membership Operators
 These Operators used to check wether some value is in something, this would get handy when creating search engines or so.
 
 | Operator | Description                                                                                         | Example                                                                    |
@@ -512,7 +512,7 @@ These Operators used to check wether some value is in something, this would get 
 | in       | Evaluates to true if it finds a variable in the specified sequence and false otherwise.             | x in y, here in results in a 1 if x is a member of sequence y.             |
 | not      | in	Evaluates to true if it does not finds a variable in the specified sequence and false otherwise. | x not in y, here not in results in a 1 if x is not a member of sequence y. |
 
-#### Python Identity Operators
+##### Python Identity Operators
 
 Identity operators compare the memory locations of two objects. It would be more clear if you know how [variables work](https://en.wikipedia.org/wiki/Variable_(computer_science))
 
@@ -521,7 +521,7 @@ Identity operators compare the memory locations of two objects. It would be more
 | is       | Evaluates to true if the variables on either side of the operator point to the same object and false otherwise. | x is y, here is results in 1 if id(x) equals id(y).                  |
 | is not   | Evaluates to false if the variables on either side of the operator point to the same object and true otherwise. | x is not y, here is not results in 1 if id(x) is not equal to id(y). |
 
-#### Python Operators Precedence
+##### Python Operators Precedence
 We used to know how the BODMAS works, and this is the BODMAS for programming. Highest to lowest.
 
 | Sr.No. | Operator                                      | Description                                                                    |
@@ -540,7 +540,7 @@ We used to know how the BODMAS works, and this is the BODMAS for programming. Hi
 | 12     | in, not, in                                   | Membership operators                                                           |
 | 13     | not, or, and                                  | Logical operators                                                              |
 
-## Decision Making
+### Decision Making
 
 Here we're in a critical part, no logical program can made without these. go through one by one carefully. Depiction making logs down to checking TRUE or FALSE on a condition so if it's true it can do something and if it's false it can do something else.
 
@@ -554,7 +554,7 @@ Python programming language provides following types of decision making statemen
 | 2      | if...else statements | An if statement can be followed by an optional else statement, which executes when the boolean expression is FALSE. |
 | 3      | nested if statements | You can use one if or else if statement inside another if or else if statement(s).                                  |
 
-#### Single Statement Suites
+##### Single Statement Suites
 you can create a if statement single lined. and here's how you can do it
 
 >       if(condition): <code to run if true>
@@ -564,7 +564,7 @@ For a practical statement
 >       a = 10
 >       if( a != 9): print("a Is not 9!")
 
-#### If statements
+##### If statements
 remember python is a case sensitive programming language which means you have to be careful with capitals and simples, all of the python keywords are simple. keep it in mind.
 
 >       if (expression):
@@ -578,7 +578,7 @@ for a practical use
 >       if (a == 10):
 >           print("A is 10")
 
-#### if...else statement
+##### if...else statement
 Now what can we do if the if statement is false? Here's the solution for you. just use a else statement and It'll run if the condition is false.
 
 >       if (expression):
@@ -596,7 +596,7 @@ This is the boilerplate for if...else statement, let's consider a practical usag
 
 Try for yourself and try to play with it.
 
-#### Nested If statements
+##### Nested If statements
 Here you can set several if statements to run if the previous one is false. let me demonstrate.
 
 >       if (expression):
@@ -620,7 +620,7 @@ Now the elif checks the condition if the if statement gets false and if both are
 >       else:
 >           print("A is something else!")
 
-## Loops
+### Loops
 Well, here comes the fun part. we can run a code for a number of times without writing the same code over and over again, and That's fun! There are several loop statements and loop control statements in python
 
 ![loops](https://www.tutorialspoint.com/python/images/loop_architecture.jpg)
@@ -633,7 +633,7 @@ Well, here comes the fun part. we can run a code for a number of times without w
 
 
 
-#### Loop control
+##### Loop control
 
 These are used in loops to alter their functionality, keep these in mind and next we'll consider on how we can use these to our will.
 
@@ -643,7 +643,7 @@ These are used in loops to alter their functionality, keep these in mind and nex
 | 2      | continue statement | Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.                        |
 | 3      | pass statement     | The pass statement in Python is used when a statement is required syntactically but you do not want any command or code to execute. |
 
-#### While loop
+##### While loop
 As it claims, these loops are running until the provided expression stays true
 
 ![loop](https://www.tutorialspoint.com/python/images/python_while_loop.jpg)
@@ -660,7 +660,7 @@ Let's consider a practical usage
 
 This would print out the value of a until it passes 10. and then, the expression turns false and the loops breaks.
 
-#### For loop
+##### For loop
 for loop is executing through a sequence like a list or so. 
 
 ![loop](https://www.tutorialspoint.com/python/images/python_for_loop.jpg)
@@ -683,7 +683,7 @@ Here you can see 'letter' is the variable and 'HelloWorld' is the sequence. this
 
 Here, I used a variable called i and as the sequence I provided a list. and this code should loop through the list and print out everything in it one by one.
 
-#### Nested loops
+##### Nested loops
 Loops can be written inside other loops and that's what nested loops are. This isn't hard or something, just use a bit of logic and you're good to go, let me show you some examples and you just have to know that you can do that.
 
 >       a = ["First Time : ","Second Time : ","Third Time : "]
@@ -711,7 +711,7 @@ And the output should be
 >       Third Time : o
 >       Third Time : u
 
-#### Using loop controls
+##### Using loop controls
 Using loop controls isn't that hard, let me demonstrate you how they work.
 
 >       b = ["a","e","i","o","u"]
@@ -743,10 +743,10 @@ pass statement is somewhat different
 
 After running this, you won't be able to see any difference as the pass command wasn't there. and that's exactly it. pass command does nothing. it just holds a place and maybe it'll help to debug the code.
 
-## Number Functions
+### Number Functions
 What are these for? well, these are for atypical calculations, I won't explain these in details because if you don't know the functions in real-life-maths, you don't want to use them here either. If you know these from real-life-maths, you know what to do.
 
-#### Mathematical Functions
+##### Mathematical Functions
 
 plug in a value or a variable in the place of x and you're pretty much done with it.
 
@@ -767,7 +767,7 @@ plug in a value or a variable in the place of x and you're pretty much done with
 | 13     | round(x [,n])      | x rounded to n digits from the decimal point. Python rounds away from zero as a tie-breaker: round(0.5) is 1.0 and round(-0.5) is -1.0. |
 | 14     | sqrt(x)            | The square root of x for x > 0                                                                                                          |
 
-#### Random Number Functions
+##### Random Number Functions
 
 Random numbers are used for games, simulations, testing, security, and privacy applications. Python includes following functions that are commonly used.
 
@@ -780,7 +780,7 @@ Random numbers are used for games, simulations, testing, security, and privacy a
 | 5      | shuffle(lst)                      | Randomizes the items of a list in place. Returns None.                                                                                               |
 | 6      | uniform(x, y)                     | A random float r, such that x is less than or equal to r and r is less than y                                                                        |
 
-#### Trigonometric Functions
+##### Trigonometric Functions
 Python includes following functions that perform trigonometric calculations.
 
 
@@ -797,7 +797,7 @@ Python includes following functions that perform trigonometric calculations.
 | 9      | degrees(x)  | Converts angle x from radians to degrees.   |
 | 10     | radians(x)  | Converts angle x from degrees to radians.   |
 
-#### Mathematical Constants
+##### Mathematical Constants
 Just our atypical mathematical constants, these can be used as numbers.
 
 | Sr.No. | Constants | Description                   |
@@ -805,12 +805,12 @@ Just our atypical mathematical constants, these can be used as numbers.
 | 1      | pi        | The mathematical constant pi. |
 | 2      | e         | The mathematical constant e.  |
 
-## String Functions
+### String Functions
 Here, we considering what kinds of things we can do with python strings. In other words, String processing In Python.
 
 Here you have to keep in mind that strings are a sequence of letters. so we can process them as like lists and tuples.
 
-#### Accessing Values in Strings
+##### Accessing Values in Strings
 Python does not support a character type; these are treated as strings of length one, thus also considered a substring. To access substrings, use the square brackets for slicing along with the index or indices to obtain your substring. For example
 
 >       var1 = 'Hello World!'
@@ -819,7 +819,7 @@ Python does not support a character type; these are treated as strings of length
 >       print ("var1[0]: ", var1[0])
 >       print ("var2[1:5]: ", var2[1:5])
 
-#### Escape Characters
+##### Escape Characters
 These are some special characters which you can use in strings. they are called escape characters. for an example you can add a escape character to print a single line paragraph as a multiline paragraph.
 
 | Backslash notation | Hexadecimal character | Description                                                    |
@@ -840,7 +840,7 @@ These are some special characters which you can use in strings. they are called 
 | \x                 |                       | Character x                                                    |
 | \xnn               |                       | Hexadecimal notation, where n is in the range 0.9, a.f, or A.F |
 
-#### String Special Operators
+##### String Special Operators
 These operators can be used to process certain paragraphs.
 
 | Operator | Description                                                                                                                                                                                                                                                                                                                                       | Example                                        |
@@ -854,7 +854,7 @@ These operators can be used to process certain paragraphs.
 | r/R      | Raw String - Suppresses actual meaning of Escape characters. The syntax for raw strings is exactly the same as for normal strings with the exception of the raw string operator, the letter "r," which precedes the quotation marks. The "r" can be lowercase (r) or uppercase (R) and must be placed immediately preceding the first quote mark. | print r'\n' prints \n and print R'\n'prints \n |
 | %        | Format - Performs String formatting                                                                                                                                                                                                                                                                                                               | See at next section                            |
 
-#### String Formatting Operator
+##### String Formatting Operator
 These can be used to add certain values to a pre formatted string. It'll make sense in the future when you work with these, until then Let's explore.
 
 | Format Symbol | Conversion                                      |
@@ -888,13 +888,13 @@ Other supported symbols and functionality are listed in the following table
 | -      | left justification                                                                                       |
 | +      | display the sign                                                                                         |
 | <sp>   | leave a blank space before a positive number                                                             |
-| #      | add the octal leading zero ( '0' ) or hexadecimal leading '0x' or '0X', depending on whether 'x' or 'X'  | were used. |
+| ##     | add the octal leading zero ( '0' ) or hexadecimal leading '0x' or '0X', depending on whether 'x' or 'X'  | were used. |
 | 0      | pad from left with zeros (instead of spaces)                                                             |
 | %      | '%%' leaves you with a single literal '%'                                                                |
 | (var)  | mapping variable (dictionary arguments)                                                                  |
 | m.n.   | m is the minimum total width and n is the number of digits to display after the decimal point (if appl.) |
 
-#### Built-in String Methods
+##### Built-in String Methods
 
 These functions can be used in order to preform string functions, and process strings in our needs. We'll get hang of these later.
 
@@ -941,9 +941,9 @@ These functions can be used in order to preform string functions, and process st
 | 39     | zfill (width)                            | Returns original string leftpadded with zeros to a total of width characters; intended for numbers, zfill() retains any sign given (less one zero).                     |
 | 40     | isdecimal()                              | Returns true if a unicode string contains only decimal characters and false otherwise.                                                                                  |
 
-## List Functions
+### List Functions
 
-#### Assigning and accessing lists
+##### Assigning and accessing lists
 As we did before, assigning lists isn't that hard. just add a list of data separated by commas and enclosed with square brackets. for an example
 
 >       a = [10,20,50,60,"Fun","Bun,"Run"]
@@ -960,7 +960,7 @@ and you'll get the first item. to get items from 3 to 5
 >       a = [10,20,50,60,"Fun","Bun,"Run"]
 >       print(a[2:5])
 
-#### Updating and Deleting Lists
+##### Updating and Deleting Lists
 You can change or delete values of a list using Index of that item
 
 >       a = [10,20,50,60,"Fun","Bun,"Run"]
@@ -968,7 +968,7 @@ You can change or delete values of a list using Index of that item
 >       del a[2]
 >       print(a)
 
-#### Basic List Operations
+##### Basic List Operations
 
 You can use these operators for process lists in python.
 
@@ -980,7 +980,7 @@ You can use these operators for process lists in python.
 | 3 in [1, 2, 3]               | True                         | Membership    |
 | for x in [1, 2, 3]: print x, | 1 2 3                        | Iteration     |
 
-#### Indexing, Slicing, and Matrixes
+##### Indexing, Slicing, and Matrixes
 Just listing what we did above
 
 >       L = ['spam', 'Spam', 'SPAM!']
@@ -991,7 +991,7 @@ Just listing what we did above
 | L[-2]             | Spam              | Negative: count from the right |
 | L[1:]             | ['Spam', 'SPAM!'] | Slicing fetches sections       |
 
-#### Built-in List Functions & Methods
+##### Built-in List Functions & Methods
 
 Python includes the following list functions −
 
@@ -1017,10 +1017,10 @@ Python includes following list methods
 | 8      | list.reverse()          | Reverses objects of list in place                  |
 | 9      | list.sort([func])       | Sorts objects of list, use compare func if given   |
 
-## Tuples
+### Tuples
 A tuple is a collection of objects which ordered and immutable. Tuples are sequences, just like lists. The differences between tuples and lists are, the tuples cannot be changed unlike lists and tuples use parentheses, whereas lists use square brackets.
 
-#### Assigning and Accessing Values
+##### Assigning and Accessing Values
 
 Let's do some work with these
 
@@ -1038,7 +1038,7 @@ and you'll get the first item. to get items from 3 to 5
 >       a = (10,20,50,60,"Fun","Bun,"Run")
 >       print(a[2:5])
 
-#### Basic Tuples Operations
+##### Basic Tuples Operations
 Tuples respond to the + and * operators much like strings; they mean concatenation and repetition here too, except that the result is a new tuple, not a string.
 
 | Python Expression            | Results                      | Description   |
@@ -1049,7 +1049,7 @@ Tuples respond to the + and * operators much like strings; they mean concatenati
 | 3 in (1, 2, 3)               | True                         | Membership    |
 | for x in (1, 2, 3): print x, | 1 2 3                        | Iteration     |
 
-#### Indexing, Slicing, and Matrixes
+##### Indexing, Slicing, and Matrixes
 It's the same as the lists. but for tuples.
 
 >       L = ('spam', 'Spam', 'SPAM!')
@@ -1060,7 +1060,7 @@ It's the same as the lists. but for tuples.
 | L[-2]             | Spam              | Negative: count from the right |
 | L[1:]             | ['Spam', 'SPAM!'] | Slicing fetches sections       |
 
-#### Built-in Tuple Functions
+##### Built-in Tuple Functions
 Python includes the following tuple functions −
 
 | Sr.No. | Function            | Description                                 |
@@ -1071,10 +1071,10 @@ Python includes the following tuple functions −
 | 4      | min(tuple)          | Returns item from the tuple with min value. |
 | 5      | tuple(seq)          | Converts a list into tuple.                 |
 
-## Dictionaries
+### Dictionaries
 Python dictionaries are a dataset that has a key value pair, and that duo helps so much. Let's start with dictionaries.
 
-#### Assigning, Updating and Deleting dictionaries
+##### Assigning, Updating and Deleting dictionaries
 
 we can create a dictionary using 
 >       <variable> = {<string>:<string>,...}
@@ -1103,7 +1103,7 @@ You can Clear the whole Dictionary
 Delete the whole dictionary
 >       del dic
 
-#### Built-in Dictionary Functions & Methods
+##### Built-in Dictionary Functions & Methods
 Python includes the following dictionary functions
 
 | Sr.No. | Function          | Description                                                                                                        |
@@ -1128,13 +1128,13 @@ Python includes following dictionary methods
 | 9      | dict.update(dict2)                 | Adds dictionary dict2's key-values pairs to dict                               |
 | 10     | dict.values()                      | Returns list of dictionary dict's values                                       |
 
-## Date & Time
+### Date & Time
 
 Here's another fun time to enjoy with python. The guide is getting longer and boring I know, but this is a complete guide so this could get much worse. 'Boring' is not for the masters so lets delete it ;D
 
 Now now no, what is this about. let me show you, python date and time operations are all about, you guessed it, date and time. we can get the current date and time in many many formats and also we can process older dates too.
 
-#### What is Tick?
+##### What is Tick?
 Time intervals are floating-point numbers in units of seconds. Particular instants in time are expressed in seconds since 12:00am, January 1, 1970(epoch). this is common for all main-stream programming languages and we have to deal with it.
 
 The function time.time() returns the current system time in ticks since 12:00am, January 1, 1970(epoch). Use a print command to check it
@@ -1146,7 +1146,7 @@ first we have to import the time library, then we can proceed.
 
 and You'll get some numbers.
 
-#### What is TimeTuple?
+##### What is TimeTuple?
 This is getting much interesting now, let's talk about time tuple. Here, Many of Python's time functions handle time as a tuple of 9 numbers, as shown below
 
 | Index | Field            | Values                                    |
@@ -1177,7 +1177,7 @@ The above tuple is equivalent to struct_time structure. This structure has follo
 | 7     | tm_yday    | 1 to 366 (Julian day)                     |
 | 8     | tm_isdst   | -1, 0, 1, -1 means library determines DST |
 
-#### Working with Dates and Times
+##### Working with Dates and Times
 Let's get down to the coding section. Here I'll show how to do the codings for some and you can figure out the rest for sure.
 
 >       import time
@@ -1206,10 +1206,10 @@ And The result will be
 
 Something like this. This is my time period. And that's pretty much it for date and time.. Moving on.
 
-## Functions
+### Functions
 Let's speak about functions. These are the most important code sections of any programing language. The reason why is functions functionality, That's awkward to say but any how. Functions store some code in them and we can run that code section anytime we call a function. It could be a calculation or anything like that. And also we can pass values in variables so the function can preform more things dynamically.
 
-#### Defining Functions
+##### Defining Functions
 That's not hard at all, but first let me tell you something, most of the developer guides start with basic functions when teaching functions, but that's not my way so let's dig deeper with a huge step forward. This is the boilerplate for functions.
 
 >       def <function-name>(<variables-to-pass>):
@@ -1235,7 +1235,7 @@ Now here's an example for you
 
 Now It's done defining. Let's call and see how it works.
 
-#### Calling Functions
+##### Calling Functions
 
 For calling a function, you have to address it with the name it made followed by brackets and in those brackets, variables to pass. here we have two variables to pass, name and age. You can create functions without variables but you have to put brackets anyways something like
 
@@ -1253,7 +1253,7 @@ That's how you call it, and this should be printed out after that.
 
 >       Hello There Tecinpact, You're 22 and It's an age full of responsibities
 
-#### return value from a function
+##### return value from a function
 
 This is something important and this makes the function behaves in a way that's different from the above example. return makes the function returns a value so we can assign them in to a variable.
 
@@ -1275,7 +1275,7 @@ did you noticed that I switched that print to a return? So now I can use the fun
 
 and the function now assigns the value to the returnedvalue variable. so we can use it in the program for something else than printing to the console.
 
-## Reading data from user in the console
+### Reading data from user in the console
 
 This is a short and simple but a compulsory part on programming, that's the user's input. so we can ask the user for inputs when the code running using raw_input method. Try this example to understand the capabilities.
 
@@ -1284,12 +1284,12 @@ This is a short and simple but a compulsory part on programming, that's the user
 
 This is short and sweet so you can see it for your self.
 
-## Files I/O
+### Files I/O
 Here we came to a part where we can write to files using python. If you're imaginative inough, you can even automate writing codes from other languages using the knowledge you gathered from this article. Let's start. Here, I'm only explaining what you really need, and nothing else.
 
 Concept is simple, you have to open a file, read or write, then you can close it.
 
-#### Opening and Closing Files
+##### Opening and Closing Files
 
 Simple as it seems, Python has a open and close function to do it, but opening is a bit different, you can use python to open in various modes, but one's you're really want it 
 * r - for read only
@@ -1313,7 +1313,7 @@ Here's the complete list if you are interested in it.
 | 11     | a+    | Opens a file for both appending and reading. The file pointer is at the end of the file if the file exists. The file opens in the append mode. If the file does not exist, it creates a new file for reading and writing.                  |
 | 12     | ab+   | Opens a file for both appending and reading in binary format. The file pointer is at the end of the file if the file exists. The file opens in the append mode. If the file does not exist, it creates a new file for reading and writing. |
 
-#### The file Object Attributes
+##### The file Object Attributes
 What are these? These are what you can do with these files. So, Let's Explore.
 
 | Sr.No. | Attribute      | Description                                                            |
@@ -1325,7 +1325,7 @@ What are these? These are what you can do with these files. So, Let's Explore.
 
 Let's write some files then.
 
-#### Write the file
+##### Write the file
 
 Let's open a file using read and write with overwriting in the directory of the script.
 
@@ -1341,7 +1341,7 @@ Let's close it now.
 
 Let's read the file now,
 
-#### Read the file
+##### Read the file
 
 >       file = open("thisIsAFile.txt", "r")
 >       fileText = file.read()
@@ -1350,7 +1350,7 @@ Let's read the file now,
 
 now the fileText variable holds what's inside the file.
 
-#### Rename the file
+##### Rename the file
 
 It's Simple and straight forward. You have to import the os module first.
 
@@ -1362,14 +1362,14 @@ Let's nome our file to another name
 >       import os
 >       os.rename("thisIsAFile.txt","anotherfile.txt")
 
-#### Let's Delete the file
+##### Let's Delete the file
 
 This is also a funtion of the os module so first we have to import it and then we can proceed
 
 >       import os
 >       os.remove("thisIsAFile.txt")
 
-#### Let's explore some OS module functions which will get in handy
+##### Let's explore some OS module functions which will get in handy
 
 | Module      | Description                                                                                     | Usage               |
 | :---------- | :---------------------------------------------------------------------------------------------- | :------------------ |
@@ -1380,7 +1380,7 @@ This is also a funtion of the os module so first we have to import it and then w
 
 And You're Golden with File I/O
 
-## Error handling
+### Error handling
 In programming, we run into all sorts of errors eventually, so we need a fool proof option to make the program run no matter what. So there's a simple boilerplate we can use
 
 >       try:
@@ -1396,13 +1396,13 @@ Let's explore
 
 You can add a try block and add you code in that, so if something went wrong it would brake the program there and run the except block. If there are no errors or so the else block will run, and finally block would always run it's code. you can ditch anything else the try block so it's something you can tailor to your needs.
 
-## Object Oriented Python
+### Object Oriented Python
 
 This would be the final topic I'm covering in this series. This is a huge topic but I'm explaining briefly.
 
 Classes are something like functions but they can have their own objects. for an example consider a class in a school, we'll assume that there is a class called "grade 2" whenever the headmaster says "come here g2" the grade 2 students have to stand up and say "I'm here". this is a imaginative exercise, so considering this case, the headmaster once gathered the whole school and said loudly, "Come here g2" and all of the grade 2 students said "I'm here". now this is a idiotic but a powerful story, no the moral of the story: class grade 2 is like the classes in python, they have certain functions to run whenever they were called, and the students of that class are like Objects in python. those objects has to obey and  follow the  class rules until they are in that class. and that's the main concept.
 
-#### Defining classes
+##### Defining classes
 
 it's easy, you just have to use the class keyword followed by the class name and the code block
 
@@ -1490,8 +1490,8 @@ And the results are
 
 Run these examples for your self and see for your self.
 
-# What's Next
+## What's Next
 Well, my friends, You are officially done with this course, you can attend a free test and get a certificate from us on this course, If you're interested, just use our mail tecinpactagencies@gmail.com to contact us. Also python is a huge programming language and there are so much more libraries modules and so much more for you to try out and learn, Explore the world and maybe you'll find your passion with this language.
 
-# Conclusions
+## Conclusions
 Here, I brought you a full python tutorial with examples that are easy to follow. It's a plesure to help beginers with their career but These tutorials take about 3-4 Days worth of work and so much effort and time, so It's greate if you can show some love by sharing these with others. Remember sharing is careing.

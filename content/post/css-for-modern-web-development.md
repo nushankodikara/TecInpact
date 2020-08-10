@@ -7,18 +7,22 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
+
 Well well, here we are in the section of styling our HTML Page, if you don't know what HTML is, Check [HERE](/post/html-for-modern-web-development/) for the HTML Course on modern web development, Today we're using CSS and HTML knowledge to create a beautiful looking website.
 
-Today we're creating 
+Today we're creating
 
-# Adding to HTML
+## Adding to HTML
+
 There are three ways we can add a css file to our HTML Document and you can use unlimited css files in a single HTML page, Let's Explore.
+
 * Externally
 * Internally
 * Inline
 
-### External CSS Files.
+### External CSS Files
+
 Here we can create a .css file in our root directory, And to link it to the HTML Page, you have to add a link tag in the head section of our HTML page
 >       <link rel="stylesheet" href="<path-with-name>">
 
@@ -45,10 +49,12 @@ Or use inline style attribution to apply css directly to that block
 
 >       <div style="background:black; font-family: monospace;"></div>
 
-## Purpose Of CSS
+### Purpose Of CSS
+
 Remember, this css language is for styling your html page and Here with my modern development course, I'm explaining only what you will use for real projects, there are a lot of properties you can play with and you're always open to explore. And remember because this is modern web development, we'll use scss and these are what you only use.
 
-## Selectors
+### Selectors
+
 Here, there are three types of selectors. you can select a tag in our HTML page, you can select a class in our HTML page and you can also select an ID on our HTML page. And to select each type
 
 | Type      | How To Select It                        | Examples |
@@ -109,17 +115,17 @@ Let's explore what properties we have to work with and how to use it.
 
 ![css form](https://www.w3schools.com/css/selector.gif)
 
-## Comments in css
-you can use the opening tag /* and closing tag */ for comments
+### Comments in css
+
+you can use the opening tag /*and closing tag*/ for comments
 
 >       /* Comment */
-
 >       /* Multiline
 >           Comment */
 
-## Properties
+### Properties
 
-### Animation Properties
+#### Animation Properties
 
 | Property                  | Description                                                                                         |
 | :------------------------ | :-------------------------------------------------------------------------------------------------- |
@@ -133,7 +139,7 @@ you can use the opening tag /* and closing tag */ for comments
 | animation-play-state      | Specifies whether the animation is running or paused.                                               |
 | animation-timing-function | Specifies how a CSS animation should progress over the duration of each cycle.                      |
 
-### Background Properties
+#### Background Properties
 
 | Property              | Description                                                               |
 | :-------------------- | :------------------------------------------------------------------------ |
@@ -147,7 +153,7 @@ you can use the opening tag /* and closing tag */ for comments
 | background-repeat     | Specify whether/how the background image is tiled.                        |
 | background-size       | Specifies the size of the background images.                              |
 
-### Border Properties
+#### Border Properties
 
 | Property                   | Description                                                                        |
 | :------------------------- | :--------------------------------------------------------------------------------- |
@@ -182,14 +188,14 @@ you can use the opening tag /* and closing tag */ for comments
 | border-top-width           | Sets the width of the top border of an element.                                    |
 | border-width               | Sets the width of the border on all the four sides of an element.                  |
 
-### Color Properties
+#### Color Properties
 
 | Property | Description                                  |
 | :------- | :------------------------------------------- |
 | color    | Specify the color of the text of an element. |
 | opacity  | Specifies the transparency of an element.    |
 
-### Dimension Properties
+#### Dimension Properties
 
 | Property   | Description                               |
 | :--------- | :---------------------------------------- |
@@ -200,16 +206,16 @@ you can use the opening tag /* and closing tag */ for comments
 | min-width  | Specify the minimum width of an element.  |
 | width      | Specify the width of an element.          |
 
-### Generated Content Properties
+#### Generated Content Properties
 
 | Property          | Description                              |
 | :---------------- | :--------------------------------------- |
 | content           | Inserts generated content.               |
-| quotes	Specifies  | quotation marks for embedded quotations. |
+| quotes Specifies  | quotation marks for embedded quotations. |
 | counter-reset     | Creates or resets one or more counters.  |
 | counter-increment | Increments one or more counter values.   |
 
-### Flexible Box Layout
+#### Flexible Box Layout
 
 | Property        | Description                                                                                                                                    |
 | :-------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -226,7 +232,7 @@ you can use the opening tag /* and closing tag */ for comments
 | justify-content | Specifies how flex items are aligned along the main axis of the flex container after any flexible lengths and auto margins have been resolved. |
 | order           | Specifies the order in which a flex items are displayed and laid out within a flex container.                                                  |
 
-### Font Properties
+#### Font Properties
 
 | Property         | Description                                                  |
 | :--------------- | :----------------------------------------------------------- |
@@ -239,7 +245,7 @@ you can use the opening tag /* and closing tag */ for comments
 | font-variant     | Specify the font variant.                                    |
 | font-weight      | Specify the font weight of the text.                         |
 
-### List Properties
+#### List Properties
 
 | Property            | Description                                             |
 | :------------------ | :------------------------------------------------------ |
@@ -248,17 +254,17 @@ you can use the opening tag /* and closing tag */ for comments
 | list-style-position | Specifies the position of the list-item marker.         |
 | list-style-type     | Specifies the marker style for a list-item.             |
 
-### Margin Properties
+#### Margin Properties
 
 | Property      | Description                                  |
 | :------------ | :------------------------------------------- |
-| margin	Sets   | the margin on all four sides of the element. |
+| margin Sets   | the margin on all four sides of the element. |
 | margin-bottom | Sets the bottom margin of the element.       |
 | margin-left   | Sets the left margin of the element.         |
 | margin-right  | Sets the right margin of the element.        |
 | margin-top    | Sets the top margin of the element.          |
 
-### Multi-column Layout Properties
+#### Multi-column Layout Properties
 
 | Property          | Description                                                                                      |
 | :---------------- | :----------------------------------------------------------------------------------------------- |
@@ -273,7 +279,7 @@ you can use the opening tag /* and closing tag */ for comments
 | column-width      | Specifies the optimal width of the columns in a multi-column element.                            |
 | columns           | A shorthand property for setting column-width and column-count properties.                       |
 
-### Outline Properties
+#### Outline Properties
 
 | Property       | Description                                                                  |
 | :------------- | :--------------------------------------------------------------------------- |
@@ -283,7 +289,7 @@ you can use the opening tag /* and closing tag */ for comments
 | outline-style  | Sets a style for an outline.                                                 |
 | outline-width  | Sets the width of the outline.                                               |
 
-### Padding Properties
+#### Padding Properties
 
 | Property       | Description                                        |
 | :------------- | :------------------------------------------------- |
@@ -293,7 +299,7 @@ you can use the opening tag /* and closing tag */ for comments
 | padding-right  | Sets the padding to the right side of an element.  |
 | padding-top    | Sets the padding to the top side of an element.    |
 
-### Print Properties
+#### Print Properties
 
 | Property          | Description                             |
 | :---------------- | :-------------------------------------- |
@@ -301,7 +307,7 @@ you can use the opening tag /* and closing tag */ for comments
 | page-break-before | Insert a page breaks before an element. |
 | page-break-inside | Insert a page breaks inside an element. |
 
-### Table Properties
+#### Table Properties
 
 | Property        | Description                                                      |
 | :-------------- | :--------------------------------------------------------------- |
@@ -311,7 +317,7 @@ you can use the opening tag /* and closing tag */ for comments
 | empty-cells     | Show or hide borders and backgrounds of empty table cells.       |
 | table-layout    | Specifies a table layout algorithm.                              |
 
-### Text Properties
+#### Text Properties
 
 | Property              | Description                                                                                                              |
 | :-------------------- | :----------------------------------------------------------------------------------------------------------------------- |
@@ -336,7 +342,7 @@ you can use the opening tag /* and closing tag */ for comments
 | word-break            | Specifies how to break lines within words.                                                                               |
 | word-wrap             | Specifies whether to break words when the content overflows the boundaries of its container.                             |
 
-### Transform Properties
+#### Transform Properties
 
 | Property            | Description                                                                                        |
 | :------------------ | :------------------------------------------------------------------------------------------------- |
@@ -347,7 +353,7 @@ you can use the opening tag /* and closing tag */ for comments
 | transform-origin    | Defines the origin of transformation for an element.                                               |
 | transform-style     | Specifies how nested elements are rendered in 3D space.                                            |
 
-### Transitions Properties
+#### Transitions Properties
 
 | Property                   | Description                                                                                  |
 | :------------------------- | :------------------------------------------------------------------------------------------- |
@@ -357,7 +363,7 @@ you can use the opening tag /* and closing tag */ for comments
 | transition-property        | Specifies the names of the CSS properties to which a transition effect should be applied.    |
 | transition-timing-function | Specifies the speed curve of the transition effect.                                          |
 
-### Visual formatting Properties
+#### Visual formatting Properties
 
 | Property   | Description                                                                                     |
 | :--------- | :---------------------------------------------------------------------------------------------- |
@@ -380,17 +386,18 @@ you can use the opening tag /* and closing tag */ for comments
 | box-shadow | Applies one or more drop-shadows to the element's box.                                          |
 | box-sizing | Alter the default CSS box model.                                                                |
 
-## Discussion
+### Discussion
 
 Now that's all we need for CSS, look carefully and you'll find something you like, now let's create some simple but beautiful webpages to emphasize our skills, and get to know how to use css.
 
-## Let's Create A Login Page
+### Let's Create A Login Page
 
 Now, Let's Cerate this beautiful Login page And I'll Show you the code and then explain what's going on here, Now considering this, it's not a difficult one to make as it seams. Also you can download the complete project [HERE](/zip/Sample-site.zip).
 
 ![HTML Document](/uploads/20200718_06.png)
 
 #### HTML
+
 First of all, let's see what's in the HTML Section of this code.
 
 >       <!DOCTYPE html>
@@ -419,7 +426,7 @@ First of all, let's see what's in the HTML Section of this code.
 
 Let me explain. Here first I made a div section with the id of loginSection. and in it I placed a image tag, h1 tag, a form with two input fields for username and password, a button to login, A disclaimer note and a link to reset the password. Here, the functionality isn't considered and we are making this functional in the Javascript course. And That's it for HTML.
 
-#### CSS
+##### CSS
 
 Here Begins the fun part. It's not that hard but you have to remember what you need and use it carefully, let me show you the code base first.
 
@@ -479,7 +486,7 @@ Here Begins the fun part. It's not that hard but you have to remember what you n
 >           color: cornflowerblue;
 >       }
 
-Here, Let me explain. first I made a selector called * and this is a special selector, which selects everything, means the properties in the * selector can affect every element in the HTML page, here I changed the font family to monospace ( It's my favorite ).
+Here, Let me explain. first I made a selector called *and this is a special selector, which selects everything, means the properties in the* selector can affect every element in the HTML page, here I changed the font family to monospace ( It's my favorite ).
 
 in then i selected the whole body section of the document with body selector and made it stretch 100% which means from the left side to the right side completely, and removed margin and padding. also added a background image (Here you have to use that url section) and I set that background repeat to no repeat. and I made that background to stay anchored to the center. also made the background size a cover, which means the background covers the whole screen.
 
@@ -489,11 +496,12 @@ for the avatar image, I just selected img tag and set it's width to 180px and he
 
 Then the input boxes, here I only have two input tags and they are username and password so I can just select input tag and It'll apply to both of those, here I made it's width 80% from parent container which is the login section. and added a padding top and bottom of 15px to make it a bit taller and 20px to left and right to make it a bit longer, also I removed it's outline and border, and added a margin to the bottom of 15px and to make it pill shaped, added a border radius of 500px (That's a trick)
 
-Buttons are the same, I added some padding to 4 sides to make it a bit taller and a bit longer, removed border and outline, made it's text black and background color of greenYellow. 
+Buttons are the same, I added some padding to 4 sides to make it a bit taller and a bit longer, removed border and outline, made it's text black and background color of greenYellow.
 
 Then Button:hover section is a special selector, these properties applies when the user hovers the mouse above the button, so I made it to go a bit darker when hovering. and I selected the password reset link with it's ID and added a color of cornflowerblue.
 
 And That's pretty much it guys, Play with these values to get a feeling for it. and css isn't something that's hard, you just have to get a feeling.
 
-# Conclusion
+## Conclusion
+
 Well well well, here we are at the end of another course, CSS Zero to Hero and this one is a bit different than others, just explanation and an example. Is it enough? yeah, get a feeling to it and you'll flow on css, CSS is not something difficult something for you to think for hours upon hours, play with it for sometime, it's just a styling guide and when you're comfortable with it, You're an artist drawing in a web browser with some codes.

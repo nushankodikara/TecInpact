@@ -5,15 +5,15 @@ description = "Brief explanation into modern code editors in 2020"
 tags = ["Editors", "Introduction", "Review"]
 title = "Best Code Editors of 2020"
 +++
-# **Introduction**
+## **Introduction**
 
 Code editors are usually overpowered text editors. Mainly they are used for editing codes, but in the modern world, code editors are playing a role of complete development environments for some frameworks, with the help of extensions.
 
 In this article, I would like to present you my most favourite code editors and also some download links, and typical extensions I use.
 
-## #1 Visual Studio Code
+### #1 Visual Studio Code
 
-![](https://www.elegantthemes.com/blog/wp-content/uploads/2019/01/000-Best-Code-Editor-VS-Code.png "VS Code")
+![d](https://www.elegantthemes.com/blog/wp-content/uploads/2019/01/000-Best-Code-Editor-VS-Code.png "VS Code")
 
 Visual studio code is a multi talented and an open source project by Microsoft. And also it's available for Windows Linux and Mac OS users. I use visual studio code mainly for web developments, cross platform app development, design and prototyping, server side scripting and as a typical code editor for other projects.
 
@@ -34,9 +34,9 @@ With this editor, I also use live server extension, SCSS compiler, HTML beautifi
 > * specific Linux distros for Ubuntu, Fedora, SUSE, Red Hat, and Debian
 > * IntelliSense highlighting and autocomplete works like a dream
 
-## #2 Atom
+### #2 Atom
 
-![](https://www.elegantthemes.com/blog/wp-content/uploads/2018/04/001-Best-Text-Editors.jpg)
+![d](https://www.elegantthemes.com/blog/wp-content/uploads/2018/04/001-Best-Text-Editors.jpg)
 
 Atom is another great text editor, in this case a perfect code editor made by GitHub but now owned by Microsoft. Microsoft development team is maintaining the atom code editor for a while now and it established a perfect user base and established as a premiere text and code editor out there. The best part is that Atom is totally free, open source, and highly customizable. Built around a minimal core, Atom comes with multiple language-specific packages built in, and the library of community-written ones has exploded over the years since the editor was first released. Atom is as robust as you need it to be – if the editor doesn’t do something you need, you can create that feature yourself. The Teletype features has been embraced by users, too. It allows multiple developers to work on the same code from remote locations.
 
@@ -58,9 +58,9 @@ Download [Here](https://atom.io/ "Atom")
 > * Highly theme-able
 > * Incredibly passionate community
 
-## #3 Sublime Text
+### #3 Sublime Text
 
-![](https://www.elegantthemes.com/blog/wp-content/uploads/2018/04/003-Best-Text-Editors.jpg)
+![d](https://www.elegantthemes.com/blog/wp-content/uploads/2018/04/003-Best-Text-Editors.jpg)
 
 Sublime text is something different from others, it was designed coding on mind. It has some cons when comparing to something like visual studio code, but for the working part it's doing perfectly, but this doesn't support extensions by this time. Sublime text can be used as a portable text editor and it's mostly usable for web developments & simple code writing.
 
@@ -79,6 +79,6 @@ Download [Here](https://www.sublimetext.com/ "Sublime text")
 > * Plugin API
 > * And more
 
-## Final conclusion
+### Final conclusion
 
 Yes, there would be new and flashy text and code editors out there and most of the developers will develop and deploy their own text editors and code editors in the future, but these three will be always in my heart and these are what I use. But at the end of the day I use **visual studio code** for most of projects because of stability and the reliability Microsoft provides with software.

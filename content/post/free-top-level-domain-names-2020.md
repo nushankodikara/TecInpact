@@ -6,13 +6,13 @@ Tags: ["Web Admin", "Domains", "Web Development"]
 Categories: []
 DisableComments: false
 ---
-# Introduction
+## Introduction
 I Was surprised and wasn't sure is this a spam or not, Top Level domains for free? that's Odd to be exact, But yeah, Freenom offers top level domains for no cost at all! and that's weird. In this article, I'll show you how you can get a Freenom top level domain for free and in the correct way. Follow this guide very carefully because anyone can f*ck it up in no time.
 
-## How do they do that?
+### How do they do that?
 Well, Freenom offers free domains of .tk .ml .ga .cf .gq extensions for no cost at all, But how do they do that? I didn't found any good explanation on how they do that or anything I can believe, so I came up with my own theory on this conspiracy. No they aren't aliens or something like that. These are domain zones of small exotic countries or even semi-independent parts of other countries – sometimes just a couple of islands in the ocean. so as silicon valley in china, they don't give a F*ck on world costs or nothing. And they have pretty flat rates on mostly every single domain name. Also they have a 99.9% online rate so I don't see anything bad about them.
 
-## Where Are these domains From?
+### Where Are these domains From?
 
 | TLD  | Corresponding country or territory                                                                                                                               |
 | :--- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -22,10 +22,10 @@ Well, Freenom offers free domains of .tk .ml .ga .cf .gq extensions for no cost 
 | .cf  | Central African Republic, a country where 4% of inhabitants have regular access to the Internet. Obviously located smack in the center of the African continent. |
 | .gq  | Equatorial Guinea, a tiny African country with a totalitarian government that accumulates all the spoils from its rich oil reserves.                             |
 
-## Are these safe?
+### Are these safe?
 Let me introduce my self in this part. These aren't safe at all because most of the scammers use them and even google rejects them. **BUT I HAVE A SOLUTION**. This is the part where **big brains** f*ck their selves up. You can't use these domains as is, there is a simple but effective work around. please let me show you.
 
-## Where to begin?
+### Where to begin?
 You have to trust me and follow my guide lines STRICTLY. If you got into a problem you can't solve, contact me and I'll Help you, otherwise
 * Provide real Details
 * Renew your domain when it's available
@@ -35,7 +35,7 @@ You have to trust me and follow my guide lines STRICTLY. If you got into a probl
 
 If you get these nice and clear, You're good to go. Let's Begin shall we?
 
-## Registering Your Accounts
+### Registering Your Accounts
 Use your email and password option here, Do NOT EVER USE ANY 3RD PARTY LOGINS! Use Email and Password! otherwise you'll be in a big trouble in the future, and freenom doesn't even care about it so probably you'll lose your domain and your account. Now that's out of the way, Just Follow me
 
 Note: I'm using a temp mail But you have to use an authentic mail address, use your Gmail instead.
@@ -182,29 +182,29 @@ To be clear, click add DNS button to add your DNS Records and you're Greeted wit
 
 Here you can see I did the above steps with all of my domains and now they are secure and safe, also fast.
 
-## Now What?
+### Now What?
 
 That's all for today guys, you can do allot more with these Domains now! Setup custom emails, setup custom websites and lot more! I'll provide you allot more tutorials to continue with in a later day so stay tuned.
 
-## How do i renew my domain?
+### How do i renew my domain?
 
 After you 1 year time period has over, You will be greeted with a renew button in freenom domain management page. click on it and you're pretty much done.
 
-## Web hosting? emails?
+### Web hosting? emails?
 
 I Will cover them in the future guys, It's not today's topic.
 
-## Where can I use these now?
+### Where can I use these now?
 
 Anywhere, Blogger, wordpress, firebase etc etc.... If you're visiting my blog in the early ages, even I'm using a .Tk domain to be clear.
 
-## SSL Certificates?
+### SSL Certificates?
 
 Netlify offers SSL Certificates for free so go to your domain to set it up. It's free and could take up-to 24h to completely offer a Certificate.
 
-## How can i get a .com .net .org domain?
+### How can i get a .com .net .org domain?
 
 Don't waste your money on godaddy or websites like that for costy domains, use [Namecheap.com](https://www.namecheap.com/) [Dynadot.com](https://www.dynadot.com/) or [Freenom.com](https://www.freenom.com/). Always compare and you'll be able to find a Pretty cheap deal so far.
 
-# Conclusion
+## Conclusion
 Free TLD Domains are easy to get and use, also .Tk is the #3 of world's most registered domain names according to [This](https://www.techradar.com/news/these-are-the-worlds-most-popular-web-domains) Article (2019) and don't be shy to use it. There are companies using even subdomains! just use it in the correct way.

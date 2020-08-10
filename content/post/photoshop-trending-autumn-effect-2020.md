@@ -7,7 +7,7 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
 Autumn effect is something now getting in trend on social medias, It's a simple filter but most of the softwares get it wrong and making a messed up look but untrained eye isn't going to notice that until doing some post processing. Here Let's re-create that effect on photoshop so it's more versatile for more adjustments. Here's a before and after photo of me (Not the prettiest one but it worked) with the effect applied
 
 Before
@@ -16,7 +16,7 @@ Before
 After
 ![Nushan Kodikara](/uploads/20200717E_03.JPG)
 
-## Let's Get Started.
+### Let's Get Started.
 First thing's first, import the photo into the photoshop and duplicate the layer so we can work with more confidence.
 
 ![Adjustment layer icon](https://pe-images.s3.amazonaws.com/photo-editing/cc/tone-and-color/brightness-contrast-adjustment-layer/new-adjustment-layer-icon.gif)
@@ -56,5 +56,5 @@ And Wolah! Here's the finished photo.
 
 ![Nushan Kodikara](/uploads/20200717E_03.JPG)
 
-# Conclusion
+## Conclusion
 Well, here you go it's a nice and simple effect most of the users doesn't know about. we can create more stunning looking photos from photoshop than using pre-made color filters so I'm preferring this method over others.

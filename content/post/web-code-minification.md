@@ -7,11 +7,11 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
 
 Code minification is a process modern web developers use on developments to speed up the loading of the codes, reduce the code size and decrease the ability to reverse-engineer the code. And it's pretty easy to use too, but sadly not most of the developers know how to do it themselves. Let's Explore Shall we.
 
-# Minification
+## Minification
 
 Now, We use an online tool for this process, https://www.willpeavy.com/tools/minifier/ Goto this website for the tool, and It's pretty simple to use but highly effective. Let's consider a huge HTML code like this.
 
@@ -314,5 +314,5 @@ Now This is the code of our main page, I know it's huge but I also need a huge b
 
 Now notice the code get compressed? this is a simple but effective way to improve your site's loading speed. And That's what in the top code but compressed. I know I know that looks cute and believe it or not, That works. You can use this with HTML CSS and JS and all of your files combined, That's allot of space to save on.
 
-# Conclusion
+## Conclusion
 This is something like a joke, I know. But it really works. Even you can check my site out using ctrl + U on desktop PCs, and you can explore the code of my website. It dramatically improves on SEO, Loading time and many more on your website. I Hope, It'll get in handy for your next project.

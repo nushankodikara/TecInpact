@@ -7,11 +7,11 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
 
 We did the programming part with JS, Now let's implement our knowledge into action, Let's create JS which can interact with webpages, This would be a long post so hold tight and here we go.
 
-# Browser environment, specs
+## Browser environment, specs
 
 The JavaScript language was initially created for web browsers. Since then it has evolved and become a language with many uses and platforms.
 
@@ -47,7 +47,7 @@ alert(window.innerHeight); // inner window height
 
 There are more window-specific methods and properties, we'll cover them later.
 
-## DOM (Document Object Model)
+### DOM (Document Object Model)
 
 Document Object Model, or DOM for short, represents all page content as objects that can be modified.
 
@@ -72,7 +72,7 @@ There's also a separate specification, [CSS Object Model (CSSOM)](https://www.w3
 
 CSSOM is used together with DOM when we modify style rules for the document. In practice though, CSSOM is rarely required, because we rarely need to modify CSS rules from JavaScript (usually we just add/remove CSS classes, not modify their CSS rules), but that's also possible.
 
-## BOM (Browser Object Model)
+### BOM (Browser Object Model)
 
 The Browser Object Model (BOM) represents additional objects provided by the browser (host environment) for working with everything except the document.
 
@@ -96,7 +96,7 @@ BOM is the part of the general [HTML specification](https://html.spec.whatwg.org
 
 Yes, you heard that right. The HTML spec at <https://html.spec.whatwg.org> is not only about the "HTML language" (tags, attributes), but also covers a bunch of objects, methods and browser-specific DOM extensions. That's "HTML in broad terms". Also, some parts have additional specs listed at <https://spec.whatwg.org>.
 
-## Summary
+### Summary
 
 Talking about standards, we have:
 
@@ -125,7 +125,7 @@ libs:
 
 ---
 
-# DOM tree
+## DOM tree
 
 The backbone of an HTML document is tags.
 
@@ -151,7 +151,7 @@ Here we used `style.background` to change the background color of `document.body
 
 Soon we'll learn more ways to manipulate the DOM, but first we need to know about its structure.
 
-## An example of the DOM
+### An example of the DOM
 
 Let's start with the following simple document:
 
@@ -223,7 +223,7 @@ Developer tools save screen space this way.
 
 On further DOM pictures we'll sometimes omit them when they are irrelevant. Such spaces usually do not affect how the document is displayed.
 
-## Autocorrection
+### Autocorrection
 
 If the browser encounters malformed HTML, it automatically corrects it when making the DOM.
 
@@ -280,7 +280,7 @@ drawHtmlTree(node5,  'div.domtree', 600, 200);
 
 You see? The `<tbody>` appeared out of nowhere. You should keep this in mind while working with tables to avoid surprises.
 
-## Other node types
+### Other node types
 
 There are some other node types besides elements and text nodes.
 
@@ -327,7 +327,7 @@ There are [12 node types](https://dom.spec.whatwg.org/#node). In practice we usu
 3. text nodes -- contain text.
 4. comments -- sometimes we can put information there, it won't be shown, but JS can read it from the DOM.
 
-## See it for yourself
+### See it for yourself
 
 To see the DOM structure in real-time, try [Live DOM Viewer](http://software.hixie.ch/utilities/js/live-dom-viewer/). Just type in the document, and it will show up as a DOM at an instant.
 
@@ -357,7 +357,7 @@ At the right part of the tools there are the following subtabs:
 
 The best way to study them is to click around. Most values are editable in-place.
 
-## Interaction with console
+### Interaction with console
 
 As we work the DOM, we also may want to apply JavaScript to it. Like: get a node and run some code to modify it, to see the result. Here are few tips to travel between the Elements tab and the console.
 
@@ -384,7 +384,7 @@ That's for debugging purposes of course. From the next chapter on we'll access a
 
 The browser developer tools are a great help in development: we can explore the DOM, try things and see what goes wrong.
 
-## Summary
+### Summary
 
 An HTML/XML document is represented inside the browser as the DOM tree.
 
@@ -405,7 +405,7 @@ libs:
 ---
 
 
-# Walking the DOM
+## Walking the DOM
 
 The DOM allows us to do anything with elements and their contents, but first we need to reach the corresponding DOM object.
 
@@ -417,7 +417,7 @@ Here's a picture of links that allow for travel between DOM nodes:
 
 Let's discuss them in more detail.
 
-## On top: documentElement and body
+### On top: documentElement and body
 
 The topmost tree nodes are available directly as `document` properties:
 
@@ -459,7 +459,7 @@ So, in the example below the first `alert` shows `null`:
 
 In the DOM, the `null` value means "doesn't exist" or "no such node".
 
-## Children: childNodes, firstChild, lastChild
+### Children: childNodes, firstChild, lastChild
 
 There are two terms that we'll use from now on:
 
@@ -523,7 +523,7 @@ elem.childNodes[elem.childNodes.length - 1] === elem.lastChild
 
 There's also a special function `elem.hasChildNodes()` to check whether there are any child nodes.
 
-### DOM collections
+#### DOM collections
 
 As we can see, `childNodes` looks like an array. But actually it's not an array, but rather a *collection* -- a special array-like iterable object.
 
@@ -571,7 +571,7 @@ Please, don't. The `for..in` loop iterates over all enumerable properties. And c
 </body>
 ```
 
-## Siblings and the parent
+### Siblings and the parent
 
 *Siblings* are nodes that are children of the same parent.
 
@@ -603,7 +603,7 @@ alert( document.head.nextSibling ); // HTMLBodyElement
 alert( document.body.previousSibling ); // HTMLHeadElement
 ```
 
-## Element-only navigation
+### Element-only navigation
 
 Navigation properties listed above refer to *all* nodes. For instance, in `childNodes` we can see both text nodes, element nodes, and even comment nodes if there exist.
 
@@ -663,7 +663,7 @@ Let's modify one of the examples above: replace `childNodes` with `children`. No
 </html>
 ```
 
-## More links: tables [#dom-navigation-tables]
+### More links: tables [#dom-navigation-tables]
 
 Till now we described the basic navigation properties.
 
@@ -710,7 +710,7 @@ The specification: [tabular data](https://html.spec.whatwg.org/multipage/tables.
 
 There are also additional navigation properties for HTML forms. We'll look at them later when we start working with forms.
 
-## Summary
+### Summary
 
 Given a DOM node, we can go to its immediate neighbors using navigation properties.
 
@@ -721,13 +721,13 @@ There are two main sets of them:
 
 Some types of DOM elements, e.g. tables, provide additional properties and collections to access their content.
 
-# Searching: getElement*, querySelector*
+## Searching: getElement*, querySelector*
 
 DOM navigation properties are great when elements are close to each other. What if they are not? How to get an arbitrary element of the page?
 
 There are additional searching methods for that.
 
-## document.getElementById or just id
+### document.getElementById or just id
 
 If an element has the `id` attribute, we can get the element using the method `document.getElementById(id)`, no matter where it is.
 
@@ -791,7 +791,7 @@ If there are multiple elements with the same `id`, then the behavior of methods 
 
 The method `getElementById` that can be called only on `document` object. It looks for the given `id` in the whole document.
 
-## querySelectorAll [#querySelectorAll]
+### querySelectorAll [#querySelectorAll]
 
 By far, the most versatile method, `elem.querySelectorAll(css)` returns all elements inside `elem` matching the given CSS selector.
 
@@ -821,13 +821,13 @@ This method is indeed powerful, because any CSS selector can be used.
 
 Pseudo-classes in the CSS selector like `:hover` and `:active` are also supported. For instance, `document.querySelectorAll(':hover')` will return the collection with elements that the pointer is over now (in nesting order: from the outermost `<html>` to the most nested one).
 
-## querySelector [#querySelector]
+### querySelector [#querySelector]
 
 The call to `elem.querySelector(css)` returns the first element for the given CSS selector.
 
 In other words, the result is the same as `elem.querySelectorAll(css)[0]`, but the latter is looking for *all* elements and picking one, while `elem.querySelector` just looks for one. So it's faster and also shorter to write.
 
-## matches
+### matches
 
 Previous methods were searching the DOM.
 
@@ -853,7 +853,7 @@ For instance:
 </script>
 ```
 
-## closest
+### closest
 
 *Ancestors* of an element are: parent, the parent of parent, its parent and so on. The ancestors together form the chain of parents from the element to the top.
 
@@ -883,7 +883,7 @@ For instance:
 </script>
 ```
 
-## getElementsBy*
+### getElementsBy*
 
 There are also other methods to look for nodes by a tag, class, etc.
 
@@ -971,7 +971,7 @@ Looking for `.article` elements:
 </script>
 ```
 
-## Live collections
+### Live collections
 
 All methods `"getElementsBy*"` return a *live* collection. Such collections always reflect the current state of the document and "auto-update" when it changes.
 
@@ -1021,7 +1021,7 @@ If we use it instead, then both scripts output `1`:
 
 Now we can easily see the difference. The static collection did not increase after the appearance of a new `div` in the document.
 
-## Summary
+### Summary
 
 There are 6 main methods to search for nodes in DOM:
 
@@ -1084,13 +1084,13 @@ Besides that:
 And let's mention one more method here to check for the child-parent relationship, as it's sometimes useful:
 -  `elemA.contains(elemB)` returns true if `elemB` is inside `elemA` (a descendant of `elemA`) or when `elemA==elemB`.
 
-# Node properties: type, tag and contents
+## Node properties: type, tag and contents
 
 Let's get a more in-depth look at DOM nodes.
 
 In this chapter we'll see more into what they are and learn their most used properties.
 
-## DOM node classes
+### DOM node classes
 
 Different DOM nodes may have different properties. For instance, an element node corresponding to tag `<a>` has link-related properties, and the one corresponding to `<input>` has input-related properties and so on. Text nodes are not the same as element nodes. But there are also common properties and methods between all of them, because all classes of DOM nodes form a single hierarchy.
 
@@ -1196,7 +1196,7 @@ interface HTMLInputElement: HTMLElement {
 }
 ```
 
-## The "nodeType" property
+### The "nodeType" property
 
 The `nodeType` property provides one more, "old-fashioned" way to get the "type" of a DOM node.
 
@@ -1227,7 +1227,7 @@ For instance:
 
 In modern scripts, we can use `instanceof` and other class-based tests to see the node type, but sometimes `nodeType` may be simpler. We can only read `nodeType`, not change it.
 
-## Tag: nodeName and tagName
+### Tag: nodeName and tagName
 
 Given a DOM node, we can read its tag name from `nodeName` or `tagName` properties:
 
@@ -1276,7 +1276,7 @@ In HTML mode `tagName/nodeName` is always uppercased: it's `BODY` either for `<b
 In XML mode the case is kept "as is". Nowadays XML mode is rarely used.
 
 
-## innerHTML: the contents
+### innerHTML: the contents
 
 The [innerHTML](https://w3c.github.io/DOM-Parsing/#widl-Element-innerHTML) property allows to get the HTML inside the element as a string.
 
@@ -1312,7 +1312,7 @@ We can try to insert invalid HTML, the browser will fix our errors:
 
 If `innerHTML` inserts a `<script>` tag into the document -- it becomes a part of HTML, but doesn't execute.
 
-### Beware: "innerHTML+=" does a full overwrite
+#### Beware: "innerHTML+=" does a full overwrite
 
 We can append HTML to an element by using `elem.innerHTML+="more html"`.
 
@@ -1348,7 +1348,7 @@ There are other side-effects as well. For instance, if the existing text was sel
 
 Luckily, there are other ways to add HTML besides `innerHTML`, and we'll study them soon.
 
-## outerHTML: full HTML of the element
+### outerHTML: full HTML of the element
 
 The `outerHTML` property contains the full HTML of the element. That's like `innerHTML` plus the element itself.
 
@@ -1401,7 +1401,7 @@ It's so easy to make an error here: modify `div.outerHTML` and then continue to 
 
 We can write to `elem.outerHTML`, but should keep in mind that it doesn't change the element we're writing to ('elem'). It puts the new HTML in its place instead. We can get references to the new elements by querying the DOM.
 
-## nodeValue/data: text node content
+### nodeValue/data: text node content
 
 The `innerHTML` property is only valid for element nodes.
 
@@ -1439,7 +1439,7 @@ Sometimes developers embed information or template instructions into HTML in the
 
 ...Then JavaScript can read it from `data` property and process embedded instructions.
 
-## textContent: pure text
+### textContent: pure text
 
 The `textContent` provides access to the *text* inside the element: only text, minus all `<tags>`.
 
@@ -1487,7 +1487,7 @@ Compare the two:
 
 In most cases, we expect the text from a user, and want to treat it as text. We don't want unexpected HTML in our site. An assignment to `textContent` does exactly that.
 
-## The "hidden" property
+### The "hidden" property
 
 The "hidden" attribute and the DOM property specifies whether the element is visible or not.
 
@@ -1518,7 +1518,7 @@ Here's a blinking element:
 </script>
 ```
 
-## More properties
+### More properties
 
 DOM elements also have additional properties, in particular those that depend on the class:
 
@@ -1545,7 +1545,7 @@ If we want to know the full list of supported properties for a given class, we c
 
 Or if we'd like to get them fast or are interested in a concrete browser specification -- we can always output the element using `console.dir(elem)` and read the properties. Or explore "DOM properties" in the Elements tab of the browser developer tools.
 
-## Summary
+### Summary
 
 Each DOM node belongs to a certain class. The classes form a hierarchy. The full set of properties and methods come as the result of inheritance.
 
@@ -1576,7 +1576,7 @@ DOM nodes also have other properties depending on their class. For instance, `<i
 
 However, HTML attributes and DOM properties are not always the same, as we'll see in the next chapter.
 
-# Attributes and properties
+## Attributes and properties
 
 When the browser loads the page, it "reads" (another word: "parses") the HTML and generates DOM objects from it. For element nodes, most standard HTML attributes automatically become properties of DOM objects.
 
@@ -1584,7 +1584,7 @@ For instance, if the tag is `<body id="page">`, then the DOM object has `body.id
 
 But the attribute-property mapping is not one-to-one! In this chapter we'll pay attention to separate these two notions, to see how to work with them, when they are the same, and when they are different.
 
-## DOM properties
+### DOM properties
 
 We've already seen built-in DOM properties. There are a lot. But technically no one limits us, and if there aren't enough, we can add our own.
 
@@ -1627,7 +1627,7 @@ So, DOM properties and methods behave just like those of regular JavaScript obje
 - They can have any value.
 - They are case-sensitive (write `elem.nodeType`, not `elem.NoDeTyPe`).
 
-## HTML attributes
+### HTML attributes
 
 In HTML, tags may have attributes. When the browser parses the HTML to create DOM objects for tags, it recognizes *standard* attributes and creates DOM properties from them.
 
@@ -1718,7 +1718,7 @@ Please note:
 3. All attributes including ones that we set are visible in `outerHTML`.
 4. The `attributes` collection is iterable and has all the attributes of the element (standard and non-standard) as objects with `name` and `value` properties.
 
-## Property-attribute synchronization
+### Property-attribute synchronization
 
 When a standard attribute changes, the corresponding property is auto-updated, and (with some exceptions) vice versa.
 
@@ -1766,7 +1766,7 @@ In the example above:
 
 That "feature" may actually come in handy, because the user actions may lead to `value` changes, and then after them, if we want to recover the "original" value from HTML, it's in the attribute.
 
-## DOM properties are typed
+### DOM properties are typed
 
 DOM properties are not always strings. For instance, the `input.checked` property (for checkboxes) is a boolean:
 
@@ -1814,7 +1814,7 @@ Here's an example:
 If we need the value of `href` or any other attribute exactly as written in the HTML, we can use `getAttribute`.
 
 
-## Non-standard attributes, dataset
+### Non-standard attributes, dataset
 
 When writing HTML, we use a lot of standard attributes. But what about non-standard, custom ones? First, let's see whether they are useful or not? What for?
 
@@ -1938,7 +1938,7 @@ Using `data-*` attributes is a valid, safe way to pass custom data.
 
 Please note that we can not only read, but also modify data-attributes. Then CSS updates the view accordingly: in the example above the last line `(*)` changes the color to blue.
 
-## Summary
+### Summary
 
 - Attributes -- is what's written in HTML.
 - Properties -- is what's in DOM objects.
@@ -1963,13 +1963,13 @@ For most situations using DOM properties is preferable. We should refer to attri
 - We need a non-standard attribute. But if it starts with `data-`, then we should use `dataset`.
 - We want to read the value "as written" in HTML. The value of the DOM property may be different, for instance the `href` property is always a full URL, and we may want to get the "original" value.
 
-# Modifying the document
+## Modifying the document
 
 DOM modification is the key to creating "live" pages.
 
 Here we'll see how to create new elements "on the fly" and modify the existing page content.
 
-## Example: show a message
+### Example: show a message
 
 Let's demonstrate using an example. We'll add a message on the page that looks nicer than `alert`.
 
@@ -1995,7 +1995,7 @@ Here's how it will look:
 
 That was the HTML example. Now let's create the same `div` with JavaScript (assuming that the styles are in the HTML/CSS already).
 
-## Creating an element
+### Creating an element
 
 To create DOM nodes, there are two methods:
 
@@ -2015,7 +2015,7 @@ To create DOM nodes, there are two methods:
 
 Most of the time we need to create element nodes, such as the `div` for the message.
 
-### Creating the message
+#### Creating the message
 
 Creating the message div takes 3 steps:
 
@@ -2032,7 +2032,7 @@ div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
 
 We've created the element. But as of now it's only in a variable named `div`, not in the page yet. So we can't see it.
 
-## Insertion methods
+### Insertion methods
 
 To make the `div` show up, we need to insert it somewhere into `document`. For instance, into `<body>` element, referenced by `document.body`.
 
@@ -2146,7 +2146,7 @@ So, these methods can only be used to insert DOM nodes or text pieces.
 
 But what if we'd like to insert an HTML string "as html", with all tags and stuff working, in the same manner as `elem.innerHTML` does it?
 
-## insertAdjacentHTML/Text/Element
+### insertAdjacentHTML/Text/Element
 
 For that we can use another, pretty versatile method: `elem.insertAdjacentHTML(where, html)`.
 
@@ -2212,7 +2212,7 @@ So here's an alternative variant of showing a message:
 </script>
 ```
 
-## Node removal
+### Node removal
 
 To remove a node, there's a method `node.remove()`.
 
@@ -2256,7 +2256,7 @@ For instance, let's swap elements:
 </script>
 ```
 
-## Cloning nodes: cloneNode
+### Cloning nodes: cloneNode
 
 How to insert one more similar message?
 
@@ -2293,7 +2293,7 @@ An example of copying the message:
 </script>
 ```
 
-## DocumentFragment [#document-fragment]
+### DocumentFragment [#document-fragment]
 
 `DocumentFragment` is a special DOM node that serves as a wrapper to pass around lists of nodes.
 
@@ -2359,7 +2359,7 @@ ul.append(...getListContent()); // append + "..." operator = friends!
 
 We mention `DocumentFragment` mainly because there are some concepts on top of it, like [template](info:template-element) element, that we'll cover much later.
 
-## Old-school insert/remove methods
+### Old-school insert/remove methods
 
 [old]
 
@@ -2438,7 +2438,7 @@ The only reason we list these methods here is that you can find them in many old
 
 All these methods return the inserted/removed node. In other words, `parentElem.appendChild(node)` returns `node`. But usually the returned value is not used, we just run the method.
 
-## A word about "document.write"
+### A word about "document.write"
 
 There's one more, very ancient method of adding something to a web-page: `document.write`.
 
@@ -2487,7 +2487,7 @@ So it works blazingly fast, because there's *no DOM modification* involved. It w
 
 So if we need to add a lot of text into HTML dynamically, and we're at page loading phase, and the speed matters, it may help. But in practice these requirements rarely come together. And usually we can see this method in scripts just because they are old.
 
-## Summary
+### Summary
 
 - Methods to create new nodes:
     - `document.createElement(tag)` -- creates an element with the given tag,
@@ -2525,7 +2525,7 @@ So if we need to add a lot of text into HTML dynamically, and we're at page load
 
     After the page is loaded such a call erases the document. Mostly seen in old scripts.
 
-# Styles and classes
+## Styles and classes
 
 Before we get into JavaScript's ways of dealing with styles and classes -- here's an important rule. Hopefully it's obvious enough, but we still have to mention it.
 
@@ -2550,7 +2550,7 @@ elem.style.top = top; // e.g '456px'
 
 For other cases, like making the text red, adding a background icon -- describe that in CSS and then add the class (JavaScript can do that). That's more flexible and easier to support.
 
-## className and classList
+### className and classList
 
 Changing a class is one of the most often used actions in scripts.
 
@@ -2609,7 +2609,7 @@ Besides, `classList` is iterable, so we can list all classes with `for..of`, lik
 </body>
 ```
 
-## Element style
+### Element style
 
 The property `elem.style` is an object that corresponds to what's written in the `"style"` attribute. Setting `elem.style.width="100px"` works the same as if we had in the attribute `style` a string `width:100px`.
 
@@ -2636,7 +2636,7 @@ button.style.MozBorderRadius = '5px';
 button.style.WebkitBorderRadius = '5px';
 ```
 
-## Resetting the style property
+### Resetting the style property
 
 Sometimes we want to assign a style property, and later remove it.
 
@@ -2676,7 +2676,7 @@ This property is rarely used, because such assignment removes all existing style
 
 The same can be accomplished by setting an attribute: `div.setAttribute('style', 'color: red...')`.
 
-## Mind the units
+### Mind the units
 
 Don't forget to add CSS units to values.
 
@@ -2703,7 +2703,7 @@ For instance, we should not set `elem.style.top` to `10`, but rather to `10px`. 
 
 Please note: the browser "unpacks" the property `style.margin` in the last lines and infers `style.marginLeft` and `style.marginTop` from it.
 
-## Computed styles: getComputedStyle
+### Computed styles: getComputedStyle
 
 So, modifying a style is easy. But how to *read* it?
 
@@ -2802,7 +2802,7 @@ But `getComputedStyle` does not give access to that color, because otherwise an 
 
 JavaScript may not see the styles applied by `:visited`. And also, there's a limitation in CSS that forbids applying geometry-changing styles in `:visited`. That's to guarantee that there's no side way for an evil page to test if a link was visited and hence to break the privacy.
 
-## Summary
+### Summary
 
 To manage classes, there are two DOM properties:
 
@@ -2819,13 +2819,13 @@ To read the resolved styles (with respect to all classes, after all CSS is appli
 
 - The `getComputedStyle(elem, [pseudo])` returns the style-like object with them. Read-only.
 
-# Element size and scrolling
+## Element size and scrolling
 
 There are many JavaScript properties that allow us to read information about element width, height and other geometry features.
 
 We often need them when moving or positioning elements in JavaScript.
 
-## Sample element
+### Sample element
 
 As a sample element to demonstrate properties we'll use the one given below:
 
@@ -2858,7 +2858,7 @@ So, without scrollbar the content width would be `300px`, but if the scrollbar i
 
 Usually paddings are shown empty on our illustrations, but if there's a lot of text in the element and it overflows, then browsers show the "overflowing" text at `padding-bottom`, that's normal.
 
-## Geometry
+### Geometry
 
 Here's the overall picture with geometry properties:
 
@@ -2868,7 +2868,7 @@ Values of these properties are technically numbers, but these numbers are "of pi
 
 Let's start exploring the properties starting from the outside of the element.
 
-## offsetParent, offsetLeft/Top
+### offsetParent, offsetLeft/Top
 
 These properties are rarely needed, but still they are the "most outer" geometry properties, so we'll start with them.
 
@@ -2905,7 +2905,7 @@ There are several occasions when `offsetParent` is `null`:
 2. For `<body>` and `<html>`.
 3. For elements with `position:fixed`.
 
-## offsetWidth/Height
+### offsetWidth/Height
 
 Now let's move on to the element itself.
 
@@ -2934,7 +2934,7 @@ function isHidden(elem) {
 
 Please note that such `isHidden` returns `true` for elements that are on-screen, but have zero sizes (like an empty `<div>`).
 
-## clientTop/Left
+### clientTop/Left
 
 Inside the element we have the borders.
 
@@ -2959,7 +2959,7 @@ Here's the example in hebrew:
 
 ![](metric-client-left-top-rtl.svg)
 
-## clientWidth/Height
+### clientWidth/Height
 
 These properties provide the size of the area inside the element borders.
 
@@ -2979,7 +2979,7 @@ Now `clientWidth` -- here the content width is not `300px`, but `284px`, because
 
 So when there's no padding we can use `clientWidth/clientHeight` to get the content area size.
 
-## scrollWidth/Height
+### scrollWidth/Height
 
 These properties are like `clientWidth/clientHeight`, but they also include the scrolled out (hidden) parts:
 
@@ -3007,7 +3007,7 @@ Click the button to expand the element:
 <button style="padding:0" onclick="element.style.height = `${element.scrollHeight}px`">element.style.height = `${element.scrollHeight}px`</button>
 ```
 
-## scrollLeft/scrollTop
+### scrollLeft/scrollTop
 
 Properties `scrollLeft/scrollTop` are the width/height of the hidden, scrolled out part of the element.
 
@@ -3027,7 +3027,7 @@ If you click the element below, the code `elem.scrollTop += 10` executes. That m
 
 Setting `scrollTop` to `0` or a big value, such as `1e9` will make the element scroll to the very top/bottom respectively.
 
-## Don't take width/height from CSS
+### Don't take width/height from CSS
 
 We've just covered geometry properties of DOM elements, that can be used to get widths, heights and calculate distances.
 
@@ -3074,7 +3074,7 @@ On a Desktop Windows OS, Firefox, Chrome, Edge all reserve the space for the scr
 
 Please note that the described difference is only about reading `getComputedStyle(...).width` from JavaScript, visually everything is correct.
 
-## Summary
+### Summary
 
 Elements have the following geometry properties:
 
@@ -3088,13 +3088,13 @@ Elements have the following geometry properties:
 
 All properties are read-only except `scrollLeft/scrollTop` that make the browser scroll the element if changed.
 
-# Window sizes and scrolling
+## Window sizes and scrolling
 
 How do we find the width and height of the browser window? How do we get the full width and height of the document, including the scrolled out part? How do we scroll the page using JavaScript?
 
 For most such requests, we can use the root document element `document.documentElement`, that corresponds to the `<html>` tag. But there are additional methods and peculiarities important enough to consider.
 
-## Width/height of the window
+### Width/height of the window
 
 To get window width and height we can use `clientWidth/clientHeight` of `document.documentElement`:
 
@@ -3124,7 +3124,7 @@ Please note: top-level geometry properties may work a little bit differently whe
 
 In modern HTML we should always write `DOCTYPE`.
 
-## Width/height of the document
+### Width/height of the document
 
 Theoretically, as the root document element is `document.documentElement`, and it encloses all the content, we could measure document full size as `document.documentElement.scrollWidth/scrollHeight`.
 
@@ -3144,7 +3144,7 @@ alert('Full document height, with scrolled out part: ' + scrollHeight);
 
 Why so? Better don't ask. These inconsistencies come from ancient times, not a "smart" logic.
 
-## Get the current scroll [#page-scroll]
+### Get the current scroll [#page-scroll]
 
 DOM elements have their current scroll state in `elem.scrollLeft/scrollTop`.
 
@@ -3159,7 +3159,7 @@ alert('Current scroll from the left: ' + window.pageXOffset);
 
 These properties are read-only.
 
-## Scrolling: scrollTo, scrollBy, scrollIntoView [#window-scroll]
+### Scrolling: scrollTo, scrollBy, scrollIntoView [#window-scroll]
 
 
 To scroll the page from JavaScript, its DOM must be fully built.
@@ -3189,7 +3189,7 @@ Alternatively, there's a simpler, universal solution: special methods  [window.s
 
 These methods work for all browsers the same way.
 
-## scrollIntoView
+### scrollIntoView
 
 For completeness, let's cover one more method:  [elem.scrollIntoView(top)](mdn:api/Element/scrollIntoView).
 
@@ -3208,7 +3208,7 @@ And this button scrolls the page to show it at the bottom:
 <button onclick="this.scrollIntoView(false)">this.scrollIntoView(false)</button>
 ```
 
-## Forbid the scrolling
+### Forbid the scrolling
 
 Sometimes we need to make the document "unscrollable". For instance, when we need to cover it with a large message requiring immediate attention, and we want the visitor to interact with that message, not with the document.
 
@@ -3230,7 +3230,7 @@ The drawback of the method is that the scrollbar disappears. If it occupied some
 
 That looks a bit odd, but can be worked around if we compare `clientWidth` before and after the freeze, and if it increased (the scrollbar disappeared) then add `padding` to `document.body` in place of the scrollbar, to keep the content width the same.
 
-## Summary
+### Summary
 
 Geometry:
 
@@ -3254,7 +3254,7 @@ Scrolling:
     - `window.scrollBy(x,y)` -- scroll relative the current place,
     - `elem.scrollIntoView(top)` -- scroll to make `elem` visible (align with the top/bottom of the window).
 
-# Coordinates
+## Coordinates
 
 To move elements around we should be familiar with coordinates.
 
@@ -3274,7 +3274,7 @@ When the document scrolled:
 - `pageY` - document-relative coordinate stayed the same, it's counted from the document top (now scrolled out).
 - `clientY` - window-relative coordinate did change (the arrow became shorter), as the same point became closer to window top.
 
-## Element coordinates: getBoundingClientRect
+### Element coordinates: getBoundingClientRect
 
 The method `elem.getBoundingClientRect()` returns window coordinates for a minimal rectangle that encloses `elem` as an object of built-in [DOMRect](https://www.w3.org/TR/geometry-1/#domrect) class.
 
@@ -3353,7 +3353,7 @@ But in CSS positioning, `right` property means the distance from the right edge,
 If we just look at the picture above, we can see that in JavaScript it is not so. All window coordinates are counted from the top-left corner, including these ones.
 
 
-## elementFromPoint(x, y) [#elementFromPoint]
+### elementFromPoint(x, y) [#elementFromPoint]
 
 The call to `document.elementFromPoint(x, y)` returns the most nested element at window coordinates `(x, y)`.
 
@@ -3393,7 +3393,7 @@ elem.style.background = ''; // Error!
 ```
 
 
-## Using for "fixed" positioning
+### Using for "fixed" positioning
 
 Most of time we need coordinates in order to position something.
 
@@ -3444,7 +3444,7 @@ The reason is obvious: the message element relies on `position:fixed`, so it rem
 
 To change that, we need to use document-based coordinates and `position:absolute`.
 
-## Document coordinates [#getCoords]
+### Document coordinates [#getCoords]
 
 Document-relative coordinates start from the upper-left corner of the document, not the window.
 
@@ -3494,7 +3494,7 @@ function createMessageUnder(elem, html) {
 }
 ```
 
-## Summary
+### Summary
 
 Any point on the page has coordinates:
 
@@ -3505,7 +3505,7 @@ Window coordinates are great to use with `position:fixed`, and document coordina
 
 Both coordinate systems have their pros and cons; there are times we need one or the other one, just like CSS `position` `absolute` and `fixed`.
 
-# Introduction to browser events
+## Introduction to browser events
 
 *An event* is a signal that something has happened. All DOM nodes generate such signals (but events are not limited to DOM).
 
@@ -3533,7 +3533,7 @@ Here's a list of the most useful DOM events, just to take a look at:
 
 There are many other events. We'll get into more details of particular events in next chapters.
 
-## Event handlers
+### Event handlers
 
 To react on events we can assign a *handler* -- a function that runs in case of an event.
 
@@ -3541,7 +3541,7 @@ Handlers are a way to run JavaScript code in case of user actions.
 
 There are several ways to assign a handler. Let's see them, starting from the simplest one.
 
-### HTML-attribute
+#### HTML-attribute
 
 A handler can be set in HTML with an attribute named `on<event>`.
 
@@ -3573,7 +3573,7 @@ Here a click runs the function `countRabbits()`:
 
 As we know, HTML attribute names are not case-sensitive, so `ONCLICK` works as well as `onClick` and `onCLICK`... But usually attributes are lowercased: `onclick`.
 
-### DOM property
+#### DOM property
 
 We can assign a handler using a DOM property `on<event>`.
 
@@ -3633,7 +3633,7 @@ In the example below adding a handler with JavaScript overwrites the existing ha
 
 To remove a handler -- assign `elem.onclick = null`.
 
-## Accessing the element: this
+### Accessing the element: this
 
 The value of `this` inside a handler is the element. The one which has the handler on it.
 
@@ -3643,7 +3643,7 @@ In the code below `button` shows its contents using `this.innerHTML`:
 <button onclick="alert(this.innerHTML)">Click me</button>
 ```
 
-## Possible mistakes
+### Possible mistakes
 
 If you're starting to work with events -- please note some subtleties.
 
@@ -3700,7 +3700,7 @@ document.body.setAttribute('onclick', function() { alert(1) });
 
 Assign a handler to `elem.onclick`, not `elem.ONCLICK`, because DOM properties are case-sensitive.
 
-## addEventListener
+### addEventListener
 
 The fundamental problem of the aforementioned ways to assign handlers -- we can't assign multiple handlers to one event.
 
@@ -3813,7 +3813,7 @@ document.addEventListener("DOMContentLoaded", function() {
 So `addEventListener` is more universal. Although, such events are an exception rather than the rule.
 
 
-## Event object
+### Event object
 
 To properly handle an event we'd want to know more about what's happened. Not just a "click" or a "keydown", but what were the pointer coordinates? Which key was pressed? And so on.
 
@@ -3857,7 +3857,7 @@ That's possible because when the browser reads the attribute, it creates a handl
 
 
 
-## Object handlers: handleEvent
+### Object handlers: handleEvent
 
 We can assign not just a function, but an object as an event handler using `addEventListener`. When an event occurs, its `handleEvent` method is called.
 
@@ -3940,7 +3940,7 @@ The method `handleEvent` does not have to do all the job by itself. It can call 
 
 Now event handlers are clearly separated, that may be easier to support.
 
-## Summary
+### Summary
 
 There are 3 ways to assign event handlers:
 
@@ -3958,7 +3958,7 @@ No matter how you assign the handler -- it gets an event object as the first arg
 
 We'll learn more about events in general and about different types of events in the next chapters.
 
-# Bubbling and capturing
+## Bubbling and capturing
 
 Let's start with an example.
 
@@ -3972,7 +3972,7 @@ This handler is assigned to `<div>`, but also runs if you click any nested tag l
 
 Isn't it a bit strange? Why does the handler on `<div>` run if the actual click was on `<em>`?
 
-## Bubbling
+### Bubbling
 
 The bubbling principle is simple.
 
@@ -4012,7 +4012,7 @@ The key word in this phrase is "almost".
 For instance, a `focus` event does not bubble. There are other examples too, we'll meet them. But still it's an exception, rather than a rule, most events do bubble.
 
 
-## event.target
+### event.target
 
 A handler on a parent element can always get the details about where it actually happened.
 
@@ -4036,7 +4036,7 @@ Check it out:
 
 It's possible that `event.target` could equal `this` -- it happens when the click is made directly on the `<form>` element.
 
-## Stopping bubbling
+### Stopping bubbling
 
 A bubbling event goes from the target element straight up. Normally it goes upwards till `<html>`, and then to `document` object, and some events even reach `window`, calling all handlers on the path.
 
@@ -4075,7 +4075,7 @@ There's usually no real need to prevent the bubbling. A task that seemingly requ
 
 
 
-## Capturing
+### Capturing
 
 There's another phase of event processing called "capturing". It is rarely used in real code, but sometimes can be useful.
 
@@ -4157,7 +4157,7 @@ elem.addEventListener("click", e => alert(2));
 ```
 
 
-## Summary
+### Summary
 
 When an event happens -- the most nested element where it happens gets labeled as the "target element" (`event.target`).
 
@@ -4182,7 +4182,7 @@ The same for event handlers. The code that set the handler on a particular eleme
 Bubbling and capturing lay the foundation for "event delegation" -- an extremely powerful event handling pattern that we study in the next chapter.
 
 
-# Event delegation
+## Event delegation
 
 Capturing and bubbling allow us to implement one of most powerful event handling patterns called *event delegation*.
 
@@ -4289,7 +4289,7 @@ Explanations:
 
 As the result, we have a fast, efficient highlighting code, that doesn't care about the total number of `<td>` in the table.
 
-## Delegation example: actions in markup
+### Delegation example: actions in markup
 
 There are other uses for event delegation.
 
@@ -4354,7 +4354,7 @@ So, what advantages does delegation give us here?
 
 We could also use classes `.action-save`, `.action-load`, but an attribute `data-action` is better semantically. And we can use it in CSS rules too.
 
-## The "behavior" pattern
+### The "behavior" pattern
 
 We can also use event delegation to add "behaviors" to elements *declaratively*, with special attributes and classes.
 
@@ -4362,7 +4362,7 @@ The pattern has two parts:
 1. We add a custom attribute to an element that describes its behavior.
 2. A document-wide handler tracks events, and if an event happens on an attributed element -- performs the action.
 
-### Behavior: Counter
+#### Behavior: Counter
 
 For instance, here the attribute `data-counter` adds a behavior: "increase value on click" to buttons:
 
@@ -4391,7 +4391,7 @@ When we assign an event handler to the `document` object, we should always use `
 For real projects it's normal that there are many handlers on `document` set by different parts of the code.
 
 
-### Behavior: Toggler
+#### Behavior: Toggler
 
 One more example of behavior. A click on an element with the attribute `data-toggle-id` will show/hide the element with the given `id`:
 
@@ -4426,7 +4426,7 @@ We can combine multiple behaviors on a single element as well.
 
 The "behavior" pattern can be an alternative to mini-fragments of JavaScript.
 
-## Summary
+### Summary
 
 Event delegation is really cool! It's one of the most helpful patterns for DOM events.
 
@@ -4453,7 +4453,7 @@ The delegation has its limitations of course:
 - Second, the delegation may add CPU load, because the container-level handler reacts on events in any place of the container, no matter whether they interest us or not. But usually the load is negligible, so we don't take it into account.
 
 
-# Browser default actions
+## Browser default actions
 
 Many events automatically lead to certain actions performed by the browser.
 
@@ -4465,7 +4465,7 @@ For instance:
 
 If we handle an event in JavaScript, we may not want the corresponding browser action to happen, and want to implement another behavior instead.
 
-## Preventing browser actions
+### Preventing browser actions
 
 There are two ways to tell the browser we don't want it to act:
 
@@ -4490,7 +4490,7 @@ The only exception is `return false` from a handler assigned using `on<event>`.
 In all other cases, `return` value is ignored. In particular, there's no sense in returning `true`.
 
 
-### Example: the menu
+#### Example: the menu
 
 Consider a site menu, like this:
 
@@ -4547,7 +4547,7 @@ Try to click on the first `<input>` below -- the `focus` event happens. But if y
 That's because the browser action is canceled on `mousedown`. The focusing is still possible if we use another way to enter the input. For instance, the `key:Tab` key to switch from the 1st input into the 2nd. But not with the mouse click any more.
 
 
-## The "passive" handler option
+### The "passive" handler option
 
 The optional `passive: true` option of `addEventListener` signals the browser that the handler is not going to call `preventDefault()`.
 
@@ -4562,7 +4562,7 @@ The `passive: true` options tells the browser that the handler is not going to c
 For some browsers (Firefox, Chrome), `passive` is `true` by default for `touchstart` and `touchmove` events.
 
 
-## event.defaultPrevented
+### event.defaultPrevented
 
 The property `event.defaultPrevented` is `true` if the default action was prevented, and `false` otherwise.
 
@@ -4667,7 +4667,7 @@ The object will catch any right-click, look through stored handlers and run the 
 
 But then each piece of code that wants a context menu should know about that object and use its help instead of the own `contextmenu` handler.
 
-## Summary
+### Summary
 
 There are many default browser actions:
 
@@ -4695,7 +4695,7 @@ Besides being "just a good thing", that makes your HTML better in terms of acces
 
 Also if we consider the example with `<a>`, then please note: a browser allows us to open such links in a new window (by right-clicking them and other means). And people like that. But if we make a button behave as a link using JavaScript and even look like a link using CSS, then `<a>`-specific browser features still won't work for it.
 
-# Dispatching custom events
+## Dispatching custom events
 
 We can not only assign handlers, but also generate events from JavaScript.
 
@@ -4703,7 +4703,7 @@ Custom events can be used to create "graphical components". For instance, a root
 
 We can generate not only completely new events, that we invent for our own purposes, but also built-in ones, such as `click`, `mousedown` etc. That may be helpful for automated testing.
 
-## Event constructor
+### Event constructor
 
 Build-in event classes form a hierarchy, similar to DOM element classes. The root is the built-in [Event](http://www.w3.org/TR/dom/#event) class.
 
@@ -4722,7 +4722,7 @@ Arguments:
 
   By default both are false: `{bubbles: false, cancelable: false}`.
 
-## dispatchEvent
+### dispatchEvent
 
 After an event object is created, we should "run" it on an element using the call `elem.dispatchEvent(event)`.
 
@@ -4745,7 +4745,7 @@ There is a way to tell a "real" user event from a script-generated one.
 The property `event.isTrusted` is `true` for events that come from real user actions and `false` for script-generated events.
 
 
-## Bubbling example
+### Bubbling example
 
 We can create a bubbling event with the name `"hello"` and catch it on `document`.
 
@@ -4777,7 +4777,7 @@ Notes:
 
 The bubbling mechanics is the same for built-in (`click`) and custom (`hello`) events. There are also capturing and bubbling stages.
 
-## MouseEvent, KeyboardEvent and others
+### MouseEvent, KeyboardEvent and others
 
 Here's a short list of classes for UI Events from the [UI Event specification](https://www.w3.org/TR/uievents):
 
@@ -4828,7 +4828,7 @@ Technically, we can work around that by assigning directly `event.clientX=100` a
 
 The full list of properties for different UI events is in the specification, for instance, [MouseEvent](https://www.w3.org/TR/uievents/#mouseevent).
 
-## Custom events
+### Custom events
 
 For our own, completely new events types like `"hello"` we should use `new CustomEvent`. Technically [CustomEvent](https://dom.spec.whatwg.org/#customevent) is the same as `Event`, with one exception.
 
@@ -4857,7 +4857,7 @@ The `detail` property can have any data. Technically we could live without, beca
 
 Besides, the event class describes "what kind of event" it is, and if the event is custom, then we should use `CustomEvent` just to be clear about what it is.
 
-## event.preventDefault()
+### event.preventDefault()
 
 Many browser events have a "default action", such as navigating to a link, starting a selection, and so on.
 
@@ -4906,7 +4906,7 @@ Any handler can listen for that event with `rabbit.addEventListener('hide',...)`
 
 Please note: the event must have the flag `cancelable: true`, otherwise the call `event.preventDefault()` is ignored.
 
-## Events-in-events are synchronous
+### Events-in-events are synchronous
 
 Usually events are processed in a queue. That is: if the browser is processing `onclick` and a new event occurs, e.g. mouse moved, then it's handing is queued up, corresponding `mousemove` handlers will be called after `onclick` processing is finished.
 
@@ -4968,7 +4968,7 @@ Now `dispatchEvent` runs asynchronously after the current code execution is fini
 
 The output order becomes: 1 -> 2 -> nested.
 
-## Summary
+### Summary
 
 To generate an event from code, we first need to create an event object.
 
@@ -4991,13 +4991,13 @@ Native events might be generated:
 
 Custom events with our own names are often generated for architectural purposes, to signal what happens inside our menus, sliders, carousels etc.
 
-# Mouse events
+## Mouse events
 
 In this chapter we'll get into more details about mouse events and their properties.
 
 Please note: such events may come not only from "mouse devices", but are also from other devices, such as phones and tablets, where they are emulated for compatibility.
 
-## Mouse event types
+### Mouse event types
 
 We've already seen some of these events:
 
@@ -5021,7 +5021,7 @@ We've already seen some of these events:
 
 ...There are several other events too, we'll cover them later.
 
-## Events order
+### Events order
 
 As you can see from the list above, a user action may trigger multiple events.
 
@@ -5039,7 +5039,7 @@ Also we can see the `button` property that allows to detect the mouse button, it
 <input onmousedown="return logMouse(event)" onmouseup="return logMouse(event)" onclick="return logMouse(event)" oncontextmenu="return logMouse(event)" ondblclick="return logMouse(event)" value="Click me with the right or the left mouse button" type="button"> <input onclick="logClear('test')" value="Clear" type="button"> <form id="testform" name="testform"> <textarea style="font-size:12px;height:150px;width:360px;"></textarea></form>
 ```
 
-## Mouse button
+### Mouse button
 
 Click-related events always have the `button` property, which allows to get the exact mouse button.
 
@@ -5071,7 +5071,7 @@ Old code may use `event.which` property that's an old non-standard way of gettin
 As of now, `event.which` is deprecated, we shouldn't use it.
 
 
-## Modifiers: shift, alt, ctrl and meta
+### Modifiers: shift, alt, ctrl and meta
 
 All mouse events include the information about pressed modifier keys.
 
@@ -5122,7 +5122,7 @@ Keyboard combinations are good as an addition to the workflow. So that if the vi
 But if their device doesn't have it -- then there should be a way to live without modifier keys.
 
 
-## Coordinates: clientX/Y, pageX/Y
+### Coordinates: clientX/Y, pageX/Y
 
 All mouse events provide coordinates in two flavours:
 
@@ -5144,7 +5144,7 @@ Move the mouse over the input field to see `clientX/clientY` (the example is in 
 <input onmousemove="this.value=event.clientX+':'+event.clientY" value="Mouse over me">
 ```
 
-## Preventing selection on mousedown
+### Preventing selection on mousedown
 
 Double mouse click has a side-effect that may be disturbing in some interfaces: it selects text.
 
@@ -5185,7 +5185,7 @@ If you try to copy a piece of text in the `<div>`, that won't work, because the 
 
 Surely the user has access to HTML-source of the page, and can take the content from there, but not everyone knows how to do it.
 
-## Summary
+### Summary
 
 Mouse events have the following properties:
 
@@ -5200,11 +5200,11 @@ The default browser action of `mousedown` is text selection, if it's not good fo
 
 In the next chapter we'll see more details about events that follow pointer movement and how to track element changes under it.
 
-# Moving the mouse: mouseover/out, mouseenter/leave
+## Moving the mouse: mouseover/out, mouseenter/leave
 
 Let's dive into more details about events that happen when the mouse moves between elements.
 
-## Events mouseover/mouseout, relatedTarget
+### Events mouseover/mouseout, relatedTarget
 
 The `mouseover` event occurs when a mouse pointer comes over an element, and `mouseout` -- when it leaves.
 
@@ -5237,7 +5237,7 @@ That's normal and just means that the mouse came not from another element, but f
 We should keep that possibility in mind when using `event.relatedTarget` in our code. If we access `event.relatedTarget.tagName`, then there will be an error.
 
 
-## Skipping elements
+### Skipping elements
 
 The `mousemove` event triggers when the mouse moves. But that doesn't mean that every pixel leads to an event.
 
@@ -5271,7 +5271,7 @@ Also move the pointer into the child `div`, and then move it out quickly down th
 In case of fast mouse movements, intermediate elements may be ignored, but one thing we know for sure: if the pointer "officially" entered an element (`mouseover` event generated), then upon leaving it we always get `mouseout`.
 ```
 
-## Mouseout when leaving for a child
+### Mouseout when leaving for a child
 
 An important feature of `mouseout` -- it triggers, when the pointer moves from an element to its descendant, e.g. from `#parent` to `#child` in this HTML:
 
@@ -5328,7 +5328,7 @@ To avoid it, we can check `relatedTarget` in the handler and, if the mouse is st
 
 Alternatively we can use other events: `mouseenter` and `mouseleave`, that we'll be covering now, as they don't have such problems.
 
-## Events mouseenter and mouseleave
+### Events mouseenter and mouseleave
 
 Events `mouseenter/mouseleave` are like `mouseover/mouseout`. They trigger when the mouse pointer enters/leaves the element.
 
@@ -5351,7 +5351,7 @@ As you can see, the only generated events are the ones related to moving the poi
 [codetabs height=340 src="mouseleave"]
 ```
 
-## Event delegation
+### Event delegation
 
 Events `mouseenter/leave` are very simple and easy to use. But they do not bubble. So we can't use event delegation with them.
 
@@ -5408,7 +5408,7 @@ Here's the full example with all details:
 Try to move the cursor in and out of table cells and inside them. Fast or slow -- doesn't matter. Only `<td>` as a whole is highlighted, unlike the example before.
 ```
 
-## Summary
+### Summary
 
 We covered events `mouseover`, `mouseout`, `mousemove`, `mouseenter` and `mouseleave`.
 
@@ -5421,7 +5421,7 @@ Events `mouseover/out` trigger even when we go from the parent element to a chil
 
 Events `mouseenter/leave` are different in that aspect: they only trigger when the mouse comes in and out the element as a whole. Also they do not bubble.
 
-# Drag'n'Drop with mouse events
+## Drag'n'Drop with mouse events
 
 Drag'n'Drop is a great interface solution. Taking something and dragging and dropping it is a clear and simple way to do many things, from copying and moving documents (as in file managers) to ordering (dropping items into a cart).
 
@@ -5433,7 +5433,7 @@ But native Drag Events also have limitations. For instance, we can't prevent dra
 
 So here we'll see how to implement Drag'n'Drop using mouse events.
 
-## Drag'n'Drop algorithm
+### Drag'n'Drop algorithm
 
 The basic Drag'n'Drop algorithm looks like this:
 
@@ -5514,7 +5514,7 @@ But as we remember, `mousemove` triggers often, but not for every pixel. So afte
 
 So we should listen on `document` to catch it.
 
-## Correct positioning
+### Correct positioning
 
 In the examples above the ball is always moved so, that it's center is under the pointer:
 
@@ -5603,7 +5603,7 @@ In action (inside `<iframe>`):
 
 The difference is especially noticeable if we drag the ball by its right-bottom corner. In the previous example the ball "jumps" under the pointer. Now it fluently follows the pointer from the current position.
 
-## Potential drop targets (droppables)
+### Potential drop targets (droppables)
 
 In previous examples the ball could be dropped just "anywhere" to stay. In real-life we usually take one element and drop it onto another. For instance, a "file" into a "folder" or something else.
 
@@ -5705,7 +5705,7 @@ In the example below when the ball is dragged over the soccer gate, the gate is 
 
 Now we have the current "drop target", that we're flying over, in the variable `currentDroppable` during the whole process and can use it to highlight or any other stuff.
 
-## Summary
+### Summary
 
 We considered a basic Drag'n'Drop algorithm.
 
@@ -5725,11 +5725,11 @@ We can lay a lot on this foundation.
 
 There are frameworks that build architecture over it: `DragZone`, `Droppable`, `Draggable` and other classes. Most of them do the similar stuff to what's described above, so it should be easy to understand them now. Or roll your own, as you can see that that's easy enough to do, sometimes easier than adapting a third-part solution.
 
-# Pointer events
+## Pointer events
 
 Pointer events is a modern way to handle input from a variety of pointing devices, such as a mouse, a pen/stylus, a touchscreen and so on.
 
-## The brief history
+### The brief history
 
 Let's make a small overview, so that you understand the general picture and the place of Pointer Events among other event types.
 
@@ -5747,7 +5747,7 @@ As of now, [Pointer Events Level 2](https://www.w3.org/TR/pointerevents2/) speci
 
 That said, there are important peculiarities, one should know them to use them correctly and avoid extra surprises.  We'll pay attention to them in this article.
 
-## Pointer event types
+### Pointer event types
 
 Pointer events are named similar to mouse events:
 
@@ -5772,7 +5772,7 @@ We can replace `mouse<event>` events with `pointer<event>` in our code and expec
 The support for touch devices will also "magically" improve, but we'll probably need to add `touch-action: none` rule in CSS. See the details below in the section about `pointercancel`. 
 
 
-## Pointer event properties
+### Pointer event properties
 
 Pointer events have the same properties as mouse events, such as `clientX/Y`, `target` etc, plus some extra:
 
@@ -5794,7 +5794,7 @@ For pointers that measure a contact area and pressure, e.g. a finger on the touc
 
 These properties aren't very well supported across devices, so they are rarely used. You can find the details in the [specification](https://w3c.github.io/pointerevents/#pointerevent-interface) if needed.
 
-## Multi-touch
+### Multi-touch
 
 One of the things that mouse events totally don't support is multi-touch: a user can touch them in several places at once at their phone or tablet, perform special gestures.
 
@@ -5821,7 +5821,7 @@ Here's the demo that logs `pointerdown` and `pointerup` events:
 Please note: you must be using a touchscreen device, such as a phone or a tablet to actually see the difference. For single-touch devices, such as a mouse, there'll be always same `pointerId` with `isPrimary=true`, for all pointer events.
 ```
 
-## Event: pointercancel
+### Event: pointercancel
 
 We've mentioned the importance of `touch-action: none` before. Now let's explain why, as skipping this may cause our interfaces to malfunction.
 
@@ -5879,7 +5879,7 @@ As you can see, there's no `pointercancel` any more.
 
 Now we can add the code to actually move the ball, and our drag'n'drop will work for mouse devices and touch devices.
 
-## Pointer capturing
+### Pointer capturing
 
 Pointer capturing is a special feature of pointer events.
 
@@ -5939,7 +5939,7 @@ There are two associated pointer events:
 - `gotpointercapture` fires when an element uses `setPointerCapture` to enable capturing.
 - `lostpointercapture` fires when the capture is released: either explicitly with `releasePointerCapture` call, or automatically on `pointerup`/`pointercancel`.
 
-## Summary
+### Summary
 
 Pointer events allow to handle mouse, touch and pen events simultaneously.
 
@@ -5955,7 +5955,7 @@ Additional abilities of Pointer events are:
 
 As of now, pointer events are supported in all major browsers, so we can safely switch to them, if IE10- and Safari 12- are not needed. And even with those browsers, there are polyfills that enable the support of pointer events.
 
-# Keyboard: keydown and keyup
+## Keyboard: keydown and keyup
 
 Before we get to keyboard, please note that on modern devices there are other ways to "input something". For instance, people use speech recognition (especially on mobile devices) or copy/paste with the mouse.
 
@@ -5964,7 +5964,7 @@ So if we want to track any input into an `<input>` field, then keyboard events a
 Keyboard events should be used when we want to handle keyboard actions (virtual keyboard also counts). For instance, to react on arrow keys `key:Up` and `key:Down` or hotkeys (including combinations of keys).
 
 
-## Teststand [#keyboard-test-stand]
+### Teststand [#keyboard-test-stand]
 
 
 To better understand keyboard events, you can use the [teststand](sandbox:keyboard-dump).
@@ -5979,11 +5979,11 @@ Try different key combinations in the text field.
 ```
 
 
-## Keydown and keyup
+### Keydown and keyup
 
 The `keydown` events happens when a key is pressed down, and then `keyup` -- when it's released.
 
-### event.code and event.key
+#### event.code and event.key
 
 The `key` property of the event object allows to get the character, while the `code` property of the event object allows to get the "physical key code".
 
@@ -6064,14 +6064,14 @@ Do we want to handle layout-dependant keys? Then `event.key` is the way to go.
 
 Or we want a hotkey to work even after a language switch? Then `event.code` may be better.
 
-## Auto-repeat
+### Auto-repeat
 
 If a key is being pressed for a long enough time, it starts to "auto-repeat": the `keydown` triggers again and again, and then when it's released we finally get `keyup`. So it's kind of normal to have many `keydown` and a single `keyup`.
 
 For events triggered by auto-repeat, the event object has `event.repeat` property set to `true`.
 
 
-## Default actions
+### Default actions
 
 Default actions vary, as there are many possible things that may be initiated by the keyboard.
 
@@ -6115,13 +6115,13 @@ Now arrows and deletion works well.
 
 ...But we still can enter anything by using a mouse and right-click + Paste. So the filter is not 100% reliable. We can just let it be like that, because most of time it works. Or an alternative approach would be to track the `input` event -- it triggers after any modification. There we can check the new value and highlight/modify it when it's invalid.
 
-## Legacy
+### Legacy
 
 In the past, there was a `keypress` event, and also `keyCode`, `charCode`, `which` properties of the event object.
 
 There were so many browser incompatibilities while working with them, that developers of the specification had no way, other than deprecating all of them and creating new, modern events (described above in this chapter). The old code still works, as browsers keep supporting them, but there's totally no need to use those any more.
 
-## Summary
+### Summary
 
 Pressing a key always generates a keyboard event, be it symbol keys or special keys like `key:Shift` or `key:Ctrl` and so on. The only exception is `key:Fn` key that sometimes presents on a laptop keyboard. There's no keyboard event for it, because it's often implemented on lower level than OS.
 
@@ -6139,7 +6139,7 @@ In the past, keyboard events were sometimes used to track user input in form fie
 
 We should use keyboard events when we really want keyboard. For example, to react on hotkeys or special keys.
 
-# Scrolling
+## Scrolling
 
 The `scroll` event allows to react on a page or element scrolling. There are quite a few good things we can do here.
 
@@ -6163,7 +6163,7 @@ Current scroll = <b id="showScroll">scroll the window</b>
 
 The `scroll` event works both on the `window` and on scrollable elements.
 
-## Prevent scrolling
+### Prevent scrolling
 
 How do we make something unscrollable?
 
@@ -6177,13 +6177,13 @@ There are many ways to initiate a scroll, so it's more reliable to use CSS, `ove
 
 Here are few tasks that you can solve or look through to see the applications on `onscroll`.
 
-# Form properties and methods
+## Form properties and methods
 
 Forms and control elements, such as `<input>` have a lot of special properties and events.
 
 Working with forms will be much more convenient when we learn them.
 
-## Navigation: form and elements
+### Navigation: form and elements
 
 Document forms are members of the special collection `document.forms`.
 
@@ -6298,7 +6298,7 @@ That's easy to see in an example:
 That's usually not a problem, because we rarely change names of form elements.
 
 
-## Backreference: element.form
+### Backreference: element.form
 
 For any element, the form is available as `element.form`. So a form references all elements, and elements reference the form.
 
@@ -6324,11 +6324,11 @@ For instance:
 </script>
 ```
 
-## Form elements
+### Form elements
 
 Let's talk about form controls.
 
-### input and textarea
+#### input and textarea
 
 We can access their value as `input.value` (string) or `input.checked` (boolean) for checkboxes.
 
@@ -6345,7 +6345,7 @@ Please note that even though `<textarea>...</textarea>` holds its value as neste
 
 It stores only the HTML that was initially on the page, not the current value.
 
-### select and option
+#### select and option
 
 A `<select>` element has 3 important properties:
 
@@ -6401,7 +6401,7 @@ We can get their collection as `select.options`, for instance:
 
 The full specification of the `<select>` element is available in the specification <https://html.spec.whatwg.org/multipage/forms.html#the-select-element>.
 
-### new Option
+#### new Option
 
 This is rarely used on its own. But there's still an interesting thing.
 
@@ -6444,11 +6444,11 @@ Option elements have properties:
 `option.text`
 : Text content of the option (seen by the visitor).
 
-## References
+### References
 
 - Specification: <https://html.spec.whatwg.org/multipage/forms.html>.
 
-## Summary
+### Summary
 
 Form navigation:
 
@@ -6469,7 +6469,7 @@ These are the basics to start working with forms. We'll meet many examples furth
 
 In the next chapter we'll cover `focus` and `blur` events that may occur on any element, but are mostly handled on forms.
 
-# Focusing: focus/blur
+## Focusing: focus/blur
 
 An element receives a focus when the user either clicks on it or uses the `key:Tab` key on the keyboard. There's also an `autofocus` HTML attribute that puts the focus into an element by default when a page loads and other means of getting a focus.
 
@@ -6481,7 +6481,7 @@ Losing the focus generally means: "the data has been entered", so we can run the
 
 There are important peculiarities when working with focus events. We'll do the best to cover them further on.
 
-## Events focus/blur
+### Events focus/blur
 
 The `focus` event is called on focusing, and `blur` -- when the element loses the focus.
 
@@ -6523,7 +6523,7 @@ input.onfocus = function() {
 Modern HTML allows us to do many validations using input attributes: `required`, `pattern` and so on. And sometimes they are just what we need. JavaScript can be used when we want more flexibility. Also we could automatically send the changed value to the server if it's correct.
 
 
-## Methods focus/blur
+### Methods focus/blur
 
 Methods `elem.focus()` and `elem.blur()` set/unset the focus on the element.
 
@@ -6572,7 +6572,7 @@ These features sometimes cause `focus/blur` handlers to misbehave -- to trigger 
 
 The best recipe is to be careful when using these events. If we want to track user-initiated focus-loss, then we should avoid causing it ourselves.
 
-## Allow focusing on any element: tabindex
+### Allow focusing on any element: tabindex
 
 By default many elements do not support focusing.
 
@@ -6619,7 +6619,7 @@ The order is like this: `1 - 2 - 0`. Normally, `<li>` does not support focusing,
 
 We can add `tabindex` from JavaScript by using the `elem.tabIndex` property. That has the same effect.
 
-## Delegation: focusin/focusout
+### Delegation: focusin/focusout
 
 Events `focus` and `blur` do not bubble.
 
@@ -6682,7 +6682,7 @@ So here's another working variant:
 </script>
 ```
 
-## Summary
+### Summary
 
 Events `focus` and `blur` trigger on focusing/losing focus on the element.
 
@@ -6692,11 +6692,11 @@ Their specials are:
 
 The current focused element is available as `document.activeElement`.
 
-# Events: change, input, cut, copy, paste
+## Events: change, input, cut, copy, paste
 
 Let's cover various events that accompany data updates.
 
-## Event: change
+### Event: change
 
 The `change` event triggers when the element has finished changing.
 
@@ -6721,7 +6721,7 @@ For other elements: `select`, `input type=checkbox/radio` it triggers right afte
 ```
 
 
-## Event: input
+### Event: input
 
 The `input` event triggers every time after a value is modified by the user.
 
@@ -6746,7 +6746,7 @@ The `input` event occurs after the value is modified.
 
 So we can't use `event.preventDefault()` there -- it's just too late, there would be no effect.
 
-## Events: cut, copy, paste
+### Events: cut, copy, paste
 
 These events occur on cutting/copying/pasting a value.
 
@@ -6774,7 +6774,7 @@ But please note that clipboard is a "global" OS-level thing. Most browsers allow
 
 Also it's forbidden to generate "custom" clipboard events with `dispatchEvent` in all browsers except Firefox.
 
-## Summary
+### Summary
 
 Data change events:
 
@@ -6784,7 +6784,7 @@ Data change events:
 | `input`          | For text inputs on every change. | Triggers immediately unlike `change`.                                                                     |
 | `cut/copy/paste` | Cut/copy/paste actions.          | The action can be prevented. The `event.clipboardData` property gives read/write access to the clipboard. |
 
-# Forms: event and method submit
+## Forms: event and method submit
 
 The `submit` event triggers when the form is submitted, it is usually used to validate the form before sending it to the server or to abort the submission and process it in JavaScript.
 
@@ -6792,7 +6792,7 @@ The method `form.submit()` allows to initiate form sending from JavaScript. We c
 
 Let's see more details of them.
 
-## Event: submit
+### Event: submit
 
 There are two main ways to submit a form:
 
@@ -6827,7 +6827,7 @@ Here's the demo:
 ```
 
 
-## Method: submit
+### Method: submit
 
 To submit a form to the server manually, we can call `form.submit()`.
 
@@ -6848,7 +6848,7 @@ document.body.append(form);
 form.submit();
 ```
 
-# Page: DOMContentLoaded, load, beforeunload, unload
+## Page: DOMContentLoaded, load, beforeunload, unload
 
 The lifecycle of an HTML page has three important events:
 
@@ -6865,7 +6865,7 @@ Each event may be useful:
 
 Let's explore the details of these events.
 
-## DOMContentLoaded
+### DOMContentLoaded
 
 The `DOMContentLoaded` event happens on the `document` object.
 
@@ -6901,7 +6901,7 @@ But it doesn't wait for the image to load. So `alert` shows zero sizes.
 
 At first sight, the `DOMContentLoaded` event is very simple. The DOM tree is ready -- here's the event. There are few peculiarities though.
 
-### DOMContentLoaded and scripts
+#### DOMContentLoaded and scripts
 
 When the browser processes an HTML-document and comes across a `<script>` tag, it needs to execute before continuing building the DOM. That's a precaution, as scripts may want to modify DOM, and even `document.write` into it, so `DOMContentLoaded` has to wait.
 
@@ -6927,7 +6927,7 @@ There are two exceptions from this rule:
 1. Scripts with the `async` attribute, that we'll cover [a bit later](info:script-async-defer), don't block `DOMContentLoaded`.
 2. Scripts that are generated dynamically with `document.createElement('script')` and then added to the webpage also don't block this event.
 
-### DOMContentLoaded and styles
+#### DOMContentLoaded and styles
 
 External style sheets don't affect DOM, so `DOMContentLoaded` does not wait for them.
 
@@ -6945,7 +6945,7 @@ The reason for this is that the script may want to get coordinates and other sty
 
 As `DOMContentLoaded` waits for scripts, it now waits for styles before them as well.
 
-### Built-in browser autofill
+#### Built-in browser autofill
 
 Firefox, Chrome and Opera autofill forms on `DOMContentLoaded`.
 
@@ -6954,7 +6954,7 @@ For instance, if the page has a form with login and password, and the browser re
 So if `DOMContentLoaded` is postponed by long-loading scripts, then autofill also awaits. You probably saw that on some sites (if you use browser autofill) -- the login/password fields don't get autofilled immediately, but there's a delay till the page fully loads. That's actually the delay until the `DOMContentLoaded` event.
 
 
-## window.onload [#window-onload]
+### window.onload [#window-onload]
 
 The `load` event on the `window` object triggers when the whole page is loaded including styles, images and other resources. This event is available via the `onload` property.
 
@@ -6973,7 +6973,7 @@ The example below correctly shows image sizes, because `window.onload` waits for
 <img id="img" src="https://en.js.cx/clipart/train.gif?speed=1&cache=0">
 ```
 
-## window.onunload
+### window.onunload
 
 When a visitor leaves the page, the `unload` event triggers on `window`. We can do something there that doesn't involve a delay, like closing related popup windows.
 
@@ -7007,7 +7007,7 @@ There's also a `keepalive` flag for doing such "after-page-left" requests in  [f
 
 If we want to cancel the transition to another page, we can't do it here. But we can use another event -- `onbeforeunload`.
 
-## window.onbeforeunload [#window.onbeforeunload]
+### window.onbeforeunload [#window.onbeforeunload]
 
 If a visitor initiated navigation away from the page or tries to close the window, the `beforeunload` handler asks for additional confirmation.
 
@@ -7033,7 +7033,7 @@ window.onbeforeunload = function() {
 
 The behavior was changed, because some webmasters abused this event handler by showing misleading and annoying messages. So right now old browsers still may show it as a message, but aside of that -- there's no way to customize the message shown to the user.
 
-## readyState
+### readyState
 
 What happens if we set the `DOMContentLoaded` handler after the document is loaded?
 
@@ -7116,7 +7116,7 @@ The numbers in square brackets denote the approximate time of when it happens. E
 - `document.readyState` becomes `complete` when all resources (`iframe` and `img`) are loaded. Here we can see that it happens in about the same time as `img.onload` (`img` is the last resource) and `window.onload`. Switching to `complete` state means the same as `window.onload`. The difference is that `window.onload` always works after all other `load` handlers.
 
 
-## Summary
+### Summary
 
 Page load events:
 
@@ -7132,7 +7132,7 @@ Page load events:
   - `complete` -- the document and resources are loaded, happens at about the same time as `window.onload`, but before it.
 
 
-# Scripts: async, defer
+## Scripts: async, defer
 
 In modern websites, scripts are often "heavier" than HTML: their download size is larger, and processing time is also longer.
 
@@ -7168,7 +7168,7 @@ Such things are invisible for people using very fast connections, but many peopl
 
 Luckily, there are two `<script>` attributes that solve the problem for us: `defer` and `async`.
 
-## defer
+### defer
 
 The `defer` attribute tells the browser that it should go on working with the page, and load the script "in background", then run the script when it loads.
 
@@ -7219,7 +7219,7 @@ But the specification requires scripts to execute in the document order, so it w
 The `defer` attribute is ignored if the `<script>` tag has no `src`.
 
 
-## async
+### async
 
 The `async` attribute means that a script is completely independent:
 
@@ -7257,7 +7257,7 @@ Async scripts are great when we integrate an independent third-party script into
 ```
 
 
-## Dynamic scripts
+### Dynamic scripts
 
 We can also add a script dynamically using JavaScript:
 
@@ -7304,7 +7304,7 @@ loadScript("/article/script-async-defer/small.js");
 ```
 
 
-## Summary
+### Summary
 
 Both `async` and `defer` have one common thing: downloading of such scripts doesn't block page rendering. So the user can read page content and get acquainted with the page immediately.
 
@@ -7323,7 +7323,7 @@ There should be "loading" indications in the proper places, and disabled buttons
 
 In practice, `defer` is used for scripts that need the whole DOM and/or their relative execution order is important. And  `async` is used for independent scripts, like counters or ads. And their relative execution order does not matter.
 
-# Resource loading: onload and onerror
+## Resource loading: onload and onerror
 
 The browser allows us to track the loading of external resources -- scripts, iframes, pictures and so on.
 
@@ -7332,7 +7332,7 @@ There are two events for it:
 - `onload` -- successful load,
 - `onerror` -- an error occurred.
 
-## Loading a script
+### Loading a script
 
 Let's say we need to load a third-party script and call a function that resides there.
 
@@ -7349,7 +7349,7 @@ document.head.append(script);
 
 For our own scripts we could use [JavaScript modules](info:modules) here, but they are not widely adopted by third-party libraries.
 
-### script.onload
+#### script.onload
 
 The main helper is the `load` event. It triggers after the script was loaded and executed.
 
@@ -7374,7 +7374,7 @@ So in `onload` we can use script variables, run functions etc.
 
 ...And what if the loading failed? For instance, there's no such script (error 404) or the server is down (unavailable).
 
-### script.onerror
+#### script.onerror
 
 Errors that occur during the loading of the script can be tracked in an `error` event.
 
@@ -7400,7 +7400,7 @@ Events `onload`/`onerror` track only the loading itself.
 Errors that may occur during script processing and execution are out of scope for these events. That is: if a script loaded successfully, then `onload` triggers, even if it has programming errors in it. To track script errors, one can use `window.onerror` global handler.
 
 
-## Other resources
+### Other resources
 
 The `load` and `error` events also work for other resources, basically for any resource that has an external `src`.
 
@@ -7426,7 +7426,7 @@ There are some notes though:
 
 That's for historical reasons.
 
-## Crossorigin policy
+### Crossorigin policy
 
 There's a rule: scripts from one site can't access contents of the other site. So, e.g. a script at `https://facebook.com` can't read the user's mailbox at `https://gmail.com`.
 
@@ -7515,7 +7515,7 @@ window.onerror = function(message, url, line, col, errorObj) {
 
 Now, assuming that the server provides an `Access-Control-Allow-Origin` header, everything's fine. We have the full error report.
 
-## Summary
+### Summary
 
 Images `<img>`, external styles, scripts and other resources provide `load` and `error` events to track their loading:
 
@@ -7527,13 +7527,13 @@ The only exception is `<iframe>`: for historical reasons it always triggers `loa
 The `readystatechange` event also works for resources, but is rarely used, because `load/error` events are simpler.
 
 
-# Mutation observer
+## Mutation observer
 
 `MutationObserver` is a built-in object that observes a DOM element and fires a callback in case of changes.
 
 We'll first take a look at the syntax, and then explore a real-world use case, to see where such thing may be useful.
 
-## Syntax
+### Syntax
 
 `MutationObserver` is easy to use.
 
@@ -7625,7 +7625,7 @@ mutationRecords = [{
 
 So, `MutationObserver` allows to react on any changes within DOM subtree.
 
-## Usage for integration
+### Usage for integration
 
 When such thing may be useful?
 
@@ -7639,7 +7639,7 @@ There are other situations when a third-party script adds something into our doc
 
 `MutationObserver` allows to implement this.
 
-## Usage for architecture
+### Usage for architecture
 
 There are also situations when `MutationObserver` is good from architectural standpoint.
 
@@ -7700,7 +7700,7 @@ We can use `MutationObserver` to automatically detect when code snippets are ins
 
 So we'll handle the highlighting functionality in one place, relieving us from the need to integrate it.
 
-### Dynamic highlight demo
+#### Dynamic highlight demo
 
 Here's the working example.
 
@@ -7758,7 +7758,7 @@ demoElem.innerHTML = `A code snippet is below:
 
 Now we have `MutationObserver` that can track all highlighting in observed elements or the whole `document`. We can add/remove code snippets in HTML without thinking about it.
 
-## Additional methods
+### Additional methods
 
 There's a method to stop observing the node:
 
@@ -7783,7 +7783,7 @@ Observers use weak references to nodes internally. That is: if a node is removed
 
 The mere fact that a DOM node is observed doesn't prevent the garbage collection.
 
-## Summary  
+### Summary  
 
 `MutationObserver` can react on changes in DOM: attributes, added/removed elements, text content.
 
@@ -7797,7 +7797,7 @@ libs:
 
 ---
 
-# Selection and Range
+## Selection and Range
 
 In this chapter we'll cover selection in the document, as well as selection in form fields, such as `<input>`.
 
@@ -7805,7 +7805,7 @@ JavaScript can get the existing selection, select/deselect both as a whole or pa
 
 You can get ready to use recipes at the end, in "Summary" section. But you'll get much more if you read the whole chapter. The underlying `Range` and `Selection` objects are easy to grasp, and then you'll need no recipes to make them do what you want.
 
-## Range
+### Range
 
 The basic concept of selection is [Range](https://dom.spec.whatwg.org/#ranges): basically, a pair of "boundary points": range start and range end.
 
@@ -7920,7 +7920,7 @@ E.g. selecting from `1` to `4` gives range `<i>italic</i> and <b>bold</b>`.
 
 We don't have to use the same node in `setStart` and `setEnd`. A range may span across many unrelated nodes. It's only important that the end is after the start.
 
-### Selecting parts of text nodes
+#### Selecting parts of text nodes
 
 Let's select the text partially, like this:
 
@@ -7961,7 +7961,7 @@ The range object has following properties:
 - `commonAncestorContainer` -- the nearest common ancestor of all nodes within the range,
   - in the example above: `<p>`
 
-## Range methods
+### Range methods
 
 There are many convenience methods to manipulate ranges.
 
@@ -8055,7 +8055,7 @@ Click buttons to run methods on the selection, "resetExample" to reset it.
 There also exist methods to compare ranges, but these are rarely used. When you need them, please refer to the [spec](https://dom.spec.whatwg.org/#interface-range) or [MDN manual](https://developer.mozilla.org/en-US/docs/Web/API/Range).
 
 
-## Selection
+### Selection
 
 `Range` is a generic object for managing selection ranges. We may create such objects, pass them around -- they do not visually select anything on their own.
 
@@ -8069,7 +8069,7 @@ Here's a screenshot of a selection with 3 ranges, made in Firefox:
 
 Other browsers support at maximum 1 range. As we'll see, some of `Selection` methods imply that there may be many ranges, but again, in all browsers except Firefox, there's at maximum 1.
 
-## Selection properties
+### Selection properties
 
 Similar to a range, a selection has a start, called "anchor", and the end, called "focus".
 
@@ -8098,7 +8098,7 @@ Otherwise, if they go from the end of "italic" to "Example", the selection is di
 
 That's different from `Range` objects that are always directed forward: the range start can't be after its end.
 
-## Selection events
+### Selection events
 
 There are events on to keep track of selection:
 
@@ -8107,7 +8107,7 @@ There are events on to keep track of selection:
 - `document.onselectionchange` -- whenever a selection changes.
     - Please note: this handler can be set only on `document`.
 
-### Selection tracking demo
+#### Selection tracking demo
 
 Here's a small demo that shows selection boundaries dynamically as it changes:
 
@@ -8125,7 +8125,7 @@ From <input id="from" disabled> – To <input id="to" disabled>
 </script>
 ```
 
-### Selection getting demo
+#### Selection getting demo
 
 To get the whole selection:
 - As text: just call `document.getSelection().toString()`.
@@ -8157,7 +8157,7 @@ As text: <span id="astext"></span>
 </script>
 ```
 
-## Selection methods
+### Selection methods
 
 Selection methods to add/remove ranges:
 
@@ -8210,7 +8210,7 @@ If the selection already exists, empty it first with `removeAllRanges()`. And th
 
 The exception is some selection methods, that replace the existing selection, like `setBaseAndExtent`.
 
-## Selection in form controls
+### Selection in form controls
 
 Form elements, such as `input` and `textarea` provide [special API for selection](https://html.spec.whatwg.org/#textFieldSelection), without `Selection` or `Range` objects. As an input value is a pure text, not HTML, there's no need for such objects, everything's much simpler.
 
@@ -8239,7 +8239,7 @@ Methods:
 
 Now let's see these methods in action.
 
-### Example: tracking selection
+#### Example: tracking selection
 
 For example, this code uses `onselect` event to track selection:
 
@@ -8263,7 +8263,7 @@ Please note:
 - `document.onselectionchange` event should not trigger for selections inside a form control, according to the [spec](https://w3c.github.io/selection-api/#dfn-selectionchange), as it's not related to `document` selection and ranges. Some browsers generate it, but we shouldn't rely on it.
 
 
-### Example: moving cursor
+#### Example: moving cursor
 
 We can change `selectionStart` and `selectionEnd`, that sets the selection.
 
@@ -8290,7 +8290,7 @@ Focus on me, the cursor will be at position 10.
 </script>
 ```
 
-### Example: modifying selection
+#### Example: modifying selection
 
 To modify the content of the selection, we can use `input.setRangeText()` method. Of course, we can read `selectionStart/End` and, with the knowledge of the selection, change the corresponding substring of `value`, but `setRangeText` is more powerful and often more convenient.
 
@@ -8333,7 +8333,7 @@ button.onclick = () => {
 </script>
 ```
 
-### Example: insert at cursor
+#### Example: insert at cursor
 
 If nothing is selected, or we use equal `start` and `end` in `setRangeText`, then the new text is just inserted, nothing is removed.
 
@@ -8354,7 +8354,7 @@ Here's a button that inserts `"HELLO"` at the cursor position and puts the curso
 ```
 
 
-## Making unselectable
+### Making unselectable
 
 To make something unselectable, there are three ways:
 
@@ -8390,14 +8390,14 @@ To make something unselectable, there are three ways:
 
 3. We can also clear the selection post-factum after it happens with `document.getSelection().empty()`. That's rarely used, as this causes unwanted blinking as the selection appears-disappears.
 
-## References
+### References
 
 - [DOM spec: Range](https://dom.spec.whatwg.org/#ranges)
 - [Selection API](https://www.w3.org/TR/selection-api/#dom-globaleventhandlers-onselectstart)
 - [HTML spec: APIs for the text control selections](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#textFieldSelection)
 
 
-## Summary
+### Summary
 
 We covered two different APIs for selections:
 
@@ -8435,7 +8435,7 @@ The most used recipes are probably:
 And finally, about the cursor. The cursor position in editable elements, like `<textarea>` is always at the start or the end of the selection. We can use it  to get cursor position or to move the cursor by setting `elem.selectionStart` and `elem.selectionEnd`.
 
 
-# Event loop: microtasks and macrotasks
+## Event loop: microtasks and macrotasks
 
 Browser JavaScript execution flow, as well as in Node.js, is based on an *event loop*.
 
@@ -8443,7 +8443,7 @@ Understanding how event loop works is important for optimizations, and sometimes
 
 In this chapter we first cover theoretical details about how things work, and then see practical applications of that knowledge.
 
-## Event Loop
+### Event Loop
 
 The concept of *event loop* is very simple. There's an endless loop, when JavaScript engine waits for tasks, executes them and then sleeps waiting for more tasks.
 
@@ -8482,7 +8482,7 @@ Two more details:
 
 That was a theory. Now let's see how we can apply that knowledge.
 
-## Use-case 1: splitting CPU-hungry tasks
+### Use-case 1: splitting CPU-hungry tasks
 
 Let's say we have a CPU-hungry task.
 
@@ -8592,7 +8592,7 @@ That's simple: as you remember, there's the in-browser minimal delay of 4ms for 
 
 Finally, we've split a CPU-hungry task into parts - now it doesn't block the user interface. And its overall execution time isn't much longer.
 
-## Use case 2: progress indication
+### Use case 2: progress indication
 
 Another benefit of splitting heavy tasks for browser scripts is that we can show progress indication.
 
@@ -8652,7 +8652,7 @@ This looks prettier:
 Now the `<div>` shows increasing values of `i`, a kind of a progress bar.
 
 
-## Use case 3: doing something after the event
+### Use case 3: doing something after the event
 
 In an event handler we may decide to postpone some actions until the event bubbled up and was handled on all levels. We can do that by wrapping the code in zero delay `setTimeout`.
 
@@ -8672,7 +8672,7 @@ menu.onclick = function() {
 };
 ```
 
-## Macrotasks and Microtasks
+### Macrotasks and Microtasks
 
 Along with *macrotasks*, described in this chapter, there exist *microtasks*, mentioned in the chapter <info:microtask-queue>.
 
@@ -8737,7 +8737,7 @@ Here's an example with "counting progress bar", similar to the one shown previou
 </script>
 ```
 
-## Summary
+### Summary
 
 The more detailed algorithm of the event loop (though still simplified compare to the [specification](https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model)):
 
@@ -8772,6 +8772,6 @@ Web Workers can exchange messages with the main process, but they have their own
 
 Web Workers do not have access to DOM, so they are useful, mainly, for calculations, to use multiple CPU cores simultaneously.
 
-# Conclusion
+## Conclusion
 
 That's Alot! We thank the authors from https://javascript.info/ For supporting this lesson, and without them, I don't think It would be possible to do such a huge work! In the next tutorial, We'll discuss how we can interact With websites in order to make our modern development success.

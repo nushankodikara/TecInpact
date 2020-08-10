@@ -8,13 +8,13 @@ title = "The Package Manager for Windows [ Chocolatey ]"
 +++
 ![Chocolatey](/uploads/20200708_224037.jpg "Chocolatey")
 
-# Introduction
+## Introduction
 
 Do you ever thought about a single command to install, uninstall or update softwares in Windows? How about a script automatically do everything for you? Guess what, you're in the perfect place!
 
 Chocolatey is a package manager for Windows, which you can install by a single command and do everything with a single command!
 
-### Showcase
+#### Showcase
 
 Install softwares
 
@@ -30,7 +30,7 @@ Uninstall softwares
 
 And explore more in the [docs](https://chocolatey.org/docs "Chocolatey Docs")
 
-## Installation
+### Installation
 
 Step 1
 
@@ -44,13 +44,13 @@ Copy the code bellow and paste it in the powershell
 
 And press enter, wait and you're ready to go.
 
-## Usage
+### Usage
 
 **Always start a powershell window with administration Access**. Use the code below to get the help documents
 
     > choco -?
 
-### Installing Softwares
+#### Installing Softwares
 
 Installation is simple and easy as it seams, replace the package name with the software you need to install and you're ready to go!
 
@@ -64,7 +64,7 @@ Also you can get all of the package names and commands by going to [chocolatey](
 
 ![](/uploads/20200708_224814.jpg)
 
-### Updating softwares
+#### Updating softwares
 
 Updating softwares is something harder in Windows, but with chocolatey, harder no more! You can update everything at once by using
 
@@ -74,12 +74,12 @@ Or packages individually by using
 
     > choco upgrade package-name -y
 
-### Uninstalling softwares
+#### Uninstalling softwares
 
 Usually we need a 3rd party uninstaller for this, but with choco, we are saved! Choco logs and monitors all installation by default so we can easily uninstall anything we install with choco by using
 
     > choco uninstall package-name -y
 
-## Conclusions
+### Conclusions
 
 Chocolatey package manager is a very useful tool I use personally on my computers. It makes installations updates and uninstallations easier and less time consuming. However A little bit of knowledge on working with powershell is necessary to operate with chocolatey.

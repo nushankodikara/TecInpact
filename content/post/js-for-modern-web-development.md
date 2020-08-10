@@ -7,10 +7,10 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
 Here we are at the end of the modern web development course, At the right basics of the language which make the web interactive and functional. JS Is the back-born of the modern Internet, Why do I say so? Because we can do literally Anything you imagine. Without further explanation, Let's start with the course. Before getting here, Please follow [HTML](/post/html-for-modern-web-development/) [CSS](/post/css-for-modern-web-development/) and [SCSS](/post/scss-for-modern-web-development/) guides.
 
-# Hello, world!
+## Hello, world!
 Javascript is fully functional with HTML and CSS, so first, Let's create our demo document with HTML CSS And JS. I'm creating 3 files in the root folder. index.html, style.css, style.scss and index.js And linking the css in the head, and the JS in the bottom of the body. pro tip Always link your js in the end of the body tag, so the JS would be load after the HTML elements and you won't face any DOM issues regarding load time or so, I'll explain later and also you can link JS in head but I don't recommend it. Let's do it in the ways of modern web development.
 
 Now, Javascript files can be linked using script element and using a src attribute. Now that out to the way
@@ -54,14 +54,14 @@ Now you should get something like this as the output
 
 That's All for the hello world! And Welcome to the Javascript community.
 
-# Before coding
+## Before coding
 JS has some limitations and node.js makes those limitations go away, with that we're using JS as a full fledge programming language and we'll explore the possibilities in another tutorial.
 
-# Code structure
+## Code structure
 
 The first thing we'll study is the building blocks of code.
 
-## Statements
+### Statements
 
 Statements are syntax constructs and commands that perform actions.
 
@@ -82,7 +82,7 @@ alert('Hello');
 alert('World');
 ```
 
-## Semicolons [#semicolon]
+### Semicolons [#semicolon]
 
 A semicolon may be omitted in most cases when a line break exists.
 
@@ -152,7 +152,7 @@ But it should be two separate statements, not one. Such a merging in this case i
 
 We recommend putting semicolons between statements even if they are separated by newlines. This rule is widely adopted by the community. Let's note once again -- *it is possible* to leave out semicolons most of the time. But it's safer -- especially for a beginner -- to use them.
 
-## Comments [#code-comments]
+### Comments [#code-comments]
 
 As time goes on, programs become more and more complex. It becomes necessary to add *comments* which describe what the code does and why.
 
@@ -214,7 +214,7 @@ Comments increase the overall code footprint, but that's not a problem at all. T
 
 Later in the tutorial there will be a chapter <info:code-quality> that also explains how to write better comments.
 
-# The modern mode, "use strict"
+## The modern mode, "use strict"
 
 For a long time, JavaScript evolved without compatibility issues. New features were added to the language while old functionality didn't change.
 
@@ -222,7 +222,7 @@ That had the benefit of never breaking existing code. But the downside was that 
 
 This was the case until 2009 when ECMAScript 5 (ES5) appeared. It added new features to the language and modified some of the existing ones. To keep the old code working, most such modifications are off by default. You need to explicitly enable them with a special directive: `"use strict"`.
 
-## "use strict"
+### "use strict"
 
 The directive looks like a string: `"use strict"` or `'use strict'`. When it is located at the top of a script, the whole script works the "modern" way.
 
@@ -258,7 +258,7 @@ There is no directive like `"no use strict"` that reverts the engine to old beha
 
 Once we enter strict mode, there's no going back.
 
-## Browser console
+### Browser console
 
 When you use a [developer console](info:devtools) to run code, please note that it doesn't `use strict` by default.
 
@@ -286,7 +286,7 @@ If it doesn't, e.g. in an old browser, there's an ugly, but reliable way to ensu
 })()
 ```
 
-## Should we "use strict"?
+### Should we "use strict"?
 
 The question may sound obvious, but it's not so.
 
@@ -301,7 +301,7 @@ As of now, we've got to know about `use strict` in general.
 In the next chapters, as we learn language features, we'll see the differences between the strict and old modes. Luckily, there aren't many and they actually make our lives better.
 
 All examples in this tutorial assume strict mode unless (very rarely) specified otherwise.
-# Variables
+## Variables
 
 Most of the time, a JavaScript application needs to work with information. Here are two examples:
 1. An online shop -- the information might include goods being sold and a shopping cart.
@@ -309,7 +309,7 @@ Most of the time, a JavaScript application needs to work with information. Here 
 
 Variables are used to store this information.
 
-## A variable
+### A variable
 
 A [variable](https://en.wikipedia.org/wiki/Variable_(computer_science)) is a "named storage" for data. We can use variables to store goodies, visitors, and other data.
 
@@ -394,7 +394,7 @@ The `var` keyword is *almost* the same as `let`. It also declares a variable, bu
 There are subtle differences between `let` and `var`, but they do not matter for us yet. We'll cover them in detail in the chapter <info:var>.
 
 
-## A real-life analogy
+### A real-life analogy
 
 We can easily grasp the concept of a "variable" if we imagine it as a "box" for data, with a uniquely-named sticker on it.
 
@@ -451,7 +451,7 @@ In such languages, once the value is stored "in the box", it's there forever. If
 
 Though it may seem a little odd at first sight, these languages are quite capable of serious development. More than that, there are areas like parallel computations where this limitation confers certain benefits. Studying such a language (even if you're not planning to use it soon) is recommended to broaden the mind.
 
-## Variable naming [#variable-naming]
+### Variable naming [#variable-naming]
 
 There are two limitations on variable names in JavaScript:
 
@@ -530,7 +530,7 @@ num = 5; // error: num is not defined
 
 ```
 
-## Constants
+### Constants
 
 To declare a constant (unchanging) variable, use `const` instead of `let`:
 
@@ -549,7 +549,7 @@ myBirthday = '01.01.2001'; // error, can't reassign the constant!
 When a programmer is sure that a variable will never change, they can declare it with `const` to guarantee and clearly communicate that fact to everyone.
 
 
-### Uppercase constants
+#### Uppercase constants
 
 There is a widespread practice to use constants as aliases for difficult-to-remember values that are known prior to execution.
 
@@ -587,7 +587,7 @@ The value of `pageLoadTime` is not known prior to the page load, so it's named n
 
 In other words, capital-named constants are only used as aliases for "hard-coded" values.  
 
-## Name things right
+### Name things right
 
 Talking about variables, there's one more extremely important thing.
 
@@ -618,7 +618,7 @@ An extra variable is good, not evil.
 
 Modern JavaScript minifiers and browsers optimize code well enough, so it won't create performance issues. Using different variables for different values can even help the engine optimize your code.
 
-## Summary
+### Summary
 
 We can declare variables to store data by using the `var`, `let`, or `const` keywords.
 
@@ -627,7 +627,7 @@ We can declare variables to store data by using the `var`, `let`, or `const` key
 - `const` -- is like `let`, but the value of the variable can't be changed.
 
 Variables should be named in a way that allows us to easily understand what's inside them.
-# Data types
+## Data types
 
 A value in JavaScript is always of a certain type. For example, a string or a number.
 
@@ -643,7 +643,7 @@ message = 123456;
 
 Programming languages that allow such things, such as JavaScript, are called "dynamically typed", meaning that there exist data types, but variables are not bound to any of them.
 
-## Number
+### Number
 
 ```js
 let n = 123;
@@ -691,7 +691,7 @@ Special numeric values formally belong to the "number" type. Of course they are 
 
 We'll see more about working with numbers in the chapter <info:number>.
 
-## BigInt
+### BigInt
 
 In JavaScript, the "number" type cannot represent integer values larger than <code>(2<sup>53</sup>-1)</code> (that's `9007199254740991`), or less than <code>-(2<sup>53</sup>-1)</code> for negatives. It's a technical limitation caused by their internal representation.
 
@@ -710,7 +710,7 @@ As `BigInt` numbers are rarely needed, we don't cover them here, but devoted the
 
 Right now `BigInt` is supported in Firefox/Chrome/Edge, but not in Safari/IE.
 
-## String
+### String
 
 A string in JavaScript must be surrounded by quotes.
 
@@ -753,7 +753,7 @@ In some languages, there is a special "character" type for a single character. F
 
 In JavaScript, there is no such type. There's only one type: `string`. A string may consist of only one character or many of them.
 
-## Boolean (logical type)
+### Boolean (logical type)
 
 The boolean type has only two values: `true` and `false`.
 
@@ -776,7 +776,7 @@ alert( isGreater ); // true (the comparison result is "yes")
 
 We'll cover booleans more deeply in the chapter <info:logical-operators>.
 
-## The "null" value
+### The "null" value
 
 The special `null` value does not belong to any of the types described above.
 
@@ -792,7 +792,7 @@ It's just a special value which represents "nothing", "empty" or "value unknown"
 
 The code above states that `age` is unknown.
 
-## The "undefined" value
+### The "undefined" value
 
 The special value `undefined` also stands apart. It makes a type of its own, just like `null`.
 
@@ -819,7 +819,7 @@ alert(age); // "undefined"
 
 ...But we don't recommend doing that. Normally, one uses `null` to assign an "empty" or "unknown" value to a variable, while `undefined` is reserved as a default initial value for unassigned things.
 
-## Objects and Symbols
+### Objects and Symbols
 
 The `object` type is special.
 
@@ -829,7 +829,7 @@ Being that important, objects deserve a special treatment. We'll deal with them 
 
 The `symbol` type is used to create unique identifiers for objects. We have to mention it here for the sake of completeness, but also postpone the details till we know objects.
 
-## The typeof operator [#type-typeof]
+### The typeof operator [#type-typeof]
 
 The `typeof` operator returns the type of the argument. It's useful when we want to process values of different types differently or just want to do a quick check.
 
@@ -874,7 +874,7 @@ The last three lines may need additional explanation:
 2. The result of `typeof null` is `"object"`. That's an officially recognized error in `typeof` behavior, coming from the early days of JavaScript and kept for compatibility. Definitely, `null` is not an object. It is a special value with a separate type of its own.
 3. The result of `typeof alert` is `"function"`, because `alert` is a function. We'll study functions in the next chapters where we'll also see that there's no special "function" type in JavaScript. Functions belong to the object type. But `typeof` treats them differently, returning `"function"`. That also comes from the early days of JavaScript. Technically, such behavior isn't correct, but can be convenient in practice.
 
-## Summary
+### Summary
 
 There are 8 basic data types in JavaScript.
 
@@ -894,11 +894,11 @@ The `typeof` operator allows us to see which type is stored in a variable.
 - For `null` returns `"object"` -- this is an error in the language, it's not actually an object.
 
 In the next chapters, we'll concentrate on primitive values and once we're familiar with them, we'll move on to objects.
-# Interaction: alert, prompt, confirm
+## Interaction: alert, prompt, confirm
 
 As we'll be using the browser as our demo environment, let's see a couple of functions to interact with the user: `alert`, `prompt` and `confirm`.
 
-## alert
+### alert
 
 This one we've seen already. It shows a message and waits for the user to press "OK".
 
@@ -910,7 +910,7 @@ alert("Hello");
 
 The mini-window with the message is called a *modal window*. The word "modal" means that the visitor can't interact with the rest of the page, press other buttons, etc, until they have dealt with the window. In this case -- until they press "OK".
 
-## prompt
+### prompt
 
 The function `prompt` accepts two arguments:
 
@@ -957,7 +957,7 @@ So, for prompts to look good in IE, we recommend always providing the second arg
 let test = prompt("Test", ''); // <-- for IE
 ```
 
-## confirm
+### confirm
 
 The syntax:
 
@@ -977,7 +977,7 @@ let isBoss = confirm("Are you the boss?");
 alert( isBoss ); // true if OK is pressed
 ```
 
-## Summary
+### Summary
 
 We covered 3 browser-specific functions to interact with visitors:
 
@@ -998,7 +998,7 @@ There are two limitations shared by all the methods above:
 2. The exact look of the window also depends on the browser. We can't modify it.
 
 That is the price for simplicity. There are other ways to show nicer windows and richer interaction with the visitor, but if "bells and whistles" do not matter much, these methods work just fine.
-# Type Conversions
+## Type Conversions
 
 Most of the time, operators and functions automatically convert the values given to them to the right type.
 
@@ -1010,7 +1010,7 @@ In this chapter, we won't cover objects. For now we'll just be talking about pri
 
 Later, after we learn about objects, in the chapter <info:object-toprimitive> we'll see how objects fit in.
 
-## String Conversion
+### String Conversion
 
 String conversion happens when we need the string form of a value.
 
@@ -1030,7 +1030,7 @@ alert(typeof value); // string
 
 String conversion is mostly obvious. A `false` becomes `"false"`, `null` becomes `"null"`, etc.
 
-## Numeric Conversion
+### Numeric Conversion
 
 Numeric conversion happens in mathematical functions and expressions automatically.
 
@@ -1083,7 +1083,7 @@ Please note that `null` and `undefined` behave differently here: `null` becomes 
 
 Most mathematical operators also perform such conversion, we'll see that in the next chapter.
 
-## Boolean Conversion
+### Boolean Conversion
 
 Boolean conversion is the simplest one.
 
@@ -1112,7 +1112,7 @@ alert( Boolean("0") ); // true
 alert( Boolean(" ") ); // spaces, also true (any non-empty string is true)
 ```
 
-## Summary
+### Summary
 
 The three most widely used type conversions are to string, to number, and to boolean.
 
@@ -1145,13 +1145,13 @@ Most of these rules are easy to understand and memorize. The notable exceptions 
 - `"0"` and space-only strings like `"   "` are true as a boolean.
 
 Objects aren't covered here. We'll return to them later in the chapter <info:object-toprimitive> that is devoted exclusively to objects after we learn more basic things about JavaScript.
-# Basic operators, maths
+## Basic operators, maths
 
 We know many operators from school. They are things like addition `+`, multiplication `*`, subtraction `-`, and so on.
 
 In this chapter, we’ll start with simple operators, then concentrate on JavaScript-specific aspects, not covered by school arithmetic.
 
-## Terms: "unary", "binary", "operand"
+### Terms: "unary", "binary", "operand"
 
 Before we move on, let's grasp some common terminology.
 
@@ -1175,7 +1175,7 @@ Before we move on, let's grasp some common terminology.
 
     Formally, in the examples above we have two different operators that share the same symbol: the negation operator, a unary operator that reverses the sign, and the subtraction operator, a binary operator that subtracts one number from another.
 
-## Maths
+### Maths
 
 The following math operations are supported:
 
@@ -1188,7 +1188,7 @@ The following math operations are supported:
 
 The first four are straightforward, while `%` and `**` need a few words about them.
 
-### Remainder %
+#### Remainder %
 
 The remainder operator `%`, despite its appearance, is not related to percents.
 
@@ -1201,7 +1201,7 @@ alert( 5 % 2 ); // 1, a remainder of 5 divided by 2
 alert( 8 % 3 ); // 2, a remainder of 8 divided by 3
 ```
 
-### Exponentiation **
+#### Exponentiation **
 
 The exponentiation operator `a ** b` multiplies `a` by itself `b` times.
 
@@ -1221,7 +1221,7 @@ alert( 8 ** (1/3) ); // 2 (power of 1/3 is the same as a cubic root)
 ```
 
 
-## String concatenation with binary +
+### String concatenation with binary +
 
 Let's meet features of JavaScript operators that are beyond school arithmetics.
 
@@ -1262,7 +1262,7 @@ alert( 6 - '2' ); // 4, converts '2' to a number
 alert( '6' / '2' ); // 3, converts both operands to numbers
 ```
 
-## Numeric conversion, unary +
+### Numeric conversion, unary +
 
 The plus `+` exists in two forms: the binary form that we used above and the unary form.
 
@@ -1317,7 +1317,7 @@ From a mathematician's standpoint, the abundance of pluses may seem strange. But
 
 Why are unary pluses applied to values before the binary ones? As we're going to see, that's because of their *higher precedence*.
 
-## Operator precedence
+### Operator precedence
 
 If an expression has more than one operator, the execution order is defined by their *precedence*, or, in other words, the default priority order of operators.
 
@@ -1345,7 +1345,7 @@ Here's an extract from the [precedence table](https://developer.mozilla.org/en/J
 
 As we can see, the "unary plus" has a priority of `17` which is higher than the `13` of "addition" (binary plus). That's why, in the expression `"+apples + +oranges"`, unary pluses work before the addition.
 
-## Assignment
+### Assignment
 
 Let's note that an assignment `=` is also an operator. It is listed in the precedence table with the very low priority of `3`.
 
@@ -1357,7 +1357,7 @@ let x = 2 * 2 + 1;
 alert( x ); // 5
 ```
 
-### Assignment = returns a value
+#### Assignment = returns a value
 
 The fact of `=` being an operator, not a "magical" language construct has an interesting implication.
 
@@ -1385,7 +1385,7 @@ Funny code, isn't it? We should understand how it works, because sometimes we se
 
 Although, please don't write the code like that. Such tricks definitely don't make code clearer or readable.
 
-### Chaining assignments
+#### Chaining assignments
 
 Another interesting feature is the ability to chain assignments:
 
@@ -1412,7 +1412,7 @@ a = c;
 ```
 That's easier to read, especially when eye-scanning the code fast.
 
-## Modify-in-place
+### Modify-in-place
 
 We often need to apply an operator to a variable and store the new result in that same variable.
 
@@ -1446,7 +1446,7 @@ n *= 3 + 5;
 alert( n ); // 16  (right part evaluated first, same as n *= 8)
 ```
 
-## Increment/decrement
+### Increment/decrement
 
 <!-- Can't use -- in title, because the built-in parser turns it into a 'long dash' – -->
 
@@ -1557,7 +1557,7 @@ alert( 2 * counter );
 counter++;
 ```
 
-## Bitwise operators
+### Bitwise operators
 
 Bitwise operators treat arguments as 32-bit integer numbers and work on the level of their binary representation.
 
@@ -1575,7 +1575,7 @@ The list of operators:
 
 These operators are used very rarely, when we need to fiddle with numbers on the very lowest (bitwise) level. We won't need these operators any time soon, as web development has little use of them, but in some special areas, such as cryptography, they are useful. You can read the [Bitwise Operators](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators) article on MDN when a need arises.
 
-## Comma
+### Comma
 
 The comma operator `,` is one of the rarest and most unusual operators. Sometimes, it's used to write shorter code, so we need to know it in order to understand what's going on.
 
@@ -1611,7 +1611,7 @@ for (a = 1, b = 3, c = a * b; a < 10; a++) {
 ```
 
 Such tricks are used in many JavaScript frameworks. That's why we're mentioning them. But usually they don't improve code readability so we should think well before using them.
-# Comparisons
+## Comparisons
 
 We know many comparison operators from maths.
 
@@ -1626,7 +1626,7 @@ In this article we'll learn more about different types of comparisons, how JavaS
 
 At the end you'll find a good recipe to avoid "javascript quirks"-related issues.
 
-## Boolean is the result
+### Boolean is the result
 
 All comparison operators return a boolean value:
 
@@ -1648,7 +1648,7 @@ let result = 5 > 4; // assign the result of the comparison
 alert( result ); // true
 ```
 
-## String comparison
+### String comparison
 
 To see whether a string is greater than another, JavaScript uses the so-called "dictionary" or "lexicographical" order.
 
@@ -1680,7 +1680,7 @@ The comparison algorithm given above is roughly equivalent to the one used in di
 
 For instance, case matters. A capital letter `"A"` is not equal to the lowercase `"a"`. Which one is greater? The lowercase `"a"`. Why? Because the lowercase character has a greater index in the internal encoding table JavaScript uses (Unicode). We'll get back to specific details and consequences of this in the chapter <info:string>.
 
-## Comparison of different types
+### Comparison of different types
 
 When comparing values of different types, JavaScript converts the values to numbers.
 
@@ -1720,7 +1720,7 @@ alert(a == b); // true!
 From JavaScript's standpoint, this result is quite normal. An equality check converts values using the numeric conversion (hence `"0"` becomes `0`), while the explicit `Boolean` conversion uses another set of rules.
 
 
-## Strict equality
+### Strict equality
 
 A regular equality check `==` has a problem. It cannot differentiate `0` from `false`:
 
@@ -1752,7 +1752,7 @@ There is also a "strict non-equality" operator `!==` analogous to `!=`.
 
 The strict equality operator is a bit longer to write, but makes it obvious what's going on and leaves less room for errors.
 
-## Comparison with null and undefined
+### Comparison with null and undefined
 
 There's a non-intuitive behavior when `null` or `undefined` are compared to other values.
 
@@ -1775,7 +1775,7 @@ For maths and other comparisons `< > <= >=`
 
 Now let's see some funny things that happen when we apply these rules. And, what's more important, how to not fall into a trap with them.
 
-### Strange result: null vs 0
+#### Strange result: null vs 0
 
 Let's compare `null` with a zero:
 
@@ -1791,7 +1791,7 @@ The reason is that an equality check `==` and comparisons `> < >= <=` work diffe
 
 On the other hand, the equality check `==` for `undefined` and `null` is defined such that, without any conversions, they equal each other and don't equal anything else. That's why (2) `null == 0` is false.
 
-### An incomparable undefined
+#### An incomparable undefined
 
 The value `undefined` shouldn't be compared to other values:
 
@@ -1808,27 +1808,27 @@ We get these results because:
 - Comparisons `(1)` and `(2)` return `false` because `undefined` gets converted to `NaN` and `NaN` is a special numeric value which returns `false` for all comparisons.
 - The equality check `(3)` returns `false` because `undefined` only equals `null`, `undefined`, and no other value.
 
-### Avoid problems
+#### Avoid problems
 
 Why did we go over these examples? Should we remember these peculiarities all the time? Well, not really. Actually, these tricky things will gradually become familiar over time, but there's a solid way to avoid problems with them:
 
 - Treat any comparison with `undefined/null` except the strict equality `===` with exceptional care.
 - Don't use comparisons `>= > < <=` with a variable which may be `null/undefined`, unless you're really sure of what you're doing. If a variable can have these values, check for them separately.
 
-## Summary
+### Summary
 
 - Comparison operators return a boolean value.
 - Strings are compared letter-by-letter in the "dictionary" order.
 - When values of different types are compared, they get converted to numbers (with the exclusion of a strict equality check).
 - The values `null` and `undefined` equal `==` each other and do not equal any other value.
 - Be careful when using comparisons like `>` or `<` with variables that can occasionally be `null/undefined`. Checking for `null/undefined` separately is a good idea.
-# Conditional branching: if, '?'
+## Conditional branching: if, '?'
 
 Sometimes, we need to perform different actions based on different conditions.
 
 To do that, we can use the `if` statement and the conditional operator `?`, that's also called a "question mark" operator.
 
-## The "if" statement
+### The "if" statement
 
 The `if(...)` statement evaluates a condition in parentheses and, if the result is `true`, executes a block of code.
 
@@ -1855,7 +1855,7 @@ if (year == 2015) {
 
 We recommend wrapping your code block with curly braces `{}` every time you use an `if` statement, even if there is only one statement to execute. Doing so improves readability.
 
-## Boolean conversion
+### Boolean conversion
 
 The `if (…)` statement evaluates the expression in its parentheses and converts the result to a boolean.
 
@@ -1890,7 +1890,7 @@ if (cond) {
 }
 ```
 
-## The "else" clause
+### The "else" clause
 
 The `if` statement may contain an optional "else" block. It executes when the condition is false.
 
@@ -1905,7 +1905,7 @@ if (year == 2015) {
 }
 ```
 
-## Several conditions: "else if"
+### Several conditions: "else if"
 
 Sometimes, we'd like to test several variants of a condition. The `else if` clause lets us do that.
 
@@ -1927,7 +1927,7 @@ In the code above, JavaScript first checks `year < 2015`. If that is falsy, it g
 
 There can be more `else if` blocks. The final `else` is optional.
 
-## Conditional operator '?'
+### Conditional operator '?'
 
 Sometimes, we need to assign a variable depending on a condition.
 
@@ -1986,7 +1986,7 @@ let accessAllowed = age > 18;
 ```
 
 
-## Multiple '?'
+### Multiple '?'
 
 A sequence of question mark operators `?` can return a value that depends on more than one condition.
 
@@ -2023,7 +2023,7 @@ if (age < 3) {
 }
 ```
 
-## Non-traditional use of '?'
+### Non-traditional use of '?'
 
 Sometimes the question mark `?` is used as a replacement for `if`:
 
@@ -2061,7 +2061,7 @@ if (company == 'Netscape') {
 Our eyes scan the code vertically. Code blocks which span several lines are easier to understand than a long, horizontal instruction set.
 
 The purpose of the question mark operator `?` is to return one value or another depending on its condition. Please use it for exactly that. Use `if` when you need to execute different branches of code.
-# Logical operators
+## Logical operators
 
 There are three logical operators in JavaScript: `||` (OR), `&&` (AND), `!` (NOT).
 
@@ -2069,7 +2069,7 @@ Although they are called "logical", they can be applied to values of any type, n
 
 Let's see the details.
 
-## || (OR)
+### || (OR)
 
 The "OR" operator is represented with two vertical line symbols:
 
@@ -2127,7 +2127,7 @@ if (hour < 10 || hour > 18 || isWeekend) {
 }
 ```
 
-## OR "||" finds the first truthy value
+### OR "||" finds the first truthy value
 
 The logic described above is somewhat classical. Now, let's bring in the "extra" features of JavaScript.
 
@@ -2199,7 +2199,7 @@ This leads to some interesting usage compared to a "pure, classical, boolean-onl
 
     Sometimes, people use this feature to execute commands only if the condition on the left part is falsy.
 
-## && (AND)
+### && (AND)
 
 The AND operator is represented with two ampersands `&&`:
 
@@ -2236,7 +2236,7 @@ if (1 && 0) { // evaluated as true && false
 ```
 
 
-## AND "&&" finds the first falsy value
+### AND "&&" finds the first falsy value
 
 Given multiple AND'ed values:
 
@@ -2310,7 +2310,7 @@ Although, the variant with `&&` appears shorter, `if` is more obvious and tends 
 
 
 
-## ! (NOT)
+### ! (NOT)
 
 The boolean NOT operator is represented with an exclamation sign `!`.
 
@@ -2349,7 +2349,7 @@ alert( Boolean(null) ); // false
 ```
 
 The precedence of NOT `!` is the highest of all logical operators, so it always executes first, before `&&` or `||`.
-# Nullish coalescing operator '??'
+## Nullish coalescing operator '??'
 
 [recent browser="new"]
 
@@ -2384,7 +2384,7 @@ alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
 
 ```
 
-## Comparison with ||
+### Comparison with ||
 
 The OR `||` operator can be used in the same way as `??`. Actually, we can replace `??` with `||` in the code above and get the same result, as it was described in the [previous chapter](info:logical-operators#or-finds-the-first-truthy-value).
 
@@ -2417,7 +2417,7 @@ The `height ?? 100` returns `100` only if `height` is exactly `null` or `undefin
 
 Which behavior is better depends on a particular use case. When zero height is a valid value, then `??` is preferrable.
 
-## Precedence
+### Precedence
 
 The precedence of the `??` operator is rather low: `5` in the [MDN table](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table).
 
@@ -2466,7 +2466,7 @@ let x = (1 && 2) ?? 3; // Works
 alert(x); // 2
 ```
 
-## Summary
+### Summary
 
 - The nullish coalescing operator `??` provides a short way to choose a "defined" value from the list.
 
@@ -2479,7 +2479,7 @@ alert(x); // 2
 
 - The operator `??` has a very low precedence, a bit higher than `?` and `=`.
 - It's forbidden to use it with `||` or `&&` without explicit parentheses.
-# Loops: while and for
+## Loops: while and for
 
 We often need to repeat actions.
 
@@ -2487,7 +2487,7 @@ For example, outputting goods from a list one after another or just running the 
 
 *Loops* are a way to repeat the same code multiple times.
 
-## The "while" loop
+### The "while" loop
 
 The `while` loop has the following syntax:
 
@@ -2538,7 +2538,7 @@ while (i) alert(i--);
 ```
 
 
-## The "do..while" loop
+### The "do..while" loop
 
 The condition check can be moved *below* the loop body using the `do..while` syntax:
 
@@ -2562,7 +2562,7 @@ do {
 
 This form of syntax should only be used when you want the body of the loop to execute **at least once** regardless of the condition being truthy. Usually, the other form is preferred: `while(…) {…}`.
 
-## The "for" loop
+### The "for" loop
 
 The `for` loop is more complex, but it's also the most commonly used loop.
 
@@ -2644,7 +2644,7 @@ alert(i); // 3, visible, because declared outside of the loop
 
 
 
-### Skipping parts
+#### Skipping parts
 
 Any part of `for` can be skipped.
 
@@ -2682,7 +2682,7 @@ for (;;) {
 
 Please note that the two `for` semicolons `;` must be present. Otherwise, there would be a syntax error.
 
-## Breaking the loop
+### Breaking the loop
 
 Normally, a loop exits when its condition becomes falsy.
 
@@ -2711,7 +2711,7 @@ The `break` directive is activated at the line `(*)` if the user enters an empty
 
 The combination "infinite loop + `break` as needed" is great for situations when a loop's condition must be checked not in the beginning or end of the loop, but in the middle or even in several places of its body.
 
-## Continue to the next iteration [#continue]
+### Continue to the next iteration [#continue]
 
 The `continue` directive is a "lighter version" of `break`. It doesn't stop the whole loop. Instead, it stops the current iteration and forces the loop to start a new one (if the condition allows).
 
@@ -2773,7 +2773,7 @@ if (i > 5) {
 This is just another reason not to use the question mark operator `?` instead of `if`.
 
 
-## Labels for break/continue
+### Labels for break/continue
 
 Sometimes we need to break out from multiple nested loops at once.
 
@@ -2848,7 +2848,7 @@ label: for (...)
 A call to `break/continue` is only possible from inside a loop and the label must be somewhere above the directive.
 
 
-## Summary
+### Summary
 
 We covered 3 types of loops:
 
@@ -2861,13 +2861,13 @@ To make an "infinite" loop, usually the `while(true)` construct is used. Such a 
 If we don't want to do anything in the current iteration and would like to forward to the next one, we can use the `continue` directive.
 
 `break/continue` support labels before the loop. A label is the only way for `break/continue` to escape a nested loop to go to an outer one.
-# The "switch" statement
+## The "switch" statement
 
 A `switch` statement can replace multiple `if` checks.
 
 It gives a more descriptive way to compare a value with multiple variants.
 
-## The syntax
+### The syntax
 
 The `switch` has one or more `case` blocks and an optional default.
 
@@ -2893,7 +2893,7 @@ switch(x) {
 - If the equality is found, `switch` starts to execute the code starting from the corresponding `case`, until the nearest `break` (or until the end of `switch`).
 - If no case is matched then the `default` code is executed (if it exists).
 
-## An example
+### An example
 
 An example of `switch` (the executed code is highlighted):
 
@@ -2972,7 +2972,7 @@ switch (+a) {
 Here `+a` gives `1`, that's compared with `b + 1` in `case`, and the corresponding code is executed.
 
 
-## Grouping of "case"
+### Grouping of "case"
 
 Several variants of `case` which share the same code can be grouped.
 
@@ -3003,7 +3003,7 @@ Now both `3` and `5` show the same message.
 
 The ability to "group" cases is a side-effect of how `switch/case` works without `break`. Here the execution of `case 3` starts from the line `(*)` and goes through `case 5`, because there's no `break`.
 
-## Type matters
+### Type matters
 
 Let's emphasize that the equality check is always strict. The values must be of the same type to match.
 
@@ -3032,7 +3032,7 @@ switch (arg) {
 1. For `0`, `1`, the first `alert` runs.
 2. For `2` the second `alert` runs.
 3. But for `3`, the result of the `prompt` is a string `"3"`, which is not strictly equal `===` to the number `3`. So we've got a dead code in `case 3`! The `default` variant will execute.
-# Functions
+## Functions
 
 Quite often we need to perform a similar action in many places of the script.
 
@@ -3042,7 +3042,7 @@ Functions are the main "building blocks" of the program. They allow the code to 
 
 We've already seen examples of built-in functions, like `alert(message)`, `prompt(message, default)` and `confirm(question)`. But we can create functions of our own as well.
 
-## Function Declaration
+### Function Declaration
 
 To create a function we can use a *function declaration*.
 
@@ -3083,7 +3083,7 @@ This example clearly demonstrates one of the main purposes of functions: to avoi
 
 If we ever need to change the message or the way it is shown, it's enough to modify the code in one place: the function which outputs it.
 
-## Local variables
+### Local variables
 
 A variable declared inside a function is only visible inside that function.
 
@@ -3103,7 +3103,7 @@ showMessage(); // Hello, I'm JavaScript!
 alert( message ); // <-- Error! The variable is local to the function
 ```
 
-## Outer variables
+### Outer variables
 
 A function can access an outer variable as well, for example:
 
@@ -3167,7 +3167,7 @@ Global variables are visible from any function (unless shadowed by locals).
 
 It's a good practice to minimize the use of global variables. Modern code has few or no globals. Most variables reside in their functions. Sometimes though, they can be useful to store project-level data.
 
-## Parameters
+### Parameters
 
 We can pass arbitrary data to functions using parameters (also called *function arguments*) .
 
@@ -3207,7 +3207,7 @@ showMessage(from, "Hello"); // *Ann*: Hello
 alert( from ); // Ann
 ```
 
-## Default values
+### Default values
 
 If a parameter is not provided, then its value becomes `undefined`.
 
@@ -3244,7 +3244,7 @@ In JavaScript, a default parameter is evaluated every time the function is calle
 
 In the example above, `anotherFunction()` is called every time `showMessage()` is called without the `text` parameter.
 
-### Alternative default parameters
+#### Alternative default parameters
 
 Sometimes it makes sense to set default values for parameters not in the function declaration, but at a later stage, during its execution.
 
@@ -3287,7 +3287,7 @@ showCount(null); // unknown
 showCount(); // unknown
 ```
 
-## Returning a value
+### Returning a value
 
 A function can return a value back into the calling code as the result.
 
@@ -3394,7 +3394,7 @@ return (
 And it will work just as we expect it to.
 
 
-## Naming a function [#function-naming]
+### Naming a function [#function-naming]
 
 Functions are actions. So their name is usually a verb. It should be brief, as accurate as possible and describe what the function does, so that someone reading the code gets an indication of what the function does.
 
@@ -3440,7 +3440,7 @@ For example, the [jQuery](http://jquery.com) framework defines a function with `
 
 These are exceptions. Generally functions names should be concise and descriptive.
 
-## Functions == Comments
+### Functions == Comments
 
 Functions should be short and do exactly one thing. If that thing is big, maybe it's worth it to split the function into a few smaller functions. Sometimes following this rule may not be that easy, but it's definitely a good thing.
 
@@ -3487,7 +3487,7 @@ The second variant is easier to understand, isn't it? Instead of the code piece 
 
 So, functions can be created even if we don't intend to reuse them. They structure the code and make it readable.
 
-## Summary
+### Summary
 
 A function declaration looks like this:
 
@@ -3512,7 +3512,7 @@ Function naming:
 - There exist many well-known function prefixes like `create…`, `show…`, `get…`, `check…` and so on. Use them to hint what a function does.
 
 Functions are the main building blocks of scripts. Now we've covered the basics, so we actually can start creating and using them. But that's only the beginning of the path. We are going to return to them many times, going more deeply into their advanced features.
-# Function expressions
+## Function expressions
 
 In JavaScript, a function is not a "magical language structure", but a special kind of value.
 
@@ -3608,7 +3608,7 @@ The answer is simple:
 - A Function Expression is used inside the statement: `let sayHi = ...;`, as a value. It's not a code block, but rather an assignment. The semicolon `;` is recommended at the end of statements, no matter what the value is. So the semicolon here is not related to the Function Expression itself, it just terminates the statement.
 
 
-## Callback functions
+### Callback functions
 
 Let's look at more examples of passing functions as values and using function expressions.
 
@@ -3679,7 +3679,7 @@ A function can be perceived as an *action*.
 We can pass it between variables and run when we want.
 
 
-## Function Expression vs Function Declaration
+### Function Expression vs Function Declaration
 
 Let's formulate the key differences between Function Declarations and Expressions.
 
@@ -3864,7 +3864,7 @@ That's also better for readability, as it's easier to look up `function f(…) {
 
 ...But if a Function Declaration does not suit us for some reason, or we need a conditional declaration (we've just seen an example), then Function Expression should be used.
 
-## Summary
+### Summary
 
 - Functions are values. They can be assigned, copied or declared in any place of the code.
 - If the function is declared as a separate statement in the main code flow, that's called a "Function Declaration".
@@ -3875,7 +3875,7 @@ That's also better for readability, as it's easier to look up `function f(…) {
 In most cases when we need to declare a function, a Function Declaration is preferable, because it is visible prior to the declaration itself. That gives us more flexibility in code organization, and is usually more readable.
 
 So we should use a Function Expression only when a Function Declaration is not fit for the task. We've seen a couple of examples of that in this chapter, and will see more in the future.
-# Arrow functions, the basics
+## Arrow functions, the basics
 
 There's another very simple and concise syntax for creating functions, that's often better than Function Expressions.
 
@@ -3951,7 +3951,7 @@ Arrow functions may appear unfamiliar and not very readable at first, but that q
 
 They are very convenient for simple one-line actions, when we're just too lazy to write many words.
 
-## Multiline arrow functions
+### Multiline arrow functions
 
 The examples above took arguments from the left of `=>` and evaluated the right-side expression with them.
 
@@ -3978,17 +3978,17 @@ To study them in-depth, we first need to get to know some other aspects of JavaS
 
 For now, we can already use arrow functions for one-line actions and callbacks.
 
-## Summary
+### Summary
 
 Arrow functions are handy for one-liners. They come in two flavors:
 
 1. Without curly braces: `(...args) => expression` -- the right side is an expression: the function evaluates it and returns the result.
 2. With curly braces: `(...args) => { body }` -- brackets allow us to write multiple statements inside the function, but we need an explicit `return` to return something.
-# JavaScript specials
+## JavaScript specials
 
 This chapter briefly recaps the features of JavaScript that we've learned by now, paying special attention to subtle moments.
 
-## Code structure
+### Code structure
 
 Statements are delimited with a semicolon:
 
@@ -4029,7 +4029,7 @@ for(;;) {
 
 More in: <info:structure>.
 
-## Strict mode
+### Strict mode
 
 To fully enable all features of modern JavaScript, we should start scripts with `"use strict"`.
 
@@ -4047,7 +4047,7 @@ Some modern features of the language (like classes that we'll study in the futur
 
 More in: <info:strict-mode>.
 
-## Variables
+### Variables
 
 Can be declared using:
 
@@ -4085,7 +4085,7 @@ typeof function(){} == "function" // functions are treated specially
 
 More in: <info:variables> and <info:types>.
 
-## Interaction
+### Interaction
 
 We're using a browser as a working environment, so basic UI functions will be:
 
@@ -4112,7 +4112,7 @@ alert( "Tea wanted: " + isTeaWanted ); // true
 
 More in: <info:alert-prompt-confirm>.
 
-## Operators
+### Operators
 
 JavaScript supports the following operators:
 
@@ -4162,7 +4162,7 @@ Other operators
 
 More in: <info:operators>, <info:comparison>, <info:logical-operators>, <info:nullish-coalescing-operator>.
 
-## Loops
+### Loops
 
 - We covered 3 types of loops:
 
@@ -4190,7 +4190,7 @@ Details in: <info:while-for>.
 
 Later we'll study more types of loops to deal with objects.
 
-## The "switch" construct
+### The "switch" construct
 
 The "switch" construct can replace multiple `if` checks. It uses `===` (strict equality) for comparisons.
 
@@ -4215,7 +4215,7 @@ switch (age) {
 
 Details in: <info:switch>.
 
-## Functions
+### Functions
 
 We covered three ways to create a function in JavaScript:
 
@@ -4265,12 +4265,12 @@ We covered three ways to create a function in JavaScript:
 
 Details: see <info:function-basics>, <info:arrow-functions-basics>.
 
-## More to come
+### More to come
 
 That was a brief list of JavaScript features. As of now we've studied only basics. Further in the tutorial you'll find more specials and advanced features of JavaScript.
 
 
-# Objects
+## Objects
 
 As we know from the chapter <info:types>, there are eight data types in JavaScript. Seven of them are called "primitive", because their values contain only a single thing (be it a string or a number or whatever).
 
@@ -4289,7 +4289,7 @@ let user = {};  // "object literal" syntax
 
 Usually, the figure brackets `{...}` are used. That declaration is called an *object literal*.
 
-## Literals and properties
+### Literals and properties
 
 We can immediately put some properties into `{...}` as "key: value" pairs:
 
@@ -4375,7 +4375,7 @@ The `const` would give an error only if we try to set `user=...` as a whole.
 There's another way to make constant object properties, we'll cover it later in the chapter <info:property-descriptors>.
 
 
-## Square brackets
+### Square brackets
 
 For multiword properties, the dot access doesn't work:
 
@@ -4442,7 +4442,7 @@ let key = "name";
 alert( user.key ) // undefined
 ```
 
-### Computed properties
+#### Computed properties
 
 We can use square brackets in an object literal, when creating an object. That's called *computed properties*.
 
@@ -4488,7 +4488,7 @@ Square brackets are much more powerful than the dot notation. They allow any pro
 
 So most of the time, when property names are known and simple, the dot is used. And if we need something more complex, then we switch to square brackets.
 
-## Property value shorthand
+### Property value shorthand
 
 In real code we often use existing variables as values for property names.
 
@@ -4533,7 +4533,7 @@ let user = {
 ```
 
 
-## Property names limitations
+### Property names limitations
 
 As we already know, a variable cannot have a name equal to one of language-reserved words like "for", "let", "return" etc.
 
@@ -4578,7 +4578,7 @@ As we see from the code, the assignment to a primitive `5` is ignored.
 
 We'll cover the special nature of `__proto__` in [subsequent chapters](info:prototype-inheritance), and suggest the [ways to fix](info:prototype-methods) such behavior.
 
-## Property existence test, "in" operator
+### Property existence test, "in" operator
 
 A notable feature of objects in JavaScript, compared to many other languages, is that it's possible to access any property. There will be no error if the property doesn't exist!
 
@@ -4638,7 +4638,7 @@ In the code above, the property `obj.test` technically exists. So the `in` opera
 Situations like this happen very rarely, because `undefined` should not be explicitly assigned. We mostly use `null` for "unknown" or "empty" values. So the `in` operator is an exotic guest in the code.
 
 
-## The "for..in" loop
+### The "for..in" loop
 
 To walk over all keys of an object, there exists a special form of the loop: `for..in`. This is a completely different thing from the `for(;;)` construct that we studied before.
 
@@ -4671,7 +4671,7 @@ Note that all "for" constructs allow us to declare the looping variable inside t
 
 Also, we could use another variable name here instead of `key`. For instance, `"for (let prop in obj)"` is also widely used.
 
-### Ordered like an object
+#### Ordered like an object
 
 Are objects ordered? In other words, if we loop over an object, do we get all properties in the same order they were added? Can we rely on this?
 
@@ -4753,7 +4753,7 @@ for (let code in codes) {
 
 Now it works as intended.
 
-## Summary
+### Summary
 
 Objects are associative arrays with several special features.
 
@@ -4782,7 +4782,7 @@ There are many other kinds of objects in JavaScript:
 They have their special features that we'll study later. Sometimes people say something like "Array type" or "Date type", but formally they are not types of their own, but belong to a single "object" data type. And they extend it in various ways.
 
 Objects in JavaScript are very powerful. Here we've just scratched the surface of a topic that is really huge. We'll be closely working with objects and learning more about them in further parts of the tutorial.
-# Object copying, references
+## Object copying, references
 
 One of the fundamental differences of objects vs primitives is that they are stored and copied "by reference".
 
@@ -4839,7 +4839,7 @@ alert(user.name); // 'Pete', changes are seen from the "user" reference
 
 The example above demonstrates that there is only one object. As if we had a cabinet with two keys and used one of them (`admin`) to get into it. Then, if we later use another key (`user`) we can see changes.
 
-## Comparison by reference
+### Comparison by reference
 
 The equality `==` and strict equality `===` operators for objects work exactly the same.
 
@@ -4866,7 +4866,7 @@ alert( a == b ); // false
 
 For comparisons like `obj1 > obj2` or for a comparison against a primitive `obj == 5`, objects are converted to primitives. We'll study how object conversions work very soon, but to tell the truth, such comparisons occur very rarely, usually as a result of a coding mistake.
 
-## Cloning and merging, Object.assign
+### Cloning and merging, Object.assign
 
 So, copying an object variable creates one more reference to the same object.
 
@@ -4952,7 +4952,7 @@ let clone = Object.assign({}, user);
 
 It copies all properties of `user` into the empty object and returns it.
 
-## Nested cloning
+### Nested cloning
 
 Until now we assumed that all properties of `user` are primitive. But properties can be references to other objects. What to do with them?
 
@@ -4997,20 +4997,20 @@ There's a standard algorithm for deep cloning that handles the case above and mo
 
 We can use recursion to implement it. Or, not to reinvent the wheel, take an existing implementation, for instance [_.cloneDeep(obj)](https://lodash.com/docs#cloneDeep) from the JavaScript library [lodash](https://lodash.com).
 
-## Summary
+### Summary
 
 Objects are assigned and copied by reference. In other words, a variable stores not the "object value", but a "reference" (address in memory) for the value. So copying such a variable or passing it as a function argument copies that reference, not the object.
 
 All operations via copied references (like adding/removing properties) are performed on the same single object.
 
 To make a "real copy" (a clone) we can use `Object.assign` for the so-called "shallow copy" (nested objects are copied by reference) or a "deep cloning" function, such as [_.cloneDeep(obj)](https://lodash.com/docs#cloneDeep).
-# Garbage collection
+## Garbage collection
 
 Memory management in JavaScript is performed automatically and invisibly to us. We create primitives, objects, functions... All that takes memory.
 
 What happens when something is not needed any more? How does the JavaScript engine discover it and clean it up?
 
-## Reachability
+### Reachability
 
 The main concept of memory management in JavaScript is *reachability*.
 
@@ -5033,7 +5033,7 @@ Simply put, "reachable" values are those that are accessible or usable somehow. 
 
 There's a background process in the JavaScript engine that is called [garbage collector](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)). It monitors all objects and removes those that have become unreachable.
 
-## A simple example
+### A simple example
 
 Here's the simplest example:
 
@@ -5054,7 +5054,7 @@ user = null;
 
 Now John becomes unreachable. There's no way to access it, no references to it. Garbage collector will junk the data and free the memory.
 
-## Two references
+### Two references
 
 Now let's imagine we copied the reference from `user` to `admin`:
 
@@ -5076,7 +5076,7 @@ user = null;
 
 ...Then the object is still reachable via `admin` global variable, so it's in memory. If we overwrite `admin` too, then it can be removed.
 
-## Interlinked objects
+### Interlinked objects
 
 Now a more complex example. The family:
 
@@ -5118,7 +5118,7 @@ Outgoing references do not matter. Only incoming ones can make an object reachab
 
 After garbage collection:
 
-## Unreachable island
+### Unreachable island
 
 It is possible that the whole island of interlinked objects becomes unreachable and is removed from the memory.
 
@@ -5136,7 +5136,7 @@ It's obvious that John and Ann are still linked, both have incoming references. 
 
 The former `"family"` object has been unlinked from the root, there's no reference to it any more, so the whole island becomes unreachable and will be removed.
 
-## Internal algorithms
+### Internal algorithms
 
 The basic garbage collection algorithm is called "mark-and-sweep".
 
@@ -5172,7 +5172,7 @@ Some of the optimizations:
 
 There exist other optimizations and flavours of garbage collection algorithms. As much as I'd like to describe them here, I have to hold off, because different engines implement different tweaks and techniques. And, what's even more important, things change as engines develop, so studying deeper "in advance", without a real need is probably not worth that. Unless, of course, it is a matter of pure interest, then there will be some links for you below.
 
-## Summary
+### Summary
 
 The main things to know:
 
@@ -5189,7 +5189,7 @@ If you are familiar with low-level programming, the more detailed information ab
 [V8 blog](https://v8.dev/) also publishes articles about changes in memory management from time to time. Naturally, to learn the garbage collection, you'd better prepare by learning about V8 internals in general and read the blog of [Vyacheslav Egorov](http://mrale.ph) who worked as one of V8 engineers. I'm saying: "V8", because it is best covered with articles in the internet. For other engines, many approaches are similar, but garbage collection differs in many aspects.
 
 In-depth knowledge of engines is good when you need low-level optimizations. It would be wise to plan that as the next step after you're familiar with the language.  
-# Object methods, "this"
+## Object methods, "this"
 
 Objects are usually created to represent entities of the real world, like users, orders and so on:
 
@@ -5204,7 +5204,7 @@ And, in the real world, a user can *act*: select something from the shopping car
 
 Actions are represented in JavaScript by functions in properties.
 
-## Method examples
+### Method examples
 
 For a start, let's teach the `user` to say hello:
 
@@ -5255,7 +5255,7 @@ When we write our code using objects to represent entities, that's called [objec
 
 OOP is a big thing, an interesting science of its own. How to choose the right entities? How to organize the interaction between them? That's architecture, and there are great books on that topic, like "Design Patterns: Elements of Reusable Object-Oriented Software" by E. Gamma, R. Helm, R. Johnson, J. Vissides or "Object-Oriented Analysis and Design with Applications" by G. Booch, and more.
 
-### Method shorthand
+#### Method shorthand
 
 There exists a shorter syntax for methods in an object literal:
 
@@ -5282,7 +5282,7 @@ As demonstrated, we can omit `"function"` and just write `sayHi()`.
 
 To tell the truth, the notations are not fully identical. There are subtle differences related to object inheritance (to be covered later), but for now they do not matter. In almost all cases the shorter syntax is preferred.
 
-## "this" in methods
+### "this" in methods
 
 It's common that an object method needs to access the information stored in the object to do its job.
 
@@ -5355,7 +5355,7 @@ admin.sayHi(); // Whoops! inside sayHi(), the old name is used! error!
 
 If we used `this.name` instead of `user.name` inside the `alert`, then the code would work.
 
-## "this" is not bound
+### "this" is not bound
 
 In JavaScript, keyword `this` behaves unlike most other programming languages. It can be used in any function.
 
@@ -5420,7 +5420,7 @@ The concept of run-time evaluated `this` has both pluses and minuses. On the one
 
 Here our position is not to judge whether this language design decision is good or bad. We'll understand how to work with it, how to get benefits and avoid problems.
 
-## Arrow functions have no "this"
+### Arrow functions have no "this"
 
 Arrow functions are special: they don't have their "own" `this`. If we reference `this` from such a function, it's taken from the outer "normal" function.
 
@@ -5441,7 +5441,7 @@ user.sayHi(); // Ilya
 That's a special feature of arrow functions, it's useful when we actually do not want to have a separate `this`, but rather to take it from the outer context. Later in the chapter <info:arrow-functions> we'll go more deeply into arrow functions.
 
 
-## Summary
+### Summary
 
 - Functions that are stored in object properties are called "methods".
 - Methods allow objects to "act" like `object.doSomething()`.
@@ -5453,13 +5453,13 @@ The value of `this` is defined at run-time.
 - When a function is called in the "method" syntax: `object.method()`, the value of `this` during the call is `object`.
 
 Please note that arrow functions are special: they have no `this`. When `this` is accessed inside an arrow function, it is taken from outside.
-# Constructor, operator "new"
+## Constructor, operator "new"
 
 The regular `{...}` syntax allows to create one object. But often we need to create many similar objects, like multiple users or menu items and so on.
 
 That can be done using constructor functions and the `"new"` operator.
 
-## Constructor function
+### Constructor function
 
 Constructor functions technically are regular functions. There are two conventions though:
 
@@ -5537,7 +5537,7 @@ let user = new function() {
 The constructor can't be called again, because it is not saved anywhere, just created and called. So this trick aims to encapsulate the code that constructs the single object, without future reuse.
 
 
-## Constructor mode test: new.target
+### Constructor mode test: new.target
 
 The syntax from this section is rarely used, skip it unless you want to know everything.
 
@@ -5582,7 +5582,7 @@ This approach is sometimes used in libraries to make the syntax more flexible. S
 
 Probably not a good thing to use everywhere though, because omitting `new` makes it a bit less obvious what's going on. With `new` we all know that the new object is being created.
 
-## Return from constructors
+### Return from constructors
 
 Usually, constructors do not have a `return` statement. Their task is to write all necessary stuff into `this`, and it automatically becomes the result.
 
@@ -5632,7 +5632,7 @@ let user = new User();
 Omitting parentheses here is not considered a "good style", but the syntax is permitted by specification.
 
 
-## Methods in constructor
+### Methods in constructor
 
 Using constructor functions to create objects gives a great deal of flexibility. The constructor function may have parameters that define how to construct the object, and what to put in it.
 
@@ -5665,7 +5665,7 @@ john = {
 
 To create complex objects, there's a more advanced syntax, [classes](info:classes), that we'll cover later.
 
-## Summary
+### Summary
 
 - Constructor functions or, briefly, constructors, are regular functions, but there's a common agreement to name them with capital letter first.
 - Constructor functions should only be called using `new`. Such a call implies a creation of empty `this` at the start and returning the populated one at the end.
@@ -5678,13 +5678,13 @@ In this chapter we only cover the basics about objects and constructors. They ar
 
 After we learn that, we return to objects and cover them in-depth in the chapters <info:prototypes> and <info:classes>.
 
-# Optional chaining '?.'
+## Optional chaining '?.'
 
 [recent browser="new"]
 
 The optional chaining `?.` is an error-proof way to access nested object properties, even if an intermediate property doesn't exist.
 
-## The problem
+### The problem
 
 If you've just started to read the tutorial and learn JavaScript, maybe the problem hasn't touched you yet, but it's quite common.
 
@@ -5715,7 +5715,7 @@ alert( user && user.address && user.address.street ); // undefined (no error)
 
 AND'ing the whole path to the property ensures that all components exist, but is cumbersome to write.
 
-## Optional chaining
+### Optional chaining
 
 The optional chaining `?.` stops the evaluation and returns `undefined` if the part before `?.` is `undefined` or `null`.
 
@@ -5760,7 +5760,7 @@ user?.address;
 There must be `let/const/var user`. The optional chaining works only for declared variables. 
 
 
-## Short-circuiting
+### Short-circuiting
 
 As it was said before, the `?.` immediately stops ("short-circuits") the evaluation if the left part doesn't exist.
 
@@ -5775,7 +5775,7 @@ user?.sayHi(x++); // nothing happens
 alert(x); // 0, value not incremented
 ```
 
-## Other cases: ?.(), ?.[]
+### Other cases: ?.(), ?.[]
 
 The optional chaining `?.` is not an operator, but a special syntax construct, that also works with functions and square brackets.
 
@@ -5834,7 +5834,7 @@ user?.name = "John"; // Error, doesn't work
 // because it evaluates to undefined = "John"
 ```
 
-## Summary
+### Summary
 
 The `?.` syntax has three forms:
 
@@ -5850,13 +5850,13 @@ Still, we should apply `?.` carefully, only where it's ok that the left part doe
 
 So that it won't hide programming errors from us, if they occur.
 
-# Symbol type
+## Symbol type
 
 By specification, object property keys may be either of string type, or of symbol type. Not numbers, not booleans, only strings or symbols, these two types.
 
 Till now we've been using only strings. Now let's see the benefits that symbols can give us.
 
-## Symbols
+### Symbols
 
 A "symbol" represents a unique identifier.
 
@@ -5921,7 +5921,7 @@ alert(id.description); // id
 
 
 
-## "Hidden" properties
+### "Hidden" properties
 
 Symbols allow us to create "hidden" properties of an object, that no other part of code can accidentally access or overwrite.
 
@@ -5972,7 +5972,7 @@ user.id = "Their id value"
 // Boom! overwritten by another script!
 ```
 
-### Symbols in a literal
+#### Symbols in a literal
 
 If we want to use a symbol in an object literal `{...}`, we need square brackets around it.
 
@@ -5990,7 +5990,7 @@ let user = {
 ```
 That's because we need the value from the variable `id` as the key, not the string "id".
 
-### Symbols are skipped by for..in
+#### Symbols are skipped by for..in
 
 Symbolic properties do not participate in `for..in` loop.
 
@@ -6029,7 +6029,7 @@ alert( clone[id] ); // 123
 
 There's no paradox here. That's by design. The idea is that when we clone an object or merge objects, we usually want *all* properties to be copied (including symbols like `id`).
 
-## Global symbols
+### Global symbols
 
 As we've seen, usually all symbols are different, even if they have the same name. But sometimes we want same-named symbols to be same entities. For instance, different parts of our application want to access symbol `"id"` meaning exactly the same property.
 
@@ -6058,7 +6058,7 @@ In some programming languages, like Ruby, there's a single symbol per name.
 
 In JavaScript, as we can see, that's right for global symbols.
 
-### Symbol.keyFor
+#### Symbol.keyFor
 
 For global symbols, not only `Symbol.for(key)` returns a symbol by name, but there's a reverse call: `Symbol.keyFor(sym)`, that does the reverse: returns a name by a global symbol.
 
@@ -6090,7 +6090,7 @@ alert( Symbol.keyFor(localSymbol) ); // undefined, not global
 alert( localSymbol.description ); // name
 ```
 
-## System symbols
+### System symbols
 
 There exist many "system" symbols that JavaScript uses internally, and we can use them to fine-tune various aspects of our objects.
 
@@ -6106,7 +6106,7 @@ For instance, `Symbol.toPrimitive` allows us to describe object to primitive con
 
 Other symbols will also become familiar when we study the corresponding language features.
 
-## Summary
+### Summary
 
 `Symbol` is a primitive type for unique identifiers.
 
@@ -6125,7 +6125,7 @@ Symbols have two main use cases:
 
 Technically, symbols are not 100% hidden. There is a built-in method [Object.getOwnPropertySymbols(obj)](mdn:js/Object/getOwnPropertySymbols) that allows us to get all symbols. Also there is a method named [Reflect.ownKeys(obj)](mdn:js/Reflect/ownKeys) that returns *all* keys of an object including symbolic ones. So they are not really hidden. But most libraries, built-in functions and syntax constructs don't use these methods.
 
-# Object to primitive conversion
+## Object to primitive conversion
 
 What happens when objects are added `obj1 + obj2`, subtracted `obj1 - obj2` or printed using `alert(obj)`?
 
@@ -6137,7 +6137,7 @@ In the chapter <info:type-conversions> we've seen the rules for numeric, string 
 2. The numeric conversion happens when we subtract objects or apply mathematical functions. For instance, `Date` objects (to be covered in the chapter <info:date>) can be subtracted, and the result of `date1 - date2` is the time difference between two dates.
 3. As for the string conversion -- it usually happens when we output an object like `alert(obj)` and in similar contexts.
 
-## ToPrimitive
+### ToPrimitive
 
 We can fine-tune string and numeric conversion, using special object methods.
 
@@ -6200,7 +6200,7 @@ There is no "boolean" hint (all objects are `true` in boolean context) or anythi
 3. Otherwise if hint is `"number"` or `"default"`
     - try `obj.valueOf()` and `obj.toString()`, whatever exists.
 
-## Symbol.toPrimitive
+### Symbol.toPrimitive
 
 Let's start from the first method. There's a built-in symbol named `Symbol.toPrimitive` that should be used to name the conversion method, like this:
 
@@ -6233,7 +6233,7 @@ alert(user + 500); // hint: default -> 1500
 As we can see from the code, `user` becomes a self-descriptive string or a money amount depending on the conversion. The single method `user[Symbol.toPrimitive]` handles all conversion cases.
 
 
-## toString/valueOf
+### toString/valueOf
 
 Methods `toString` and `valueOf` come from ancient times. They are not symbols (symbols did not exist that long ago), but rather "regular" string-named methods. They provide an alternative "old-style" way to implement the conversion.
 
@@ -6307,7 +6307,7 @@ alert(user + 500); // toString -> John500
 
 In the absence of `Symbol.toPrimitive` and `valueOf`, `toString` will handle all primitive conversions.
 
-## Return types
+### Return types
 
 The important thing to know about all primitive-conversion methods is that they do not necessarily return the "hinted" primitive.
 
@@ -6319,7 +6319,7 @@ For historical reasons, if `toString` or `valueOf` returns an object, there's no
 
 In contrast, `Symbol.toPrimitive` *must* return a primitive, otherwise there will be an error.
 
-## Further conversions
+### Further conversions
 
 As we know already, many operators and functions perform type conversions, e.g. multiplication `*` converts operands to numbers.
 
@@ -6355,7 +6355,7 @@ let obj = {
 alert(obj + 2); // 22 ("2" + 2), conversion to primitive returned a string => concatenation
 ```
 
-## Summary
+### Summary
 
 The object-to-primitive conversion is called automatically by many built-in functions and operators that expect a primitive as a value.
 
@@ -6377,6 +6377,6 @@ The conversion algorithm is:
 In practice, it's often enough to implement only `obj.toString()` as a "catch-all" method for all conversions that return a "human-readable" representation of an object, for logging or debugging purposes.  
 
 
-# Conclusion
+## Conclusion
 
 That's Alot! We thank the authors from https://javascript.info/ For supporting this lesson, and without them, I don't think It would be possible to do such a huge work! In the next tutorial, We'll discuss how we can interact With websites in order to make our modern development success.

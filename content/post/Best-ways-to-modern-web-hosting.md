@@ -7,7 +7,8 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
+
 Welcome to the world of modern web hosting, now why modern you ask, If you followed our course of modern web development, by now you should know it's different from the typical web development process and here Today I'm showing you the free and paid web hosting platforms I use for my projects in a daily basis. My favorite is Netlify, before you ask, and this is only an introduction guide to what we're going to explore in the near future. Let's get into the list
 
 ![Just A PC](https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
@@ -19,7 +20,7 @@ Welcome to the world of modern web hosting, now why modern you ask, If you follo
 5. Vercel
 6. Free Hosting
 
-# #1 Heroku https://www.heroku.com
+## #1 Heroku https://www.heroku.com
 
 ![Heroku](https://nejcribic.com/content/assets/heroku-logo.png)
 
@@ -34,7 +35,7 @@ Heroku is a cloud platform as a service supporting several programming languages
 * Automatic OS patching
 * Sleeps after 30 mins of inactivity, otherwise always on depending on your remaining monthly free dyno hours.
 
-# #2 Netlify (My Personal Favorite) https://www.netlify.com
+## #2 Netlify (My Personal Favorite) https://www.netlify.com
 
 ![Netlify](https://i.ytimg.com/vi/eOKLccIYcBc/maxresdefault.jpg)
 
@@ -53,13 +54,13 @@ Netlify customers include Google, Facebook, Verizon, NBC, Samsung, Nike, Cisco, 
 * Deploy static assets & dynamic serverless functions
 * Domain Manager
 
-# #3 Github Pages https://pages.github.com
+## #3 Github Pages https://pages.github.com
 
 ![Github Pages](https://i.ytimg.com/vi/2MsN8gpT6jY/maxresdefault.jpg)
 
 GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. Here you can also connect a custom domain and that's pretty much all you can do with it. But how ever, you'll get unlimited storage bandwidth and many more features with it.
 
-# #4 Infinity free https://infinityfree.net
+## #4 Infinity free https://infinityfree.net
 
 ![Infinity Free](https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2019/08/AwesomeScreenshot-infinityfree-net-2019-08-18_8_28.png)
 
@@ -73,7 +74,7 @@ I Still don't believe the fact that this is real, but it is. This site offers co
 * Limited Server Power
 * 50,000 Daily Hits
 
-# #5 Vercel https://vercel.com
+## #5 Vercel https://vercel.com
 
 ![Vercel](https://miro.medium.com/max/938/1*Rv6kW7EnWmShq7DKEb9-_A@2x.jpeg)
 
@@ -86,12 +87,13 @@ This is also a service like netlify and as they say Vercel is the best place to 
 * Serverless Functions in Node.js, Go, and more
 
 Also You Can Deploy from
+
 * GitHub personal accounts
 * GitLab personal accounts
 * Bitbucket personal accounts
 * Command-Line Interface
 
-# #6 Free Hosting https://www.freehosting.com
+## #6 Free Hosting https://www.freehosting.com
 
 ![Free Hosting](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200409224837/7-Best-Sites-For-Free-Web-Hosting.png)
 
@@ -103,10 +105,10 @@ FreeHosting.com offers you what other free web hosting services out there simply
 * Linux / Apache / PHP / MySQL
 * One-time billed addons
 
-# Difference?
+## Difference
 
 That would be like a Heaven for most of the developers I know, But they all have a secret to control traffic and so, I listed them in the descending order of the limitation. According to my calculations, #1 can handle more users daily than the #5 option but still #5 option can handle 30,000 Daily users and that's a huge amount and you won't need to pay a single dollar to get these options. So why do we pay for more hosting?
 
-# Conclusion
+## Conclusion
 
 Let's be real, These are unlikely but real, Try for yourself and see the difference. I love these services and currently I'm using Netlify as I said, And hope you'll use them too. Also This is an introduction for a post I'm planning to the future so stay tuned for that.
