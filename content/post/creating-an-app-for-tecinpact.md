@@ -7,13 +7,14 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
 
 Today we're creating an app for our agency using Hybrid technology which we discussed in [THIS ARTICLE](/post/creating-mobile-apps-with-cordova/), And if you didn't checked it out, Go ahead and try now, I'm only showing you the codes I used here And also This is an demo on how to use the technology, Then we're publishing it on playstore Tomorrow! How cool is that? started as a web developer and now you're an official mobile developer. Let's get started.
 
-# Setup
+## Setup
 
 Read the previous article and get a feel for it, now you should have,
+
 * created the project
 * added android plugin
 * added multidex
@@ -540,7 +541,7 @@ And guys that's it for the application and that's all we have to put to create a
 
 Now you have to run
 
-```
+```js
 cordova build android --release
 ```
 
@@ -553,6 +554,6 @@ Let me show you some screenshots!
 ![Screenshot 3](/uploads/20200802_03.jpg)
 ![Screenshot 4](/uploads/20200802_04.jpg)
 
-# Conclusion
+## Conclusion
 
 This is how I crate almost every app I develop, and remember, with cordova plugins, you can achieve more advanced functionality and for a simple process as this, This is the future guys!

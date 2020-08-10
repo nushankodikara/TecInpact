@@ -7,7 +7,8 @@ Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
+
 We all come across a situation when the default notify-the-user procedure is getting incompatible with our project theme and appearance, so in this guide I'm going to discuss about creating a beautiful modal for your web project, with a SCSS and JQuery ( a little bit ) before this, you have to master [HTML](/post/html-for-modern-web-development/) [CSS](/post/css-for-modern-web-development/) [SCSS](/post/scss-for-modern-web-development/) [JS part 1](/post/js-for-modern-web-development/) and [JS part 2](/content/post/js-for-modern-web-development-2/) guides.
 
 Now in this guide, We're making This Beautiful modal from scratch with only 14 lines of JS codes. I'm using HTML SCSS and a JS file in the root folder.
@@ -195,6 +196,7 @@ html {
     }
 }
 ```
+
 And now here's the scss Now in here, I'm defining the page width and height in the HTML tags and setting the font aspects in the body, I explained this SCSS code once and here I'm only explaining the modal section. Now when considering the wrapper I fixed it's position and adjusted z-index to 2 to make it appear in-front of everything. Also I used a trick from [This Guide](/post/1line-css-tricks-part1/) to add the modal to the center of the wrapper. and then adjusted some basic aspects and again used a trick from [This Guide](/post/1line-css-tricks-part1/) to layout the modal.
 
 ```js
@@ -215,9 +217,11 @@ butotnFunction = () => {
 ```
 
 Here's where the magic happens. Now considering this code, It's very simple isn't it? yeah I'm using a library called JQuery for this section. and I'm sure you never saw this kinds of codes if you're a beginner. now let's explore and I'll post a JQuery guide in the near future. Here the $(".wrapper") is equal to
->   document.getElementByClass
+
+> document.getElementByClass
 
 from JS and I'm selecting the class wrapper and in the beginning changing it's css to hide when the page loads. and then I'm setting modalStat which is a way for my program to know wether the modal is hidden or not to 0 means hidden and 1 means active. now I'm creating a basic JS function called butotnFunction which I miss spelled but it works for the program, and adding a simple logic to make it appear if hidden and hide if appeared when the function calls. And you can see in the HTML page, that I assigned onclick attribute to this function. When the button in the main page or the X to close button is pressed, this works perfectly and And also Don't forget to use this in your next project.
 
-# Conclusion
+## Conclusion
+
 It's simple, It's beautiful, It's Elegant and I love it, I hope you like it too and the code is simple and easy to understand. I assume you learn something new today.

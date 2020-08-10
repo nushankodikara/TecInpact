@@ -1,25 +1,26 @@
 ---
 title: "Getting Started With Firebase"
-date: 2020-08-05T06:00:00+05:30
+date: 2020-08-05T05:00:00+05:30
 Description: "How we can use Firebase"
 Tags: ["web development","mobile development"]
 Categories: []
 DisableComments: false
 ---
 
-# Introduction
+## Introduction
 
 This is a different post from what I did before, Today I'm introducing you to a technology, It's a BaaS from google which stands for Backend As A Service and that's weird in many ways, First It is not what you would expect out of a traditional site and Here I only speak about Modern development So Let's get started with this new technology and make our Lives Easier!
 
-# What Is Firebase
+## What Is Firebase
 
 Firebase is a platform for creating mobile and web applications developed by Google. It was originally an independent company founded in 2011. In 2014, Google acquired the platform and it is now their flagship offering for app development. Considering google, They are the biggest tech company in earth by now. (Yeah we have more planets and there are aliens, I have proofs and Let's not talk about it ever again) So as an Earth being, if a service gets delivered by google, That's a pot of gold. Let's explore what we can do with firebase shall we?
 
-# Firebase Products
+## Firebase Products
 
 Before getting in to what are the benefits, Let's Explore what Firebase offers Us in advance. you can check this link https://firebase.google.com/docs for more details.
 
 For Building your app
+
 * Cloud Firestore
 * Firebase ML
 * Cloud Functions
@@ -29,12 +30,14 @@ For Building your app
 * Realtime Database
 
 Improve app quality
+
 * Crashlytics
 * App Distribution
 * Performance Monitoring
 * Test Lab
 
 Grow your business
+
 * Analytics
 * Extensions
 * Predictions
@@ -131,10 +134,10 @@ Firebase App Indexing gets your app into Google Search. If users have your app i
 
 And That's It! That's all we get for a free quota which updates every month! and believe it or not these are the cheapest services you can get right now!
 
-# How Should I Start?
+## How Should I Start
 
 We're considering Firebase with Javascript. So in this guide series we're considering more and more web apps and hybrid mobile apps to develop. And you also need some basic knowledge on [HTML](/post/html-for-modern-web-development/), [CSS](/post/css-for-modern-web-development/), [SCSS](/post/scss-for-modern-web-development/), [JS part 1](/post/js-for-modern-web-development/) and [JS part 2](/content/post/js-for-modern-web-development-2/) After that we can get into this series. This isn't hard but you have to keep your focus high.
 
-# Conclusion
+## Conclusion
 
 Firebase is a set of services ( A Collection of services ) which can make your life easier. I Use firebase personally in my projects whenever I can and It made my life so much easier. From today on we're discussing how we can use these services. So stay Tuned!
