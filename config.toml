@@ -12,6 +12,9 @@ disqusShortname = "tecinpact"
 # Google Analytics
 googleAnalytics = "UA-172360495-1"
 
+# Google Adsense
+adsenseID = "ca-pub-2375766996268537"
+
 [params]
 title = "I'm Nushan Kodikara"
 author = "Tecinpact"
