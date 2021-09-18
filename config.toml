@@ -1,10 +1,10 @@
-baseURL = "https://www.tecinpact.tk/"
-languageCode = "en"
 DefaultContentLanguage = "en"
-title = "TECINPACT Techno Guide"
-theme = "anatole"
-summarylength = 10
+baseURL = "https://www.tecinpact.tk/"
 enableEmoji = true
+languageCode = "en"
+summarylength = 10
+theme = "anatole"
+title = "TECINPACT Technology Guide"
 
 # Enable Disqus
 disqusShortname = "tecinpact"
@@ -13,21 +13,21 @@ disqusShortname = "tecinpact"
 googleAnalytics = "UA-172360495-1"
 
 [params]
-title = "I'm Nushan Kodikara"
-author = "Tecinpact"
-description = "Welcome Visitor! Here you can find out new technologies, Reviews, suggestions about technologies and step-by-step guides to the EASY World."
-profilePicture = "images/profile.jpg"
-keywords = ""
-favicon = "favicons/"
-customCss = []
-mainSections = ["post"]
-images = ["images/site-feature-image.png"]
 adsenseID = "ca-pub-2375766996268537"
+author = "Tecinpact"
+customCss = []
+description = "Welcome Visitor! Here you can find out new technologies, Reviews, suggestions about technologies and step-by-step guides to the EASY World."
+favicon = "favicons/"
+images = ["images/site-feature-image.png"]
+keywords = ""
+mainSections = ["post"]
+profilePicture = "images/profile.jpg"
+title = "I'm Nushan Kodikara"
 
 ## Math settings
 [params.math]
-enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
-use = "katex"  # options: "katex", "mathjax". default is "katex".
+enable = false # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex" # options: "katex", "mathjax". default is "katex".
 
 ## Social links
 [[params.socialIcons]]
@@ -51,11 +51,6 @@ title = "Telegram"
 url = "https://t.me/tecinpact"
 
 [[params.socialIcons]]
-icon = "fa-whatsapp"
-title = "Whatsapp"
-url = "https://chat.whatsapp.com/K4aWxjBIfw38GNuupCNmTO"
-
-[[params.socialIcons]]
 icon = "fa-instagram"
 title = "instagram"
 url = "https://www.instagram.com/Tecinpact"
@@ -69,35 +64,41 @@ url = "mailto:tecinpactagencies@gmail.com"
 
 [menu]
 
-  [[menu.main]]
-  name = "Home"
-  identifier = "home"
-  weight = 1
-  url = "/"
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
 
-  [[menu.main]]
-  name = "Posts"
-  weight = 2
-  identifier = "posts"
-  url = "/post/"
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/post/"
+weight = 2
 
-  [[menu.main]]
-  name = "About"
-  weight = 3
-  identifier = "about"
-  url = "/about/"
+[[menu.main]]
+identifier = "cookies"
+name = "Cookies"
+url = "/cookies/"
+weight = 3
 
-  [[menu.main]]
-  name = "Portfolio"
-  weight = 4
-  identifier = "portfolio"
-  url = "/portfolio/"
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 4
 
-  [[menu.main]]
-  name = "Search"
-  weight = 100
-  identifier = "search"
-  url = "/search/"
+[[menu.main]]
+identifier = "portfolio"
+name = "Portfolio"
+url = "/portfolio/"
+weight = 5
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 100
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
