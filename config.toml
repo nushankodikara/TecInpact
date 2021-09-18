@@ -1,5 +1,5 @@
 DefaultContentLanguage = "en"
-baseURL = "https://www.tecinpact.tk/"
+baseURL = "https://tecinpact.tk/"
 enableEmoji = true
 languageCode = "en"
 summarylength = 10
